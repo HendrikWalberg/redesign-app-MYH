@@ -5,53 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <body>
 <!--Footer area starts-->
 <!-- ISSUE, put in fonts for email, adress for easier understanding-->
     <footer>
-        <div class="footer wrapper">
+        <section class="footer wrapper">
             <div class="column">
-                <h3>Kontakt</h3>
-                <span>Telefon</span>
+                <h2 class="p1">Kontakt</h2>
+                <h3 class="p1"> Telefon</h3>
                 <span>Ring vår växel 010-209 01 00</span><br>
                 <span>Växeln är öppen vardagar 8.00 - 17.00</span>
-                <h3>Digitalt kundforum</h3>
-                <span>Se vanliga frågor och svar eller ställ frågor: </span>
-                <a href="https://forum.myh.se" target="blank">forum.myh.se</a>
-                <h3>E-post</h3>
+                <h3 class="p1">Digitalt kundforum</h3>
+                <span>Se vanliga frågor och svar eller ställ frågor: </span><br>
+                <a role="link" class="link" href="https://forum.myh.se" target="blank">forum.myh.se</a>
+                <h3 class="p1">E-post</h3>
                 <span>Allmänna frågor/synpunkter:</span>
-                <a class="email" href="mailto:info@myh.se">info@myh.se<br></a>
+                <a role=textbox class="email" href="mailto:info@myh.se">info@myh.se<br></a>
                 <span>Registrator:</span>
-                <a class="email" href="mailto:registrator@myh.se">registrator@myh.se</a>
-                <h3>Adress</h3>
-                <span>Myndigheten för yrkeshögskolan</span>
-                <span>Box 145</span>
+                <a role=textbox class="email" href="mailto:registrator@myh.se">registrator@myh.se</a>
+                <h3 class="p1">Adress</h3>
+                <span>Myndigheten för yrkeshögskolan</span><br>
+                <span>Box 145</span><br>
                 <span>721 05 Västerås</span>
             </div>
             <div class="column">
-                <h3>Om webbplatsen</h3>
-                <a class="link" href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">
+                <h3 class="p1">Om webbplatsen</h3>
+                <a role="link" class="link" href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">
                 Använda webbplatsen</a><br>
-                <a class="link" href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">
+                <a role="link" class="link" href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">
                 Om webbkakor (cookies)</a><br>
-                <a class="link" href="https://www.myh.se/Webbkarta/">
+                <a role="link" class="link" href="https://www.myh.se/Webbkarta/">
                 Webbkarta</a>
-                <h3>Våra övriga webbplatser</h3>
-                <a class="link" href="https://www.yrkeshogskolan.se" target="blank" aria-label="yrkeshögskolan"> 
+                <h3 class="p1">Våra övriga webbplatser</h3>
+                <a role="link" class="link" href="https://www.yrkeshogskolan.se" target="blank" aria-label="yrkeshögskolan"> 
                 www.yrkeshogskolan.se</a><br>
-                <a class="link" href="https://www.konstkulturutbildning.se" target="_blank" aria-label="Konstkulturutbildning">
+                <a role="link" class="link" href="https://www.konstkulturutbildning.se" target="blank" aria-label="Konstkulturutbildning">
                 www.konstkulturutbildning.se</a><br>
-                <a class="link" href="https://www.myh.se/blitolk/" target="blank" aria-label="Blitolk">
+                <a role="link" class="link" href="https://www.myh.se/blitolk/" target="blank" aria-label="Blitolk">
                 www.blitolk.nu</a><br>
-                <a class="link" href="https://www.seqf.se" target="blank" aria-label="Seqf">
+                <a role="link" class="link" href="https://www.seqf.se" target="blank" aria-label="Seqf">
                 www.seqf.se</a>
-                <h3>Ansvarig utgivare</h3>
+                <h3 class="p1">Ansvarig utgivare</h3>
                 <span>Thomas Persson, generaldirektör MYH.</span>
             </div>
-        </div>
+            <div class="column">
+                <h3 class="p1">Ansvarig utgivare</h3>
+                <span>Thomas Persson, generaldirektör MYH.</span>
+                <h3 class="p1">Håll dig informerad</h3>
+                <ul class="social">
+                    <li role=contentinfo>
+                        <a href="https://twitter.com/" target="blank" aria-label="Twitter">
+                        <i class="fab fa-twitter-square"></i></a>  
+                    </li>
+                    <li role=contentinfo>
+                        <a href="https://facebook.com/" target="blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li role=contentinfo>
+                        <a href="https://youtube.com/" target="blank" aria-label="Youtube">
+                            <i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li role=contentinfo>
+                        <a href="https://instagram.com/" target="blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <!-- ISSUE, Put in fonts for twitter, facebook, youtube, instagram-->
-        <nav class="below-footer">
+<!--        <nav class="below-footer">
             <ul class="social">
                     <li>
                         <a href="https://twitter.com/" target="blank" aria-label="Twitter">
@@ -70,7 +95,7 @@
                         <i class="#"></i></a>
                     </li>
                 </ul>
-            </nav>
+            </nav>                  -->
     </footer>
 <!--Footer area ends-->
 </body>
