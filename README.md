@@ -17,7 +17,7 @@
     <li><a href ="https://www.figma.com/proto/oebkyGRIXpOAZQLTkcCUMN/MYH-mockup-desktop-3-Verksamhetsomr%C3%A5den?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">3-Verksamhetsområden mockup desktop</a></li>
     <li><a href ="https://www.figma.com/proto/Hv1mAF3hQy37Kci7zREQjV/MYH-mockup-mobile-3-Verksamhetsomr%C3%A5den?node-id=1%3A2&viewport=497%2C400%2C0.12480896711349487&scaling=scale-down">3-Verksamhetsområden mockup mobil</a></li>
     <li><a href ="https://www.figma.com/proto/LcL9Isk5oKrehon50nPthw/MYH-mockup-desktop-4-Lagar?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">4-Lagar mockup desktop</a></li>
-    <li><a href ="https://www.figma.com/file/VtptvElTO9U25HcoG88lOm/MYH-mockup-mobile-4-Lagar?node-id=0%3A1">4-Lagar mockup mobil</a></li>
+    <li><a href ="https://www.figma.com/proto/VtptvElTO9U25HcoG88lOm/MYH-mockup-mobile-4-Lagar?node-id=1%3A2&scaling=scale-down">4-Lagar mockup mobil</a></li>
     <li><a href ="https://www.figma.com/proto/rcnbkxClKPebpm0rVxfNVc/MYH-mockup-desktop-5-Statistik?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">5-Statistik mockup desktop</a></li>
     <li><a href ="https://www.figma.com/proto/KKMsGIWSeTfQeqhZBmnuTQ/MYH-mockup-mobile-5-Statistik?node-id=1%3A2&viewport=497%2C672%2C0.21528998017311096&scaling=scale-down">5-Statistik mockup mobil</a></li>
     <li><a href ="https://www.figma.com/proto/mhVMeBYnCRqAQmIoWxyZuW/MYH-mockup-desktop-6-Publikationer?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">6-Publikationer mockup desktop</a></li>
