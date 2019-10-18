@@ -7,5 +7,13 @@
     <li><a href ="https://www.figma.com/proto/oebkyGRIXpOAZQLTkcCUMN/MYH-mockup-desktop-3-Verksamhetsomr%C3%A5den?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">3-Verksamhetsområden mockup desktop</a></li>
     <li><a href ="https://www.figma.com/proto/Hv1mAF3hQy37Kci7zREQjV/MYH-mockup-mobile-3-Verksamhetsomr%C3%A5den?node-id=1%3A2&viewport=497%2C400%2C0.12480896711349487&scaling=scale-down">3-Verksamhetsområden mockup mobil</a></li>
     <li><a href ="https://www.figma.com/proto/LcL9Isk5oKrehon50nPthw/MYH-mockup-desktop-4-Lagar?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">4-Lagar mockup desktop</a></li>
-    <li><a href ="https://www.figma.com/file/VtptvElTO9U25HcoG88lOm/MYH-mockup-mobile-4-Lagar?node-id=0%3A1">4-Lagar mockup mobil</a></li>
+    <li><a href ="https://www.figma.com/proto/VtptvElTO9U25HcoG88lOm/MYH-mockup-mobile-4-Lagar?node-id=1%3A2&scaling=scale-down">4-Lagar mockup mobil</a></li>
+    <li><a href ="https://www.figma.com/proto/rcnbkxClKPebpm0rVxfNVc/MYH-mockup-desktop-5-Statistik?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">5-Statistik mockup desktop</a></li>
+    <li><a href ="https://www.figma.com/proto/KKMsGIWSeTfQeqhZBmnuTQ/MYH-mockup-mobile-5-Statistik?node-id=1%3A2&viewport=497%2C672%2C0.21528998017311096&scaling=scale-down">5-Statistik mockup mobil</a></li>
+    <li><a href ="https://www.figma.com/proto/mhVMeBYnCRqAQmIoWxyZuW/MYH-mockup-desktop-6-Publikationer?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">6-Publikationer mockup desktop</a></li>
+    <li><a href ="https://www.figma.com/proto/5IKxwVDn98PX4zsqzqi6zl/MYH-mockup-mobile-6-Publikationer?node-id=1%3A2&viewport=497%2C267%2C0.08045095950365067&scaling=scale-down">6-Publikationer mockup mobil</a></li>
+    <li><a href ="https://www.figma.com/proto/t3YqGknToR1cpspL7NQwre/MYH-mockup-desktop-7-Nyhetsrum?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">7-Nyhetsrum mockup desktop</a></li>
+    <li><a href ="https://www.figma.com/proto/Z79IWgk6AAo1Q4u25God4O/MYH-mockup-mobile-7-Nyhetsrum?node-id=1%3A2&viewport=497%2C382%2C0.11870154738426208&scaling=scale-down">7-Nyhetsrum mockup mobil</a></li>
+    <li><a href ="https://www.figma.com/proto/Q3DHp0MeYxUHfAaWIga0Vt/MYH-mockup-desktop-8-Kontakt?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">8-Kontakt mockup desktop</a></li>
+    <li><a href ="https://www.figma.com/proto/2Rj7g89nqR2o9pODXGcZBd/MYH-mockup-mobile-8-Kontakt?node-id=1%3A2&viewport=497%2C509%2C0.16107824444770813&scaling=scale-down">8-Kontakt mockup mobil</a></li>
 </ul>
