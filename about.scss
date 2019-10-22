@@ -1,0 +1,77 @@
+$yellow: #FFFF00;
+$blue: #6699CC;
+$lightgray: #9CB0C3;
+$darkgrey: #708090;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
+        "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 200px auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+        "h1 h1"
+        "pic article";
+    background-color: $darkgrey;
+    color: white;
+
+    h1 {
+    background-color: $blue;
+    grid-area: h1;
+    font-size: 48px;
+    margin: auto 0;
+    text-align: left;
+    padding: 40px
+    }
+
+    img {
+        grid-area: pic;
+        align-self: center;
+    }
+}
+
+article {
+    grid-area: article;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "ingress ingress ingress"
+        "item-1 item-2 item-3";
+
+    .ingress {
+        font-size: 32px;
+        grid-area: ingress;
+        padding: 35px;
+    }
+
+    .body-text {
+        font-size: 14px;
+        padding: 35px;
+        text-align: justify;
+    }
+
+    #item-1 {
+        grid-area: item-1;
+    }
+    
+    #item-2 {
+        grid-area: item-2;
+    }
+    
+    #item-3 {
+        grid-area: item-3;
+    }
+}
+
+
+
+
+
