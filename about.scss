@@ -15,22 +15,12 @@ $darkgrey: #708090;
 
 main {
     display: grid;
-    grid-template-rows: 200px auto;
+    grid-template-rows: auto;
     grid-template-columns: auto 1fr;
     grid-template-areas: 
-        "h1 h1"
         "pic article";
     background-color: $darkgrey;
     color: white;
-
-    h1 {
-    background-color: $blue;
-    grid-area: h1;
-    font-size: 48px;
-    margin: auto 0;
-    text-align: left;
-    padding: 40px
-    }
 
     img {
         grid-area: pic;
@@ -40,11 +30,13 @@ main {
 
 article {
     grid-area: article;
+    margin: 20px;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         "ingress ingress ingress"
-        "item-1 item-2 item-3";
+        "item-1 item-2 item-3"
+        ". button .";
 
     .ingress {
         font-size: 32px;
@@ -55,7 +47,7 @@ article {
     .body-text {
         font-size: 14px;
         padding: 35px;
-        text-align: justify;
+        text-align: left;
     }
 
     #item-1 {
@@ -68,6 +60,23 @@ article {
     
     #item-3 {
         grid-area: item-3;
+    }
+
+    /*Placeholder för riktig knapp*/
+    .button {
+        width: auto;
+        padding: 8px;
+        grid-area: button;
+        text-align: center;
+        background-color: $lightgray;
+        border: solid 1px;
+        border-radius: 10px;
+        margin: 15px;
+
+        &:hover {
+            background-color: $darkgrey;
+            text-decoration: underline;
+        }
     }
 }
 

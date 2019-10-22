@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,29 +11,17 @@
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 200px auto;
-      grid-template-rows: 200px auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   -ms-grid-columns: auto 1fr;
       grid-template-columns: auto 1fr;
-      grid-template-areas: "h1 h1" "pic article";
+      grid-template-areas: "pic article";
   background-color: #708090;
   color: white;
 }
 
-main h1 {
-  background-color: #6699CC;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: h1;
-  font-size: 48px;
-  margin: auto 0;
-  text-align: left;
-  padding: 40px;
-}
-
 main img {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: pic;
   -ms-flex-item-align: center;
@@ -41,14 +30,16 @@ main img {
 }
 
 article {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: article;
+  margin: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 1fr;
-      grid-template-rows: auto 1fr;
-      grid-template-areas: "ingress ingress ingress" "item-1 item-2 item-3";
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: "ingress ingress ingress" "item-1 item-2 item-3" ". button .";
+  /*Placeholder för riktig knapp*/
 }
 
 article .ingress {
@@ -63,7 +54,7 @@ article .ingress {
 article .body-text {
   font-size: 14px;
   padding: 35px;
-  text-align: justify;
+  text-align: left;
 }
 
 article #item-1 {
@@ -82,5 +73,23 @@ article #item-3 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: item-3;
+}
+
+article .button {
+  width: auto;
+  padding: 8px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: button;
+  text-align: center;
+  background-color: #9CB0C3;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+article .button:hover {
+  background-color: #708090;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=about.css.map */
