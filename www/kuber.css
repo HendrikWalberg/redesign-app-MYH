@@ -1,0 +1,18 @@
+.cube {
+    margin: 30px;
+    background-color: #00c84e;
+    background-image: url("arrow.png");
+    background-size: contain;
+    color: #FFF;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    transition: transform .2s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.cube:hover {
+    transform: scale(1.1);
+}
