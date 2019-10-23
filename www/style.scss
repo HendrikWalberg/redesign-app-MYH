@@ -13,7 +13,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: yellow;
-    ul > li{
+    ul > li {
         display: inline-flex;
     }    
 }
@@ -22,7 +22,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-    //text-align: center;
 }
 
 .column {
@@ -40,22 +39,23 @@ footer {
 }
 
 //from 3 columns to 2
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
 }
   
-    //from 2 columns to 1
+//from 2 columns to 1
 @media screen and (max-width: 600px) {
     .column {
       flex: 100%;
       max-width: 100%;
+      text-align: center;
     }
 }
 
-
+//social font on hover and siz
 .social {
     a {
         font-size: 25px;
@@ -63,6 +63,7 @@ footer {
         transition: color 300ms ease, transform 300ms ease; 
         color: black;
     }
+
     a:hover {
         transform: scale(1.4);
     }

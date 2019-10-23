@@ -52,7 +52,7 @@ footer ul > li {
   color: black;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .column {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -67,6 +67,7 @@ footer ul > li {
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
+    text-align: center;
   }
 }
 
