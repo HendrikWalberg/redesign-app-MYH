@@ -11,43 +11,33 @@ $darkgrey: #708090;
     line-height: 1.5;
     font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
         "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
-}
+    font-size: 1.5vw;
+    }
 
 main {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto 1fr;
-    grid-template-areas: 
-        "pic article";
     background-color: $darkgrey;
     color: white;
 
     img {
-        grid-area: pic;
         align-self: center;
+        width: 100%;
     }
 }
 
 article {
-    grid-area: article;
-    margin: 20px;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    padding: 8%;
+    grid-gap: 15px;
     grid-template-areas: 
-        "ingress ingress ingress"
-        "item-1 item-2 item-3"
-        ". button .";
+        "ingress"
+        "item-1"
+        "item-2"
+        "item-3"
+        "button";
 
     .ingress {
-        font-size: 32px;
+        font-size: 2.2vw;
         grid-area: ingress;
-        padding: 35px;
-    }
-
-    .body-text {
-        font-size: 14px;
-        padding: 35px;
-        text-align: left;
     }
 
     #item-1 {
@@ -71,7 +61,6 @@ article {
         background-color: $lightgray;
         border: solid 1px;
         border-radius: 10px;
-        margin: 15px;
 
         &:hover {
             background-color: $darkgrey;
@@ -80,7 +69,77 @@ article {
     }
 }
 
+/* För iPhone 8 */
+@media screen and (max-width: 414px) {
+    article {
+        .ingress {
+            font-size: 6vw;
+        }
+    }
 
+    .body-text {
+        font-size: 4vw;
+    }
 
+    .button {
+        font-size: 4vw;
+    }
 
+    img {
+        display: none;
+    }
+}
 
+/* För Laptop */
+@media screen and (min-width: 415px) and (max-width: 1919px) {
+    main {
+        display: grid;
+        grid-template-areas:
+        "pic article";
+    }
+
+    img {
+        grid-area: pic;
+    }
+
+    article {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "ingress ingress ingress"
+        "item-1 item-1 item-1"
+        "item-2 item-2 item-2"
+        "item-3 item-3 item-3"
+        ". button .";
+    }
+}
+
+/* För Desktop */
+@media screen and (min-width: 1920px) {
+    main {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "pic article";
+    }
+
+    img {
+        grid-area: pic;
+    }
+
+    article {
+        display: grid;
+        grid-column-gap: 50px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "ingress ingress"
+        "item-1 item-2"
+        "item-3 button";
+    }
+
+    .button {
+        height: fit-content;
+        align-self: end;
+    }
+}
