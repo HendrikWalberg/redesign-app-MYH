@@ -10,9 +10,12 @@ body {
 }
 
 footer {
+    background-color: yellow;
+}
+
+article {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
     ul > li {
         display: inline-flex;
     }    
