@@ -1,0 +1,68 @@
+$yellow: #FFFF00;
+$blue: #6699CC;
+$lightgray: #9CB0C3;
+$darkgrey: #708090;
+$white: #FFFFFF;
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+line-height: 1.5;
+font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial","sans-serif";
+}
+
+// MIXINS
+
+.verksamhet {
+
+    h1 {
+        text-align: center;
+        background-color: $blue;
+    }
+
+    p {
+        background-color: $darkgrey;
+        color: $white;
+    }
+}
+
+//alternating patterns, can probably use 3 mixins for structure then specific colors below 
+
+.yrkesHogskolan {
+     background-color: $yellow;
+
+}
+
+.konstKultur {
+    background-color: $lightgray;
+}
+
+.tolkUtbildningar {
+ //Diffrent structure, ontop image instead of side
+    background-color: $blue;
+}
+
+.utbildningarTillsyn {
+    background-color: $yellow;
+}
+
+.seqf {
+    background-color: $blue;
+}
+
+.validering {
+//Diffrent structure, ontop image instead of side
+    background-color: $lightgray;
+    
+}
+
+article a {
+    color: black;
+    text-decoration: none;;
+    &:hover {
+        color: $blue;
+        text-decoration: underline;
+    }
+}
