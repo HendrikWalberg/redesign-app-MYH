@@ -1,13 +1,3 @@
-# u02-redesign-alpha
-
-<h1>Viktaga länkar:</h1>
-<ul> 
-  <li><a href="https://files.slack.com/files-pri/T4WV23X5X-FNX45DY1H/download/myh_content.zip">MYH.se content</a></li>
-  <li><a href="https://drive.google.com/open?id=1Zflq5lON8680LNOjI1toPCB0JguIY6ds">Google drive map</a></li>
-  <li><a href="https://guides.github.com/introduction/git-handbook/">Git handbook</a></li>
-  <li><a href="https://www.css2scss.com/">CSS to SCSS</a></li>
-</ul>
-
 <h1>Mockups</h1>
 <ul>
     <li><a href="https://www.figma.com/proto/YdTNGoZ9oeFulYVGFy2Vrh/MYH-mockup-desktop-startsida?node-id=43%3A9&viewport=273%2C-597%2C0.4903155267238617&scaling=min-zoom">Startsida mockup desktop</a></li>
@@ -27,10 +17,3 @@
     <li><a href ="https://www.figma.com/proto/Q3DHp0MeYxUHfAaWIga0Vt/MYH-mockup-desktop-8-Kontakt?node-id=43%3A9&viewport=344%2C-163%2C0.3124585747718811&scaling=min-zoom">8-Kontakt mockup desktop</a></li>
     <li><a href ="https://www.figma.com/proto/2Rj7g89nqR2o9pODXGcZBd/MYH-mockup-mobile-8-Kontakt?node-id=1%3A2&viewport=497%2C509%2C0.16107824444770813&scaling=scale-down">8-Kontakt mockup mobil</a></li>
 </ul>
-
-<h1>Tutorials:</h1>
-<ul>
-  <li><a href="https://www.youtube.com/watch?v=DZg6UfS5zYg">Pure CSS Hamburger Menu & Overlay</a></li>
-  <li><a href="https://www.youtube.com/watch?v=JttTcnidSdQ">Basic Parallax Website With HTML & CSS</a></li>
-</ul>  
-
