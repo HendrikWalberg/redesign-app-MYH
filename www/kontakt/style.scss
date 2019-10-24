@@ -1,0 +1,79 @@
+$yellow: #FFFF00;
+$blue: #6699CC;
+$lightgray: #9CB0C3;
+$darkgrey: #708090;
+$white: #FFFFFF;
+
+@mixin white {
+
+    color:$white;
+}
+
+@mixin margintop {
+
+    margin-top: 6%;
+}
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+line-height: 1.5;
+font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial","sans-serif";
+}
+
+h1 {
+
+    text-align:center;
+    background-color: $blue;;
+}
+
+.imgContact {
+    @include margintop;
+
+    align-self: center;
+}
+
+.infoField {
+
+    background-color: $lightgray;
+    padding: 2% 4%;
+    width: 90%;
+
+    p {
+        @include white;
+
+        margin-bottom: 2.5%;
+        
+    }
+
+    h2 {
+        @include white;
+        
+    }
+
+    a {
+
+        text-decoration: none;
+        color: $darkgrey;
+        
+        &:hover {
+
+            text-decoration: underline;
+            color: $blue;
+        }
+    }
+}
+
+iframe {
+    @include margintop;
+
+    align-self: center;
+}
+
+.imageLinks {
+    @include margintop;
+
+
+}
