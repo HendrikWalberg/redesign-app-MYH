@@ -1,18 +1,40 @@
 .cube {
     margin: 30px;
-    background-color: #00c84e;
-    background-image: url("arrow.png");
+    background-color: grey;
     background-size: contain;
+    opacity: .6;
     color: #FFF;
     width: 200px;
     height: 200px;
     text-align: center;
     align-items: center;
     display: flex;
-    transition: transform .2s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: relative;
+    overflow: hidden;
 }
 
-.cube:hover {
-    transform: scale(1.1);
+
+.animation {
+    position: absolute;
+    background-image: linear-gradient(-60deg, rgb(80, 79, 79) 50%, black 50%);
+    border-right: 2px solid white;
+    opacity: .5;
+    transition: .5s ease;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+}
+
+.cube:hover .animation {
+    width: 100%;
+}
+
+@keyframes slide {
+    100% {
+        transform:translateX(20%);
+    }
 }
