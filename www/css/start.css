@@ -1,0 +1,27 @@
+#main-menu {
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.main-menu-list {
+    text-align: center;
+}
+.main-menu-item {
+    display: inline-block;
+    padding: 30px 25px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.main-menu-list > a {
+    text-decoration: none;
+    color: #000;
+}
+.main-menu-item:hover {
+    background: #eee
+}
