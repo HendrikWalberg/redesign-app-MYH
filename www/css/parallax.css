@@ -9,7 +9,7 @@ body, html {
 }
 
 .main-image {
-    background-image: url("images/main-image.jpg");
+    background-image: url("../img/main-image.jpg");
     min-height: 100%;
     position: relative;
     opacity: 0.7;

@@ -14,6 +14,13 @@ $white: #FFFFFF;
     margin-top: 6%;
 }
 
+@mixin marginauto {
+    @include margintop;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 * {
 
 margin: 0;
@@ -23,23 +30,18 @@ line-height: 1.5;
 font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial","sans-serif";
 }
 
-h1 {
-
-    text-align:center;
-    background-color: $blue;;
-}
-
 .imgContact {
-    @include margintop;
+    @include marginauto;
+    text-align: center;
+    height: 35em;
+    width:80%;
 
-    align-self: center;
 }
 
 .infoField {
-
     background-color: $lightgray;
     padding: 2% 4%;
-    width: 90%;
+    width: 80%;
 
     p {
         @include white;
@@ -67,13 +69,21 @@ h1 {
 }
 
 iframe {
-    @include margintop;
+    @include marginauto;
 
-    align-self: center;
+    display: block;
+    width: 470px;
+    height: 400px;
 }
 
 .imageLinks {
-    @include margintop;
+    @include marginauto;
+
+    ul {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
 
 
 }
