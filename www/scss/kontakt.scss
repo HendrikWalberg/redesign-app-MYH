@@ -32,17 +32,21 @@ font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeu
 
 .imgContact {
     @include marginauto;
-    text-align: center;
-    height: 35em;
-    width:80%;
+
+    display: grid;
+    align-self: center;
+    height: 10%;
+    width: 80%;
 
 }
 
 .infoField {
+
+    display: inline-grid;
+    align-self: center;
     background-color: $lightgray;
     padding: 2% 4%;
     width: 80%;
-
     p {
         @include white;
 
@@ -74,16 +78,5 @@ iframe {
     display: block;
     width: 470px;
     height: 400px;
-}
-
-.imageLinks {
-    @include marginauto;
-
-    ul {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-    }
-
-
+    margin-bottom: 6%;
 }
