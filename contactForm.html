@@ -1,10 +1,14 @@
-<form role="form" aria-labelledby="contact" action="">
-  <fieldset>
-    <legend id="contact">Kontakta oss</legend>
-    <label>Namn:</label>
-	<input type="text" placeholder="Förnamn Efternamn"></input>
-	<label>Mailadress:</label>
-    <input type="email" placeholder="exempel@gmail.com"></input><br>
-    <button type="submit" action="">Skicka</button>
+<head>
+  <link rel="stylesheet" href="contactFormStyle.css">
+</head>
+<form role="form" aria-labelledby="contact" action="" class="contactForm">
+  <fieldset class="contactField">
+    <legend id="headerContact">Kontakta oss</legend>
+    <label class="directoryText">Namn:</label>
+	    <input type="text" placeholder="Förnamn Efternamn" class="textFields"></input><br>
+	  <label class="directoryText">Mailadress:</label>
+      <input type="email" placeholder="exempel@gmail.com" class="textFields"></input><br>
+      <textarea placeholder="Här kan du skriva" class="freeTextField" contenteditable="true"></textarea><br>
+      <button type="submit" action="" class="submitBtn">Skicka</button>
   </fieldset>
 </form>
