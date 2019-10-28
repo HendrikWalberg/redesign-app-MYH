@@ -1,25 +1,3 @@
-.light {
-    color: #FFF;
-}
-
-.lighter {
-    color: #DADADA;
-}
-
-.link {
-    text-decoration: none;
-    color: #4B4D52;
-}
-
-.fler {
-    font-size: 24px;
-}
-
-filter {
-    text-decoration: none;
-}
-
-/* Button */
 .fler {
     color: #000;
     background-color: #ffff00;
