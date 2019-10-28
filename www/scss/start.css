@@ -70,8 +70,12 @@ h3 {
   h2 {
     width: 100%;
     padding-top: 8%;
-    padding-left: 5%;
+    padding-left: 10%;
     text-align: left;
+    font-size: 7vw;
+  }
+  h3 {
+    font-size: 6vw;
   }
   .news {
     -ms-grid-columns: 1fr;
@@ -81,6 +85,12 @@ h3 {
   }
   .card {
     width: 80%;
+  }
+  .card p {
+    font-size: 4vw;
+  }
+  .card footer {
+    font-size: 4vw;
   }
 }
 
