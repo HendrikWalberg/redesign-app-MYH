@@ -18,27 +18,26 @@ main {
     background-color: $darkgrey;
     color: white;
 
-    img {
-        align-self: center;
-        width: 100%;
+    section {
+        padding: 8%;
+        .ingress {
+            padding: 20px;
+            font-size: 2.2vw;
+            grid-area: ingress;
+        }
     }
 }
 
 article {
     display: grid;
     padding: 8%;
-    grid-gap: 15px;
+    grid-gap: 2%;
     grid-template-areas: 
         "ingress"
         "item-1"
         "item-2"
         "item-3"
         "button";
-
-    .ingress {
-        font-size: 2.2vw;
-        grid-area: ingress;
-    }
 
     #item-1 {
         grid-area: item-1;
@@ -71,10 +70,8 @@ article {
 
 /* För iPhone 8 */
 @media screen and (max-width: 414px) {
-    article {
-        .ingress {
-            font-size: 6vw;
-        }
+    .ingress {
+        font-size: 6vw;
     }
 
     .body-text {
@@ -85,7 +82,7 @@ article {
         font-size: 4vw;
     }
 
-    img {
+    .page-image {
         display: none;
     }
 }
@@ -93,20 +90,22 @@ article {
 /* För Laptop */
 @media screen and (min-width: 415px) and (max-width: 1919px) {
     main {
+        margin: 0 30px;
         display: grid;
         grid-template-areas:
-        "pic article";
+        "pic ingress"
+        "article article";
     }
 
-    img {
+    .page-image {
         grid-area: pic;
+        width: 48%;
     }
 
     article {
         display: grid;
         grid-template-rows: auto;
         grid-template-areas:
-        "ingress ingress ingress"
         "item-1 item-1 item-1"
         "item-2 item-2 item-2"
         "item-3 item-3 item-3"
@@ -118,22 +117,22 @@ article {
 @media screen and (min-width: 1920px) {
     main {
         display: grid;
-        grid-gap: 20px;
-        grid-template-columns: 50% 50%;
+        grid-gap: 2%;
+        grid-template-columns: 48% 48%;
         grid-template-areas:
-        "pic article";
+        "pic ingress"
+        "article article";
     }
 
-    img {
+    .page-image {
         grid-area: pic;
     }
 
     article {
         display: grid;
-        grid-column-gap: 50px;
+        grid-column-gap: 2%;
         grid-template-rows: auto;
         grid-template-areas:
-        "ingress ingress"
         "item-1 item-2"
         "item-3 button";
     }
