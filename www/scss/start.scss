@@ -1,0 +1,97 @@
+$yellow: #FFFF00;
+$blue: #6699CC;
+$lightgray: #9CB0C3;
+$darkgrey: #708090;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
+        "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    font-size: 1vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        text-decoration: underline;
+        color: $darkgrey;
+    }
+}
+
+h2 {
+    width: 80%;
+    background-color: $lightgray;
+    margin: 30px auto 0 auto;
+    font-size: 7vw;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
+.news {
+    background-color: $lightgray;
+    margin:0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    border: 0px;
+    background-color: white;
+    border-radius: 12px;
+    width: 90%;
+    margin: 8% auto 2% auto;
+    box-shadow: 0 4px 8px 0 $darkgrey;
+
+    img {
+        width:100%;
+        border-radius: 12px 12px 0 0;
+    }
+    .card-content {
+        padding: 12% 6%;
+    }
+
+    .card-footer {
+        color: lightgray;
+        margin-top: 2%;
+    }
+ }
+
+/* För iPhone 8 */
+@media screen and (max-width: 414px) {
+    h2 {
+        width: 100%;
+        padding-top: 8%;
+        padding-left: 5%;
+        text-align: left;
+    }
+
+    .news {
+        grid-template-columns: 1fr;
+        margin: 0;
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+/* För Laptop */
+@media screen and (min-width: 415px) and (max-width: 1919px) {
+
+}
+
+/* För Desktop */
+@media screen and (min-width: 1920px) {
+
+}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-size: 1vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #708090;
+}
+
+h2 {
+  width: 80%;
+  background-color: #9CB0C3;
+  margin: 30px auto 0 auto;
+  font-size: 7vw;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5vw;
+}
+
+.news {
+  background-color: #9CB0C3;
+  margin: 0 auto;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  border: 0px;
+  background-color: white;
+  border-radius: 12px;
+  width: 90%;
+  margin: 8% auto 2% auto;
+  -webkit-box-shadow: 0 4px 8px 0 #708090;
+          box-shadow: 0 4px 8px 0 #708090;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.card .card-content {
+  padding: 12% 6%;
+}
+
+.card .card-footer {
+  color: lightgray;
+  margin-top: 2%;
+}
+
+/* För iPhone 8 */
+@media screen and (max-width: 414px) {
+  h2 {
+    width: 100%;
+    padding-top: 8%;
+    padding-left: 5%;
+    text-align: left;
+  }
+  .news {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0;
+    width: 100%;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+/* För Laptop */
+/* För Desktop */
+/*# sourceMappingURL=start.css.map */
