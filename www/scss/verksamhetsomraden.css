@@ -4,15 +4,28 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial","sans-serif";
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-size: 1.5vw;
 }
 
-.verksamhet h1 {
+.infoField {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
+}
+
+.infoField p {
+  font-size: 1.6vw;
+}
+
+.infoField h2 {
+  font-size: 2.2vw;
+}
+
+.verksamhet {
   text-align: center;
-  background-color: #6699CC;
-}
-
-.verksamhet p {
   background-color: #708090;
   color: #FFFFFF;
 }
