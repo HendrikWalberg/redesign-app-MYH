@@ -2,13 +2,8 @@ $yellow: #FFFF00;
 $blue: #6699CC;
 $lightgray: #9CB0C3;
 $darkgrey: #708090;
-$white: #FFFFFF;
 
-@mixin white {
-    color:$white;
-}
-
-@mixin margintop {
+@mixin margintop6 {
     margin-top: 6%;
 }
 
@@ -32,12 +27,12 @@ font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeu
 
 .imgContact {
     @include marginauto;
-    @include margintop;
+    @include margintop6;
     @include width80;
 
     display: grid;
     align-self: center;
-    height: 10%;
+    height: 550px;
 
 }
 
@@ -45,15 +40,19 @@ font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeu
 .infoField {
     @include marginauto;
     @include width80;
-    @include white;
 
     display: grid;
     align-self: center;
     background-color: $lightgray;
     padding: 2% 4%;
+    color: #FFFFFF;
+
+    h2 {
+        margin-top: 2.5%;
+    }
 
     p {
-        margin-bottom: 2.5%;
+        font-size: 1.5vw;
     }
 
     a {
@@ -69,10 +68,26 @@ font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeu
 
 iframe {
     @include marginauto;
-    @include margintop;
+    @include margintop6;
 
     display: block;
-    width: 570px;
+    width: 70%;
     height: 600px;
     margin-bottom: 6%;
+}
+
+// DESKTOP 1920x1080p LAPTOP 1280x900p IPHONE8 414x736p
+
+@media screen and (max-width: 650px) {
+
+    .imgContact {
+        display: none;
+    }
+
+
+
+    iframe {
+
+
+    }
 }

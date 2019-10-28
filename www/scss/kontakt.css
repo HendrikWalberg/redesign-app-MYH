@@ -16,24 +16,28 @@
   display: grid;
   -ms-grid-row-align: center;
       align-self: center;
-  height: 10%;
+  height: 550px;
 }
 
 .infoField {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  color: #FFFFFF;
   display: -ms-grid;
   display: grid;
   -ms-grid-row-align: center;
       align-self: center;
   background-color: #9CB0C3;
   padding: 2% 4%;
+  color: #FFFFFF;
+}
+
+.infoField h2 {
+  margin-top: 2.5%;
 }
 
 .infoField p {
-  margin-bottom: 2.5%;
+  font-size: 1.5vw;
 }
 
 .infoField a {
@@ -51,8 +55,14 @@ iframe {
   margin-right: auto;
   margin-top: 6%;
   display: block;
-  width: 570px;
+  width: 70%;
   height: 600px;
   margin-bottom: 6%;
+}
+
+@media screen and (max-width: 650px) {
+  .imgContact {
+    display: none;
+  }
 }
 /*# sourceMappingURL=kontakt.css.map */
