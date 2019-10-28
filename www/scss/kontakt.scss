@@ -5,20 +5,20 @@ $darkgrey: #708090;
 $white: #FFFFFF;
 
 @mixin white {
-
     color:$white;
 }
 
 @mixin margintop {
-
     margin-top: 6%;
 }
 
 @mixin marginauto {
-    @include margintop;
-
     margin-left: auto;
     margin-right: auto;
+}
+
+@mixin width80 {
+    width: 80%;
 }
 
 * {
@@ -27,45 +27,40 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 line-height: 1.5;
-font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial","sans-serif";
+font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 }
 
 .imgContact {
     @include marginauto;
+    @include margintop;
+    @include width80;
 
     display: grid;
     align-self: center;
     height: 10%;
-    width: 80%;
 
 }
 
-.infoField {
 
-    display: inline-grid;
+.infoField {
+    @include marginauto;
+    @include width80;
+    @include white;
+
+    display: grid;
     align-self: center;
     background-color: $lightgray;
     padding: 2% 4%;
-    width: 80%;
+
     p {
-        @include white;
-
         margin-bottom: 2.5%;
-        
-    }
-
-    h2 {
-        @include white;
-        
     }
 
     a {
-
         text-decoration: none;
         color: $darkgrey;
         
         &:hover {
-
             text-decoration: underline;
             color: $blue;
         }
@@ -74,9 +69,10 @@ font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeu
 
 iframe {
     @include marginauto;
+    @include margintop;
 
     display: block;
-    width: 470px;
-    height: 400px;
+    width: 570px;
+    height: 600px;
     margin-bottom: 6%;
 }
