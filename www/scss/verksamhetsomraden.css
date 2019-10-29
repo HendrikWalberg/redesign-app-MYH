@@ -4,41 +4,219 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial","sans-serif";
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-size: 1.5vw;
 }
 
-.verksamhet h1 {
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+p {
+  margin-left: 5%;
+  font-size: 1.6vw;
+  margin-bottom: 5%;
+}
+
+h2 {
+  margin-left: 5%;
+  font-size: 2.2vw;
+  margin-top: 5%;
+}
+
+#pVerk {
+  grid-area: pVerk;
+}
+
+#verksamhet {
   text-align: center;
-  background-color: #6699CC;
-}
-
-.verksamhet p {
   background-color: #708090;
   color: #FFFFFF;
+  display: -ms-grid;
+  display: grid;
 }
 
-.yrkesHogskolan {
+#yrkesHogskolan {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "ImgYh h2Yh" "ImgYh pYh";
   background-color: #FFFF00;
 }
 
-.konstKultur {
+#yrkesHogskolan #imgYh {
+  grid-area: imgYh;
+}
+
+#yrkesHogskolan #h2YH {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: h2Yh;
+}
+
+#yrkesHogskolan #pYh {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pYh;
+}
+
+#konstKultur {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "h2Kk imgKk" "pKk imgKk";
   background-color: #9CB0C3;
 }
 
-.tolkUtbildningar {
+#konstKultur #h2Kk {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h2Kk;
+}
+
+#konstKultur #pKk {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: pKk;
+}
+
+#konstKultur #imgKk {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: imgKk;
+}
+
+#tolkUtbildningar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "imgTolk" "h2Tolk" "pTolk";
   background-color: #6699CC;
 }
 
-.utbildningarTillsyn {
+#tolkUtbildningar #imgTolk {
+  grid-area: ImgTolk;
+  min-width: 100%;
+  max-height: 650px;
+}
+
+#tolkUtbildningar #h2Tolk {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: h2Tolk;
+}
+
+#tolkUtbildningar #pTolk {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: pTolk;
+}
+
+#utbildningarTillsyn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "imgEt h2Et" "imgEt pEt";
   background-color: #FFFF00;
 }
 
-.seqf {
+#utbildningarTillsyn #imgEt {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: imgEt;
+}
+
+#utbildningarTillsyn #h2Et {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: h2Et;
+}
+
+#utbildningarTillsyn #pEt {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pEt;
+}
+
+#seqf {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "h2Seqf imgSeqf" "pSeqf imgSeqf";
   background-color: #6699CC;
 }
 
-.validering {
+#seqf #h2Seqf {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h2Seqf;
+}
+
+#seqf #pSeqf {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: pSeqf;
+}
+
+#seqf #imgSeqf {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: imgSeqf;
+}
+
+#validering {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "imgValid" "h2Valid" "pValid";
   background-color: #9CB0C3;
+}
+
+#validering #imgValid {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imgValid;
+  min-width: 100%;
+  max-height: 650px;
+}
+
+#validering #h2Valid {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: h2Valid;
+}
+
+#validering #pValid {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: pValid;
+}
+
+article {
+  margin-top: 6%;
 }
 
 article a {
