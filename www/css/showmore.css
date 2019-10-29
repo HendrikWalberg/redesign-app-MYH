@@ -1,0 +1,35 @@
+.fler {
+    color: #000;
+    background-color: #ffff00;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+    padding: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.fler span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.fler span:after {
+    content: "→";
+    position: absolute;
+    opacity: 0;
+    left: 100%;
+}
+
+.fler:hover span {
+    padding-right: 40px;
+
+}
+
+.fler:hover span:after {
+    opacity: 1;
+    right: 0;
+}
