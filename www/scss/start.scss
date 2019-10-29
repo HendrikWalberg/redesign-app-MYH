@@ -5,6 +5,15 @@ $darkgrey: #708090;
 
 /*Global styling*/
 
+@mixin omradenimgstyle {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +29,7 @@ a {
     color: black;
 }
 
-h2 {
+.description {
     width: 80%;
     background-color: $lightgray;
     margin: 30px auto 0 auto;
@@ -82,32 +91,46 @@ h3 {
     a {
         display: flex;
         align-content: center;
+        font-size: 1vw;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
     }
 
-    .omraden-img {
+    .omraden-img-note {
+        @include omradenimgstyle;
         background-image: url(../img/omOssNotepad.jpg);
-        background-repeat: no-repeat;
-        width: 90%;
-        margin: 30px auto;
+        
+    }
 
-        .omraden-headline {
-            color: white;
-            text-align: center;
-            text-shadow: 1px 2px 3px black;
-            font-size: 4vw;
-            padding: 8%;
+    .omraden-img-school {
+        @include omradenimgstyle;
+        background-image: url(../img/forutbildare.jpg);
+    }
 
-        }
+    .omraden-img-foretag {
+        @include omradenimgstyle;
+        background-image: url(../img/forforetag.jpg);
+    }
+
+    .omraden-headline {
+        color: white;
+        text-align: center;
+        text-shadow: 1px 2px 3px black;
+        font-size: 3vw;
+        padding: 8%;
+
     }
 
     .omraden-list {
         list-style-type: none;
         width: 90%;
-        margin: 10px auto 0 auto;
+        margin: 10px auto;
         padding: 30px 15px;
 
         .omraden-list-item {
-            font-size: 2vw;
+            font-size: 1.5vw;
             padding: 1.5%;
         }
     }
@@ -119,19 +142,14 @@ h3 {
         padding: 30px 15px;
 
         .head-text {
-            font-size: 2vw;
+            color: white;
+            font-size: 1.5vw;
+            margin-bottom: 1.5%;
         }
 
-        a {
-            font-size: 2.5vw;
-
-            &:hover {
-                color: white;
-                text-decoration: underline;
-            }
-        }
+      }
     }
- }
+ 
 
 /* För iPhone 8 */
 @media screen and (max-width: 414px) {
