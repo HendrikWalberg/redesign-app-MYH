@@ -2,16 +2,18 @@ $yellow: #FFFF00;
 $blue: #6699CC;
 $lightgray: #9CB0C3;
 $darkgrey: #708090;
-$white: #FFFFFF;
 
-@mixin white {
-
-    color:$white;
+@mixin margintop6 {
+    margin-top: 6%;
 }
 
-@mixin margintop {
+@mixin marginauto {
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    margin-top: 6%;
+@mixin width80 {
+    width: 80%;
 }
 
 * {
@@ -20,46 +22,44 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 line-height: 1.5;
-font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial","sans-serif";
-}
-
-h1 {
-
-    text-align:center;
-    background-color: $blue;;
+font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 }
 
 .imgContact {
-    @include margintop;
+    @include marginauto;
+    @include margintop6;
+    @include width80;
 
+    display: grid;
     align-self: center;
+    height: 550px;
+
 }
 
-.infoField {
 
+.infoField {
+    @include marginauto;
+    @include width80;
+
+    display: grid;
+    align-self: center;
     background-color: $lightgray;
     padding: 2% 4%;
-    width: 90%;
-
-    p {
-        @include white;
-
-        margin-bottom: 2.5%;
-        
-    }
+    color: #FFFFFF;
 
     h2 {
-        @include white;
-        
+        margin-top: 2.5%;
+    }
+
+    p {
+        font-size: 1.5vw;
     }
 
     a {
-
         text-decoration: none;
         color: $darkgrey;
         
         &:hover {
-
             text-decoration: underline;
             color: $blue;
         }
@@ -67,13 +67,27 @@ h1 {
 }
 
 iframe {
-    @include margintop;
+    @include marginauto;
+    @include margintop6;
 
-    align-self: center;
+    display: block;
+    width: 70%;
+    height: 600px;
+    margin-bottom: 6%;
 }
 
-.imageLinks {
-    @include margintop;
+// DESKTOP 1920x1080p LAPTOP 1280x900p IPHONE8 414x736p
+
+@media screen and (max-width: 650px) {
+
+    .imgContact {
+        display: none;
+    }
 
 
+
+    iframe {
+
+
+    }
 }

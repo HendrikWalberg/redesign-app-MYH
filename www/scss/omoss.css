@@ -5,7 +5,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
+<<<<<<< HEAD
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+=======
   font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+>>>>>>> master
   font-size: 1.5vw;
 }
 
@@ -14,18 +18,40 @@ main {
   color: white;
 }
 
+<<<<<<< HEAD
+main img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+article {
+  display: -ms-grid;
+  display: grid;
+  padding: 8%;
+  grid-gap: 15px;
+      grid-template-areas: "ingress" "item-1" "item-2" "item-3" "button";
+  /*Placeholder för riktig knapp*/
+}
+
+article .ingress {
+=======
 main section {
   padding: 8%;
 }
 
 main section .ingress {
   padding: 20px;
+>>>>>>> master
   font-size: 2.2vw;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: ingress;
 }
 
+<<<<<<< HEAD
+=======
 article {
   display: -ms-grid;
   display: grid;
@@ -35,6 +61,7 @@ article {
   /*Placeholder för riktig knapp*/
 }
 
+>>>>>>> master
 article #item-1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -72,7 +99,11 @@ article .button:hover {
 
 /* För iPhone 8 */
 @media screen and (max-width: 414px) {
+<<<<<<< HEAD
+  article .ingress {
+=======
   .ingress {
+>>>>>>> master
     font-size: 6vw;
   }
   .body-text {
@@ -81,7 +112,11 @@ article .button:hover {
   .button {
     font-size: 4vw;
   }
+<<<<<<< HEAD
+  img {
+=======
   .page-image {
+>>>>>>> master
     display: none;
   }
 }
@@ -89,6 +124,16 @@ article .button:hover {
 /* För Laptop */
 @media screen and (min-width: 415px) and (max-width: 1919px) {
   main {
+<<<<<<< HEAD
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "pic article";
+  }
+  img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: pic;
+=======
     margin: 0 30px;
     display: -ms-grid;
     display: grid;
@@ -99,13 +144,18 @@ article .button:hover {
     -ms-grid-column: 1;
     grid-area: pic;
     width: 48%;
+>>>>>>> master
   }
   article {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
+<<<<<<< HEAD
+        grid-template-areas: "ingress ingress ingress" "item-1 item-1 item-1" "item-2 item-2 item-2" "item-3 item-3 item-3" ". button .";
+=======
         grid-template-areas: "item-1 item-1 item-1" "item-2 item-2 item-2" "item-3 item-3 item-3" ". button .";
+>>>>>>> master
   }
 }
 
@@ -114,12 +164,21 @@ article .button:hover {
   main {
     display: -ms-grid;
     display: grid;
+<<<<<<< HEAD
+    grid-gap: 20px;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "pic article";
+  }
+  img {
+=======
     grid-gap: 2%;
     -ms-grid-columns: 48% 48%;
         grid-template-columns: 48% 48%;
         grid-template-areas: "pic ingress" "article article";
   }
   .page-image {
+>>>>>>> master
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: pic;
@@ -127,10 +186,17 @@ article .button:hover {
   article {
     display: -ms-grid;
     display: grid;
+<<<<<<< HEAD
+    grid-column-gap: 50px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "ingress ingress" "item-1 item-2" "item-3 button";
+=======
     grid-column-gap: 2%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
         grid-template-areas: "item-1 item-2" "item-3 button";
+>>>>>>> master
   }
   .button {
     height: -webkit-fit-content;
