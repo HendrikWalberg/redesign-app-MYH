@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: black;
+}
+
+#main-menu {
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.main-menu-list {
+  text-align: center;
+}
+
+.main-menu-item {
+  display: inline-block;
+  padding: 30px 25px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.main-menu-list > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-menu-item:hover {
+  background: #eee;
+}
+
+footer {
+  background-color: yellow;
+}
+
+footer.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+footer.wrapper > article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer.wrapper > article ul > li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+footer.wrapper .column {
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 5px 5px;
+}
+
+footer.wrapper .column .p1 {
+  padding: 10px 0;
+}
+
+footer.wrapper .link,
+footer.wrapper .email {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  footer.wrapper .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer.wrapper .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+footer.wrapper .social a {
+  font-size: 25px;
+  padding: 20px 14px;
+  -webkit-transition: color 300ms ease, -webkit-transform 300ms ease;
+  transition: color 300ms ease, -webkit-transform 300ms ease;
+  transition: color 300ms ease, transform 300ms ease;
+  transition: color 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+  color: black;
+}
+
+footer.wrapper .social a:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-size: 1.5vw;
 }
 
@@ -33,7 +33,7 @@ h2 {
 #verksamhet {
   text-align: center;
   background-color: #708090;
-  color: #FFFFFF;
+  color: #ffffff;
   display: -ms-grid;
   display: grid;
 }
@@ -46,7 +46,7 @@ h2 {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "ImgYh h2Yh" "ImgYh pYh";
-  background-color: #FFFF00;
+  background-color: #ffff00;
 }
 
 #yrkesHogskolan #imgYh {
@@ -73,7 +73,7 @@ h2 {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "h2Kk imgKk" "pKk imgKk";
-  background-color: #9CB0C3;
+  background-color: #9cb0c3;
 }
 
 #konstKultur #h2Kk {
@@ -103,7 +103,7 @@ h2 {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: "imgTolk" "h2Tolk" "pTolk";
-  background-color: #6699CC;
+  background-color: #6699cc;
 }
 
 #tolkUtbildningar #imgTolk {
@@ -132,7 +132,7 @@ h2 {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "imgEt h2Et" "imgEt pEt";
-  background-color: #FFFF00;
+  background-color: #ffff00;
 }
 
 #utbildningarTillsyn #imgEt {
@@ -162,7 +162,7 @@ h2 {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "h2Seqf imgSeqf" "pSeqf imgSeqf";
-  background-color: #6699CC;
+  background-color: #6699cc;
 }
 
 #seqf #h2Seqf {
@@ -192,7 +192,7 @@ h2 {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: "imgValid" "h2Valid" "pValid";
-  background-color: #9CB0C3;
+  background-color: #9cb0c3;
 }
 
 #validering #imgValid {
@@ -225,7 +225,7 @@ article a {
 }
 
 article a:hover {
-  color: #6699CC;
+  color: #6699cc;
   text-decoration: underline;
 }
 /*# sourceMappingURL=verksamhetsomraden.css.map */

@@ -1,144 +1,128 @@
-$yellow: #FFFF00;
-$blue: #6699CC;
-$lightgray: #9CB0C3;
-$darkgrey: #708090;
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
-        "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
-    font-size: 1.5vw;
-    }
-
-main {
-    background-color: $darkgrey;
-    color: white;
-
-    section {
-        padding: 8%;
-        .ingress {
-            padding: 20px;
-            font-size: 2.2vw;
-            grid-area: ingress;
-        }
-    }
+main > img {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  width: 100%;
 }
 
 article {
-    display: grid;
-    padding: 8%;
-    grid-gap: 2%;
-    grid-template-areas: 
-        "ingress"
-        "item-1"
-        "item-2"
-        "item-3"
-        "button";
+  display: grid;
+  padding: 8%;
+  grid-gap: 15px;
+  grid-template-areas:
+    "ingress"
+    "item-1"
+    "item-2"
+    "item-3"
+    "button";
+ 
+  .ingress {
+    padding: 20px;
+    font-size: 2.2vw;
+    grid-area: ingress;
+  }
 
-    #item-1 {
-        grid-area: item-1;
-    }
-    
-    #item-2 {
-        grid-area: item-2;
-    }
-    
-    #item-3 {
-        grid-area: item-3;
-    }
+  #item-1 {
+    grid-area: item-1;
+    grid-row: 1;
+  }
 
-    /*Placeholder för riktig knapp*/
-    .button {
-        width: auto;
-        padding: 8px;
-        grid-area: button;
-        text-align: center;
-        background-color: $lightgray;
-        border: solid 1px;
-        border-radius: 10px;
+  #item-2 {
+    grid-area: item-2;
+  }
 
-        &:hover {
-            background-color: $darkgrey;
-            text-decoration: underline;
-        }
+  #item-3 {
+    grid-area: item-3;
+  }
+
+  /*Placeholder för riktig knapp*/
+  .button {
+    width: auto;
+    padding: 8px;
+    grid-area: button;
+    text-align: center;
+    background-color: $lightgray;
+    border: solid 1px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $darkgrey;
+      text-decoration: underline;
     }
+  }
 }
 
 /* För iPhone 8 */
 @media screen and (max-width: 414px) {
-    .ingress {
-        font-size: 6vw;
-    }
+  .ingress {
+    font-size: 6vw;
+  }
 
-    .body-text {
-        font-size: 4vw;
-    }
+  .body-text {
+    font-size: 4vw;
+  }
 
-    .button {
-        font-size: 4vw;
-    }
+  .button {
+    font-size: 4vw;
+  }
 
-    .page-image {
-        display: none;
-    }
+  .page-image {
+    display: none;
+  }
 }
 
 /* För Laptop */
 @media screen and (min-width: 415px) and (max-width: 1919px) {
-    main {
-        margin: 0 30px;
-        display: grid;
-        grid-template-areas:
-        "pic ingress"
-        "article article";
-    }
+  main {
+    margin: 0 30px;
+    display: grid;
+    grid-template-areas:
+      "pic ingress"
+      "article article";
+  }
 
-    .page-image {
-        grid-area: pic;
-        width: 48%;
-    }
+  .page-image {
+    grid-area: pic;
+    width: 48%;
+  }
 
-    article {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "item-1 item-1 item-1"
-        "item-2 item-2 item-2"
-        "item-3 item-3 item-3"
-        ". button .";
-    }
+  article {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "item-1 item-1 item-1"
+      "item-2 item-2 item-2"
+      "item-3 item-3 item-3"
+      ". button .";
+  }
 }
 
 /* För Desktop */
 @media screen and (min-width: 1920px) {
-    main {
-        display: grid;
-        grid-gap: 2%;
-        grid-template-columns: 48% 48%;
-        grid-template-areas:
-        "pic ingress"
-        "article article";
-    }
+  main {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 48% 48%;
+    grid-template-areas:
+      "pic ingress"
+      "article article";
+  }
 
-    .page-image {
-        grid-area: pic;
-    }
+  .page-image {
+    grid-area: pic;
+  }
 
-    article {
-        display: grid;
-        grid-column-gap: 2%;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "item-1 item-2"
-        "item-3 button";
-    }
+  article {
+    display: grid;
+    grid-column-gap: 2%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "item-1 item-2"
+      "item-3 button";
+  }
 
-    .button {
-        height: fit-content;
-        align-self: end;
-    }
+  .button {
+    height: fit-content;
+    align-self: end;
+  }
 }

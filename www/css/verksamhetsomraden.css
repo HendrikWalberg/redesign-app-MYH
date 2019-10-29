@@ -1,44 +1,37 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial","sans-serif";
-}
+@import './style.css';
 
 .verksamhet h1 {
   text-align: center;
-  background-color: #6699CC;
+  background-color: #6699cc;
 }
 
 .verksamhet p {
   background-color: #708090;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .yrkesHogskolan {
-  background-color: #FFFF00;
+  background-color: #ffff00;
 }
 
 .konstKultur {
-  background-color: #9CB0C3;
+  background-color: #9cb0c3;
 }
 
 .tolkUtbildningar {
-  background-color: #6699CC;
+  background-color: #6699cc;
 }
 
 .utbildningarTillsyn {
-  background-color: #FFFF00;
+  background-color: #ffff00;
 }
 
 .seqf {
-  background-color: #6699CC;
+  background-color: #6699cc;
 }
 
 .validering {
-  background-color: #9CB0C3;
+  background-color: #9cb0c3;
 }
 
 article a {
@@ -47,7 +40,7 @@ article a {
 }
 
 article a:hover {
-  color: #6699CC;
+  color: #6699cc;
   text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

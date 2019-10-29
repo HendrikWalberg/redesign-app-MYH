@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+}
+
+#main-menu {
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.main-menu-list {
+  text-align: center;
+}
+.main-menu-item {
+  display: inline-block;
+  padding: 30px 25px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.main-menu-list > a {
+  text-decoration: none;
+  color: #000;
+}
+.main-menu-item:hover {
+  background: #eee;
+}
+
+footer {
+  background-color: yellow;
+}
+
+footer.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+  > article {
+    display: flex;
+    flex-direction: column;
+    ul > li {
+      display: inline-flex;
+    }
+  }
+
+  .column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 5px 5px;
+    .p1 {
+      padding: 10px 0;
+    }
+  }
+
+  .link,
+  .email {
+    text-decoration: none;
+    color: black;
+  }
+
+  //from 3 columns to 2
+  @media screen and (max-width: 900px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  //from 2 columns to 1
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  //social font on hover and siz
+  .social {
+    a {
+      font-size: 25px;
+      padding: 20px 14px;
+      transition: color 300ms ease, transform 300ms ease;
+      color: black;
+    }
+
+    a:hover {
+      transform: scale(1.4);
+    }
+  }
+}
