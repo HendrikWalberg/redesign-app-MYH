@@ -15,131 +15,198 @@ font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNe
 font-size: 1.5vw;
 }
 
-
-//NOPE NOPE NOPE LAYERED, REWRITE!!! <-----
-@mixin twobytwo {
+@mixin gridme {
     display: grid;
-    grid-row: 2;
-    grid-column: 2;
 }
 
-@mixin wrapperimgleft {
-    display: grid;
-    grid-template-areas:
-      "img h2"
-      "img p";
-    background-color: $yellow;
+@mixin gridtwobytwo {
+    @include gridme;
 
-    img {
-        grid-area: img;
-    }
-
-    h2 {
-        grid-area: h2;
-    }
-
-    p {
-        grid-area: p;
-    }
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
-@mixin wrapperimgright  {
-    display: grid;
-    grid-template-areas:
-      "h2 img"
-      "p img";
-    background-color: $yellow;
+@mixin gridsinglecolumn {
+    @include gridme;
 
-    img {
-        grid-area: img;
-    }
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 
-    h2 {
-        grid-area: h2;
-    }
+}
 
-    p {
-        grid-area: p;
-    }}
-
-@mixin wrapperimgtop {display: grid;
-    grid-row: 3;
-    grid-column: 1;
-    grid-template-areas:
-      "img"
-      "h2"
-      "p";
-    background-color: $yellow;
-
-    img {
-        grid-area: img;
-    }
-
-    h2 {
-        grid-area: h2;
-    }
-
-    p {
-        grid-area: p;
-    }}
-
-.infoField {
-    display: grid;
-    align-self: center;
+body {
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
+}
 
-    p {
-        font-size: 1.6vw;
-    }
-
-    h2 {
-        font-size: 2.2vw;
-    }
+p {
+    font-size: 1.6vw;
 
 }
 
-.verksamhet {
+h2 {
+    font-size: 2.2vw;
+    margin-top: 5%;
+}
+
+#pVerk {
+    grid-area: pVerk;
+}
+
+#verksamhet {
     text-align: center;
     background-color: $darkgrey;
     color: $white;
-
-
+    display: grid;
 }
 
-//alternating patterns, can probably use 3 mixins for structure then specific colors below 
+//alternating patterns
 
-.yrkesHogskolan { //imgleft
+#yrkesHogskolan { //imgleft
+    @include gridtwobytwo;
+
+    grid-template-areas: 
+    "ImgYh h2Yh"
+    "ImgYh pYh";
     background-color: $yellow;
+    
+    #imgYh {
+        grid-area: imgYh;
+    }
+
+    #h2YH {
+        grid-area: h2Yh;
+    }
+
+    #pYh  {
+        grid-area: pYh;
+    }
 }
 
-.konstKultur { //imgright
+#konstKultur { //imgright
+    @include gridtwobytwo;
 
+    grid-template-areas:
+    "h2Kk imgKk"
+    "pKk imgKk";
     background-color: $lightgray;
+
+    #h2Kk {
+        grid-area: h2Kk;
+    }
+
+    #pKk {
+        grid-area: pKk;
+    }
+
+    #imgKk {
+        grid-area: imgKk;
+    }
 }
 
-.tolkUtbildningar { //imgtop
+#tolkUtbildningar { //imgtop
+    @include gridsinglecolumn;
+
+    grid-template-areas:
+    "imgTolk"
+    "h2Tolk"
+    "pTolk";
     background-color: $blue;
+
+    #imgTolk {
+        grid-area: ImgTolk;
+        min-width: 100%;
+        max-height: 250px;
+    }
+
+    #h2Tolk {
+        grid-area: h2Tolk;
+    }
+
+    #pTolk {
+        grid-area: pTolk;
+    }
 }
 
-.utbildningarTillsyn { //imgleft
-
+#utbildningarTillsyn { //imgleft
+    @include gridtwobytwo;
+    
+    grid-template-areas: 
+    "imgEt h2Et"
+    "imgEt pEt";
     background-color: $yellow;
+
+    #imgEt {
+        grid-area: imgEt;
+    }
+
+    #h2Et {
+        grid-area: h2Et;
+    }
+
+    #pEt {
+        grid-area: pEt;
+    }
 }
 
-.seqf { //imgright
+#seqf { //imgright
+    @include gridtwobytwo;
+
+    grid-template-areas: 
+    "h2Seqf imgSeqf"
+    "pSeqf imgSeqf";
     background-color: $blue;
+
+    #h2Seqf {
+        grid-area: h2Seqf;
+    }
+
+    #pSeqf {
+        grid-area: pSeqf;
+    }
+
+    #imgSeqf {
+        grid-area: imgSeqf;
+    }
+
 }
 
-.validering { //imgtop
+#validering { //imgtop
+    @include gridsinglecolumn;
+
+    grid-template-areas: 
+    "imgValid"
+    "h2Valid"
+    "pValid";
     background-color: $lightgray;
+
+    #imgValid {
+        grid-area: imgValid;
+        min-width: 100%;
+        max-height: 250px;
+    }
+
+    #h2Valid {
+        grid-area: h2Valid;
+    }
+
+    #pValid {
+        grid-area: pValid;
+    }
     
 }
 
-article a {
+article {
+    margin-top: 6%;
+
+  a {
     color: black;
     text-decoration: none;;
+    
     &:hover {
-        color: $blue;
-        text-decoration: underline;
+    color: $blue;
+    text-decoration: underline;
     }
+  }
 }
