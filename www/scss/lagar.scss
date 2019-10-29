@@ -4,6 +4,9 @@ $color-primary: rgba(255, 238, 0, 0.706); // yellow color for heading.
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
+      "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 }
 
 html {
@@ -286,12 +289,28 @@ nav {
 }
 
 /* FOOTER HERE */
+footer {
+  p, a {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  h2 {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+}
 
 footer.wrapper {
   background-color: yellow;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 10%;
+  //padding: 0 4px;
+ // padding: 1.25rem 1.875rem;
 
   > article {
     display: flex;
@@ -302,9 +321,9 @@ footer.wrapper {
   }
 
   .column {
+
     flex: 33.33%;
     max-width: 33.33%;
-    padding: 0 5px 5px;
     .p1 {
       padding: 10px 0;
     }
@@ -313,7 +332,9 @@ footer.wrapper {
   .link,
   .email {
     text-decoration: none;
-    color: black;
+    font-family: lato;
+    font-size: 12px;
+    color: #777;
   }
 
   //from 3 columns to 2
@@ -331,15 +352,19 @@ footer.wrapper {
       max-width: 100%;
       text-align: center;
     }
+
   }
 
   //social font on hover and siz
   .social {
     a {
-      font-size: 25px;
       padding: 20px 14px;
       transition: color 300ms ease, transform 300ms ease;
       color: black;
+    }
+
+    i {
+      font-size: 25px;
     }
 
     a:hover {

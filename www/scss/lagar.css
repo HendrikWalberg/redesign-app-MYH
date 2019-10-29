@@ -3,6 +3,8 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 }
 
 html {
@@ -363,6 +365,20 @@ nav .nav-links.open {
 }
 
 /* FOOTER HERE */
+footer p, footer a {
+  font-size: 12px;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer h2 {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 footer.wrapper {
   background-color: yellow;
   display: -webkit-box;
@@ -370,7 +386,7 @@ footer.wrapper {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 10%;
 }
 
 footer.wrapper > article {
@@ -394,7 +410,6 @@ footer.wrapper .column {
       -ms-flex: 33.33%;
           flex: 33.33%;
   max-width: 33.33%;
-  padding: 0 5px 5px;
 }
 
 footer.wrapper .column .p1 {
@@ -404,7 +419,9 @@ footer.wrapper .column .p1 {
 footer.wrapper .link,
 footer.wrapper .email {
   text-decoration: none;
-  color: black;
+  font-family: lato;
+  font-size: 12px;
+  color: #777;
 }
 
 @media screen and (max-width: 900px) {
@@ -427,13 +444,16 @@ footer.wrapper .email {
 }
 
 footer.wrapper .social a {
-  font-size: 25px;
   padding: 20px 14px;
   -webkit-transition: color 300ms ease, -webkit-transform 300ms ease;
   transition: color 300ms ease, -webkit-transform 300ms ease;
   transition: color 300ms ease, transform 300ms ease;
   transition: color 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
   color: black;
+}
+
+footer.wrapper .social i {
+  font-size: 25px;
 }
 
 footer.wrapper .social a:hover {
