@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Global styling*/
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +32,7 @@ h3 {
   font-size: 1.5vw;
 }
 
+/*News-section*/
 .news {
   background-color: #9CB0C3;
   margin: 0 auto;
@@ -65,8 +67,40 @@ h3 {
   margin-top: 2%;
 }
 
+/*Omraden-section*/
+.omraden {
+  background-color: #9CB0C3;
+  margin: 30px auto 0 auto;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.omraden .omraden-img {
+  background-image: url(../img/omOssNotepad.jpg);
+  width: 90%;
+  margin: 10px auto 0 auto;
+}
+
+.omraden .omraden-list {
+  list-style-type: none;
+  width: 90%;
+  margin: 10px auto 0 auto;
+  padding: 15px;
+}
+
+.omraden .omraden-content {
+  list-style-type: none;
+  width: 90%;
+  margin: 10px auto 0 auto;
+  padding: 15px;
+}
+
 /* För iPhone 8 */
 @media screen and (max-width: 414px) {
+  /*Global styling*/
   h2 {
     width: 100%;
     padding-top: 8%;
@@ -77,6 +111,7 @@ h3 {
   h3 {
     font-size: 6vw;
   }
+  /*News-section*/
   .news {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
