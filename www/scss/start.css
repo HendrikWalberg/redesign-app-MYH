@@ -92,7 +92,7 @@ h3 {
   background-image: url(../img/omOssNotepad.jpg);
   background-repeat: no-repeat;
   width: 90%;
-  margin: 10px auto 0 auto;
+  margin: 30px auto;
 }
 
 .omraden .omraden-img .omraden-headline {
@@ -107,7 +107,7 @@ h3 {
   list-style-type: none;
   width: 90%;
   margin: 10px auto 0 auto;
-  padding: 15px;
+  padding: 30px 15px;
 }
 
 .omraden .omraden-list .omraden-list-item {
@@ -119,7 +119,7 @@ h3 {
   list-style-type: none;
   width: 90%;
   margin: 10px auto 0 auto;
-  padding: 15px;
+  padding: 30px 15px;
 }
 
 .omraden .omraden-content .head-text {
@@ -128,6 +128,11 @@ h3 {
 
 .omraden .omraden-content a {
   font-size: 2.5vw;
+}
+
+.omraden .omraden-content a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 /* För iPhone 8 */

@@ -88,7 +88,7 @@ h3 {
         background-image: url(../img/omOssNotepad.jpg);
         background-repeat: no-repeat;
         width: 90%;
-        margin: 10px auto 0 auto;
+        margin: 30px auto;
 
         .omraden-headline {
             color: white;
@@ -104,7 +104,7 @@ h3 {
         list-style-type: none;
         width: 90%;
         margin: 10px auto 0 auto;
-        padding: 15px;
+        padding: 30px 15px;
 
         .omraden-list-item {
             font-size: 2vw;
@@ -116,7 +116,7 @@ h3 {
         list-style-type: none;
         width: 90%;
         margin: 10px auto 0 auto;
-        padding: 15px;
+        padding: 30px 15px;
 
         .head-text {
             font-size: 2vw;
@@ -124,6 +124,11 @@ h3 {
 
         a {
             font-size: 2.5vw;
+
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
         }
     }
  }
