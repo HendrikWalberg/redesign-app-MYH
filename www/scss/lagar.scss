@@ -1,9 +1,16 @@
-$color-primary: rgba(255, 238, 0, 0.706); // yellow color for heading.
+$yellow: #FFFF00;
+$blue: #6699CC;
+$lightgray: #9CB0C3;
+$darkgrey: #708090;
+$white: #FFFFFF;
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
+      "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 }
 
 html {
@@ -11,12 +18,10 @@ html {
 }
 
 body {
-  font-family: lato;
   font-weight: 400px;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  box-sizing: border-box;
 }
 
 /* NAVIGATION HERE */
@@ -149,7 +154,7 @@ nav {
 
 .header {
   height: 30vh;
-  background-color: $color-primary;
+  background-color: $yellow;
   position: relative;
   .text-box {
     position: absolute;
