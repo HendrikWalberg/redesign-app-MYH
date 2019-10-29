@@ -19,6 +19,45 @@ filter {
     text-decoration: none;
 }
 
+.main-card {
+    background-color: #9CB0C3;
+    margin: 0 auto;
+    width: 80%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+}
+
+.publications {
+    background-color: #9CB0C3;
+    margin: 0 auto;
+    width: 80%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+}
+.parallel {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.wrapped {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.publications .wrapped img {
+    width: 200px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 0;
+    margin: auto;
+}
+
 /* Button */
 .fler {
     color: #000;
@@ -26,7 +65,9 @@ filter {
     border: none;
     text-align: center;
     font-size: 24px;
+    display: block;
     padding: 40px;
+    margin: 40px auto;
     transition: 0.5s;
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
