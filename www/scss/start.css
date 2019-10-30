@@ -8,7 +8,7 @@ h3 {
   font-size: 1.5vw;
 }
 
-/*Parallax*/
+/*PARALLAX START*/
 .main-image {
   height: 80vh;
   background-color: #000;
@@ -32,7 +32,8 @@ h3 {
   padding: 3%;
 }
 
-/*News-section*/
+/*PARALLAX END*/
+/*KORT*/
 #verksamhetsomraden-ingress {
   color: #708090;
   margin: 0 auto;
@@ -41,7 +42,7 @@ h3 {
   font-size: 3vw;
 }
 
-.news {
+.card-section {
   background-color: #9CB0C3;
   margin: 0 auto 60px auto;
   width: 80%;
@@ -129,7 +130,7 @@ h3 {
 .omraden {
   background-color: #9CB0C3;
   margin: 30px auto 0 auto;
-  width: 100%;
+  width: 80%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];

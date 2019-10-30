@@ -5,7 +5,6 @@ $darkgrey: #708090;
 $shadows: #7080909c;
 
 /*Global styling*/
-
 a {
     text-decoration: none;
 }
@@ -14,44 +13,7 @@ h3 {
     font-size: 1.5vw;
 }
 
-@mixin omradenimgstyle {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-}
-
-/*News-section*/
-#verksamhetsomraden-ingress {
-    color: $darkgrey;
-    margin:0 auto;
-    width: 80%;
-    padding: 50px 20px;
-    font-size: 3vw;
-}
-
-/*News-section*/
-.news {
-    background-color: $lightgray;
-    margin: 0 auto 60px auto;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 20px;
-    border-radius: 0px 0px 12px 12px;
-}
-
-a {
-    text-decoration: none;
-}
-
-h3 {
-    font-size: 1.5vw;
-}
-
-/*Parallax*/
+/*PARALLAX START*/
 .main-image {
     height: 80vh;
     background-color: #000;
@@ -72,6 +34,35 @@ h3 {
     width: 35%;
     background-color: #6666664b;
     padding: 3%;
+}
+/*PARALLAX END*/
+
+/*KORT*/
+@mixin omradenimgstyle {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#verksamhetsomraden-ingress {
+    color: $darkgrey;
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px 20px;
+    font-size: 3vw;
+}
+
+.card-section {
+    background-color: $lightgray;
+    margin: 0 auto 60px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 20px;
+    border-radius: 0px 0px 12px 12px;
 }
 
 .card {
@@ -101,8 +92,8 @@ h3 {
         margin-top: 2%;
     }
 
-/* KNAPP: ALLT AKTUELLT */
-.show-more {
+    /* KNAPP: ALLT AKTUELLT */
+    .show-more {
     color: #000;
     background-color: $yellow;
     border: none;
