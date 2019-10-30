@@ -6,6 +6,13 @@ $shadows: #7080909c;
 
 /*Global styling*/
 
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
 
 @mixin omradenimgstyle {
     background-position: center;
@@ -16,31 +23,18 @@ $shadows: #7080909c;
     margin: 0 auto;
 }
 
-
-
-a {
-    text-decoration: none;
-}
-
-
-.description {
-    width: 80%;
-    background-color: $lightgray;
-    margin: 30px auto 0 auto;
-    font-size: 7vw;
-    text-align: center;
-}
-
-
-h3 {
-    font-size: 1.5vw;
-}
-
-
 /*News-section*/
+#verksamhetsomraden-ingress {
+    color: $darkgrey;
+    margin:0 auto;
+    width: 80%;
+    padding: 50px 20px;
+    font-size: 3vw;
+}
+
 .news {
     background-color: $lightgray;
-    margin:0 auto;
+    margin: 0 auto 60px auto;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -75,7 +69,7 @@ h3 {
     }
 
 
-/* Allt aktuellt button */
+/* KNAPP: ALLT AKTUELLT */
 .show-more {
     color: #000;
     background-color: $yellow;
@@ -90,38 +84,38 @@ h3 {
     cursor: pointer;
     border-radius: 12px;
     grid-column-start: 3;
+
+    span {
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+    }
 }
 
-.show-more span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-}
+.show-more {
+    span:after {
+        content: "→";
+        position: absolute;
+        opacity: 0;
+        left: 100%;
+    }
 
-.show-more span:after {
-    content: "→";
-    position: absolute;
-    opacity: 0;
-    left: 100%;
-}
+    &:hover span {
+        padding-right: 25px;
+    
+        &:after {
+            opacity: 1;
+            right: 0;
+        }
+    }
+} /* KNAPP SLUT */
 
-.show-more:hover span {
-    padding-right: 25px;
-
-}
-
-.show-more:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
- /*Omraden-section*/
+ /*OMRÅDEN*/
  .omraden {
     background-color: $lightgray;
-    margin:30px auto 0 auto;
+    margin: 30px auto 0 auto;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
