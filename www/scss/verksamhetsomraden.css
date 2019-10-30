@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-size: 1.5vw;
 }
 
@@ -45,7 +45,7 @@ h2 {
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "ImgYh h2Yh" "ImgYh pYh";
+      grid-template-areas: "ImgYh h2Yh" "ImgYh pYh";
   background-color: #ffff00;
 }
 
@@ -72,7 +72,7 @@ h2 {
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "h2Kk imgKk" "pKk imgKk";
+      grid-template-areas: "h2Kk imgKk" "pKk imgKk";
   background-color: #9cb0c3;
 }
 
@@ -102,7 +102,7 @@ h2 {
       grid-template-rows: 1fr;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: "imgTolk" "h2Tolk" "pTolk";
+      grid-template-areas: "imgTolk" "h2Tolk" "pTolk";
   background-color: #6699cc;
 }
 
@@ -131,7 +131,7 @@ h2 {
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "imgEt h2Et" "imgEt pEt";
+      grid-template-areas: "imgEt h2Et" "imgEt pEt";
   background-color: #ffff00;
 }
 
@@ -161,7 +161,7 @@ h2 {
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "h2Seqf imgSeqf" "pSeqf imgSeqf";
+      grid-template-areas: "h2Seqf imgSeqf" "pSeqf imgSeqf";
   background-color: #6699cc;
 }
 
@@ -191,7 +191,7 @@ h2 {
       grid-template-rows: 1fr;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: "imgValid" "h2Valid" "pValid";
+      grid-template-areas: "imgValid" "h2Valid" "pValid";
   background-color: #9cb0c3;
 }
 
