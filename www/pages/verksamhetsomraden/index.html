@@ -5,94 +5,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Verksamhetsområden - Myndigheten för yrkeshögskolan</title>
-    <link rel="stylesheet" href="../../scss/verksamhetsomraden.css">
+    <title>Verksamhetsområden</title>
+    <link rel="stylesheet" href="../../scss/start.css">
+    <link rel="stylesheet" href="../../scss/lagar.css">
   </head>
 
   <body>
-    <!-- Header start -->
-    <header role="banner">
-        <nav role="navigation">
-          <div class="main-menu-list">
-            <a href="/"><div class="main-menu-item">Start</div></a>
-            <a href="pages/om-oss"><div class="main-menu-item">Om oss</div></a>
-            <a href="pages/verksamhetsomraden"
-              ><div class="main-menu-item">Verksamhetsområden</div></a
+    <!--NAVIGATION STARTS-->
+    <nav>
+      <div role="button" tabindex="0" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="nav-links">
+        <ul id="hem">
+          <a href="../"><img src="./img/logo.png"/></a>
+        </ul>
+  
+        <ul id="kontakt">
+          <li><a href="./pages/kontakt/">Kontakta oss - Huvudsida</a></li>
+          <li><a href="#">Jobba hos oss</a></li>
+        </ul>
+        <ul id="publikationer">
+          <li><a href="./pages/publikationer">Publikationer - Huvudsida</a></li>
+        </ul>
+        <ul id="om-oss">
+          <li><a href="./pages/om-oss/">Om oss - Huvudsida</a></li>
+          <li><a href="#">Organisaton</a></li>
+          <li><a href="#">Så styrs myndigheten</a></li>
+          <li><a href="#">Redovisning av verksamhet</a></li>
+          <li><a href="#">Remisssvar och yttranden</a></li>
+          <li><a href="#">Pågående upphandlingar</a></li>
+        </ul>
+        <ul id="verksamhet">
+          <li>
+            <a href="./pages/verksamhetsomraden/"
+              >Verksamhetsområden - Huvudsida</a
             >
-            <a href="pages/lagar"
-              ><div class="main-menu-item">Lagar, regler, tillsyn</div></a
+          </li>
+          <li><a href="#">Yrkeshögskolan</a></li>
+          <li><a href="#">Konst- och kulturutbildningar</a></li>
+          <li><a href="#">Tolkutbildningar</a></li>
+          <li><a href="#">Utbildningar med endast tillsyn</a></li>
+          <li><a href="#">SeQF</a></li>
+          <li><a href="#">Validering</a></li>
+        </ul>
+        <ul id="lagar">
+          <li>
+            <a href="./pages/lagar-regler-tillsyn/"
+              >Lagar, regler, tillsyn - Huvudsida</a
             >
-            <a href="pages/statistik"
-              ><div class="main-menu-item">Statistik</div></a
-            >
-            <a href="pages/publikationer"
-              ><div class="main-menu-item">Publikationer</div></a
-            >
-            <a href="pages/nyhetsrum"
-              ><div class="main-menu-item">Nyhetsrum</div></a
-            >
-            <a href="pages/kontakt"><div class="main-menu-item">Kontakt</div></a>
-          </div>
-        </nav>
-      </header>
-      <!-- Header end -->
+          </li>
+          <li><a href="#">Lagar och förordningar</a></li>
+          <li><a href="#">Gällande föreskrifter</a></li>
+          <li><a href="#">Allmänna råd</a></li>
+          <li><a href="#">Tillsyn</a></li>
+          <li><a href="#">Kvalitetsgranskning</a></li>
+          <li><a href="#">Anmäl brister i en utbildning</a></li>
+        </ul>
+        <ul id="statistik">
+          <li><a href="./pages/statistik/">Statistik - Huvudsida</a></li>
+          <li><a href="#">Yrkeshögskoleutbildningar</a></li>
+          <li>
+            <a href="#">
+              Konst- och kulturutbildningar och utbildningar med endast tillsyn</a>
+          </li>
+          <li><a href="#">Tolkutbildningar inom folkbildningen</a></li>
+        </ul>
+        <ul id="nyheter">
+          <li><a href="./pages/nyhetsrum/">Nyhetsrum</a></li>
+          <li><a href="#">Pressmedelanden</a></li>
+          <li><a href="#">Kalender</a></li>
+          <li><a href="#">Filmer</a></li>
+          <li><a href="#">Pressbilder</a></li>
+          <li><a href="#">Nyhetsbrev</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--NAVIGATION ENDS-->
+
     <main role="main">
-      <!--TO DO: TABINDEX WITH TEMPLATES-->
-      <section role="region" id="infoField">
+      <p id="verksamhetsomraden-ingress">
+          Myndigheten för yrkeshögskolan har i uppdrag att ansvara för frågorsom rör utbildningar inom yrkeshögskolan. 
+          Dessutom ansvarar vi för ytterligare frågor inom utbildningsområdet.</p>
+      <!--CARDS-SECTION-->
+      <section class="news">
+        <!--KLAR-->
+        <section class="card">
+          <img src="../../img/Yh-start.png" alt="Yrkeshögskolan" />
+          <article class="card-content">
+            <a href="#"><h3>Yrkeshögskolan</h3></a>
 
-        <article role="article" id="verksamhet">
-          <p id="pVerk">Myndigheten för yrkeshögskolan har i uppdrag att ansvara för frågor
-            som rör utbildningar inom yrkeshögskolan. Dessutom ansvarar vi för
-            ytterligare frågor inom utbildningsområdet.</p>
-         
+            <p>
+              Utbildningar som svarar mot arbetslivets behov av kvalificerad
+              yrkeskompetens och som drivs i nära samverkan med företag och andra
+              arbetsgivare.
+            </p>
         </article>
+        </section>
+        <!--KLAR-->
+        <section class="card">
+          <img src="../../img/KK-start.png" alt="Konst och Kulturutbildningar" />
+          <article class="card-content">
+            <a href="#"><h3>Konst & Kulturutbildningar</h3></a>
 
-        <article role="article" id="yrkesHogskolan"> <!--imgleft-->
-          <a href="#" tabindex="0"><img id="imgYh" role="img" src="./img/Yh-start.png" alt="Yrkeshögskolan"></a>
-          <h2 id="h2Yh"><a href="#" tabindex="0">Yrkeshögskolan</a></h2>
-          <p id="pYh">Utbildningar som svarar mot arbetslivets behov av kvalificerad
-            yrkeskompetens och som drivs i nära samverkan med företag och andra
-            arbetsgivare.</p>
-          </p>
-        </article>
-
-        <article role="article" id="konstKultur"> <!--imgright-->
-          <h2 id="h2Kk"><a href="#" tabindex="0">Konst & Kulturutbildningar</a></h2>
-          <p id="pKk">Utbildningar som är högskoleförberedande, yrkesförberedande eller inom
-            kulturarvsområdet och drivs av privata utbildningsanordnare.</p>
-          <a href="#" tabindex="0"><img id="imgKk" role="img" src="./img/KK-start.png" alt="Konst och kulturutbildningar"></a>
-        </article>
-
-        <article role="article" id="tolkUtbildningar"> <!--imgtop-->
-          <a href="#" tabindex="0"><img id="imgTolk" role="img" src="./img/Tolk-start.png" alt="Tolkutbildningar"></a>
-          <h2 id="h2Tolk"><a href="#" tabindex="0">Tolkutbildningar</a></h2>
-          <p id="pTolk">Utbildningar till kontakttolk, teckenspråks- och dövblindtolk samt
-            skrivtolk som drivs av folkhögskolor och studieförbund.</p>
-        </article>
-
-        <article role="article" id="utbildningarTillsyn"> <!--imgleft-->
-          <a href="#" tabindex="0"><img id="imgEt" role="img" src="./img/ET-start.png" alt="Utbildningar med endast tillsyn"></a>
-          <h2 id="h2Et"><a href="#" tabindex="0">Utbildningar med endast tillsyn</a></h2>
-          <p id="pEt">Eftergymnasiala utbildningar inom olika områden som bedrivs ansvara
-            fristående skolor. Utbildningarnas statliga stöd omfattas endast av tillsyn.</p> <!--Add extra row if necessary like original-->
-        </article>
-
-        <article role="article" id="seqf"> <!--imgright-->
-          <h2 id="h2Seqf"><a href="#" tabindex="0">SeQF</a></h2>
-          <p id="pSeqf">Sveriges referensram för kvalifikationer (SeQF) ska synliggöra allt
+            <p>
+              Utbildningar som är högskoleförberedande, yrkesförberedande eller inom
+              kulturarvsområdet och drivs av privata utbildningsanordnare.
+            </p>
+          </article>
+        </section>
+        <!--KLAR-->
+        <section class="card">
+          <img src="../../img/Tolk-start.png" alt="Tolkutbildningar" />
+          <article class="card-content">
+            <a href="#"> <h3>Tolkutbildningar</h3> </a>
+            <p>Utbildningar till kontakttolk, teckenspråks- och dövblindtolk samt
+              skrivtolk som drivs av folkhögskolor och studieförbund.
+            </p>
+          </article>
+        </section>
+        <!--KLAR-->
+        <section class="card">
+          <img src="../../img/ET-start.png" alt="Utbildningar med endast tillsyn" />
+          <article class="card-content">
+            <a href="#"> <h3>Utbildningar med endast tillsyn</h3> </a>
+            <p>Eftergymnasiala utbildningar inom olika områden som bedrivs ansvara
+              fristående skolor. Utbildningarnas statliga stöd omfattas endast av tillsyn.</p>
+          </article>
+        </section>
+        <!--KLAR-->
+        <section class="card">
+          <img src="../../img/SEQF-start.png" alt="SeQF" />
+          <article class="card-content">
+            <a href="#"> <h3>SeQF</h3> </a>
+            <p>Sveriges referensram för kvalifikationer (SeQF) ska synliggöra allt
             lärande för att öka matchningen på arbetsmarknaden.</p>
-          <a href="#" tabindex="0"><img id="imgSeqf" role="img" src="./img/SEQF-start.png" alt="SeQF"></a>
-        </article> 
+          </article>
+        </section>
 
-        <article role="article" id="validering"> <!--imgtop-->
-          <a href="#" tabindex="0"><img id="imgValid" role="img" src="./img/Validering-start.jpg" alt="Validering"></a>
-          <h2 id="h2Valid"><a href="#" tabindex="0">Validering</a></h2>
-          <p id="pValid">Validering innebär att en persons kunskaper och kompetenser kartläggs
-            och bedöms på ett strukturerat sätt, för studier eller arbete, oavsett
-            hur, var eller när de förvärvats.</p>
-        </article>
+        <section class="card">
+            <img src="../../img/Validering-start.jpg" alt="Validering" />
+            <article class="card-content">
+              <a href="#"> <h3>Validering</h3> </a>
+              <p>Validering innebär att en persons kunskaper och kompetenser kartläggs och bedöms på ett strukturerat 
+                sätt, för studier eller arbete, oavsett hur, var eller när de förvärvats.</p>
+            </article>
+          </section>
       </section>
-    </main>
 
      <!--Footer area starts-->
     <!-- ISSUE, put in fonts for email, adress for easier understanding-->
