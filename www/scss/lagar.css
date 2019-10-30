@@ -110,7 +110,7 @@ nav .nav-links {
   margin-left: auto;
   gap: 10px;
   position: fixed;
-  background: #FFFF00;
+  background: #708090;
   height: 100vh;
   width: 100%;
   -webkit-clip-path: circle(100px at 90% -20%);
@@ -145,22 +145,15 @@ nav li a {
   text-align: center;
   cursor: pointer;
   font-size: 15px;
-  -webkit-box-shadow: 0 4px 8px 0 black;
-          box-shadow: 0 4px 8px 0 black;
 }
 
 nav li a:hover {
-  -webkit-box-shadow: 0 8px 16px black;
-          box-shadow: 0 8px 16px black;
+  color: white;
 }
 
 .menubold {
   font-weight: 900;
-  font-size: 18px;
-}
-
-div.navlinks > ul#kontakt > li.menubold {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 768px) {

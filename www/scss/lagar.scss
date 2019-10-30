@@ -93,7 +93,7 @@ nav {
     margin-left: auto;
     gap: 10px;
     position: fixed;
-    background: $yellow;
+    background: $darkgrey;
     height: 100vh;
     width: 100%;
     clip-path: circle(100px at 90% -20%);
@@ -125,19 +125,15 @@ nav {
       text-align: center;
       cursor: pointer;
       font-size: 15px;
-      box-shadow: 0 4px 8px 0 black;
-    &:hover {
-      box-shadow: 0 8px 16px black;
-    }
+      &:hover {
+        color: white;
+      }
     }
   }
   .menubold {
         font-weight: 900;
-        font-size: 18px;
+        font-size: 30px;
       }
-  div.navlinks > ul#kontakt > li.menubold {
-    font-size: 20px;
-  }
 
 
 @media screen and (min-width: 768px) {
