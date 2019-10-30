@@ -291,8 +291,9 @@ nav {
 /* FOOTER HERE */
 footer {
   p, a {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
+    font-family: lato;
     color: black !important;
   }
   h3 {
@@ -312,9 +313,11 @@ footer {
 
 footer.wrapper {
   background-color: yellow;
+  padding-bottom: 30px;
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 10%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
   > article {
     display: flex;
@@ -324,41 +327,19 @@ footer.wrapper {
     }
   }
 
-  .column {
-
-    flex: 33.33%;
-    max-width: 33.33%;
-    .p1 {
-      padding: 10px 0;
-    }
+  .p1 {
+    padding: 10px 0;
   }
 
   .link,
   .email {
     text-decoration: none;
     font-family: lato;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 15px;
     color: black !important;
   }
-
-  //from 3 columns to 2
-  @media screen and (max-width: 900px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-
-  //from 2 columns to 1
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-      text-align: center;
-    }
-
-  }
-
+  
   //social in footer
   .social {
     a {
@@ -375,4 +356,14 @@ footer.wrapper {
       transform: scale(1.4);
     }
   }
+
+  //from 3 columns to 1
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+
+  } 
 }

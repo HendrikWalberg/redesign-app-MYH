@@ -363,8 +363,9 @@ nav .nav-links.open {
 
 /* FOOTER HERE */
 footer p, footer a {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
+  font-family: lato;
   color: black !important;
 }
 
@@ -384,12 +385,18 @@ footer h2 {
 
 footer.wrapper {
   background-color: yellow;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 10%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 footer.wrapper > article {
@@ -408,14 +415,7 @@ footer.wrapper > article ul > li {
   display: inline-flex;
 }
 
-footer.wrapper .column {
-  -webkit-box-flex: 33.33%;
-      -ms-flex: 33.33%;
-          flex: 33.33%;
-  max-width: 33.33%;
-}
-
-footer.wrapper .column .p1 {
+footer.wrapper .p1 {
   padding: 10px 0;
 }
 
@@ -423,27 +423,9 @@ footer.wrapper .link,
 footer.wrapper .email {
   text-decoration: none;
   font-family: lato;
-  font-size: 12px;
+  font-weight: 500;
+  font-size: 15px;
   color: black !important;
-}
-
-@media screen and (max-width: 900px) {
-  footer.wrapper .column {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  footer.wrapper .column {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
-  }
 }
 
 footer.wrapper .social a {
@@ -462,5 +444,15 @@ footer.wrapper .social i {
 footer.wrapper .social a:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
+}
+
+@media screen and (max-width: 800px) {
+  footer.wrapper .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=lagar.css.map */
