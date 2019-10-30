@@ -165,7 +165,7 @@ div.navlinks > ul#kontakt > li.menubold {
 
 @media screen and (min-width: 768px) {
   nav .nav-links {
-        grid-template-areas: "hem omoss verksamhet" "kontakt omoss verksamhet" "publikationer omoss verksamhet" ". omoss verksamhet" "lagar statistik nyheter" "lagar statistik nyheter" "lagar statistik nyheter";
+        grid-template-areas: "hem omoss verksamhet" "kontakt omoss verksamhet" "publikationer omoss verksamhet" "lagar statistik nyheter" "lagar statistik nyheter";
   }
 }
 

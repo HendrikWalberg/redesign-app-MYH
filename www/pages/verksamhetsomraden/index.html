@@ -7,33 +7,85 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Verksamhetsområden - Myndigheten för yrkeshögskolan</title>
     <link rel="stylesheet" href="../../scss/verksamhetsomraden.css">
+    <link rel="stylesheet" href="../../scss/lagar.css">
   </head>
 
   <body>
     <!-- Header start -->
     <header role="banner">
-        <nav role="navigation">
-          <div class="main-menu-list">
-            <a href="/"><div class="main-menu-item">Start</div></a>
-            <a href="pages/om-oss"><div class="main-menu-item">Om oss</div></a>
-            <a href="pages/verksamhetsomraden"
-              ><div class="main-menu-item">Verksamhetsområden</div></a
-            >
-            <a href="pages/lagar"
-              ><div class="main-menu-item">Lagar, regler, tillsyn</div></a
-            >
-            <a href="pages/statistik"
-              ><div class="main-menu-item">Statistik</div></a
-            >
-            <a href="pages/publikationer"
-              ><div class="main-menu-item">Publikationer</div></a
-            >
-            <a href="pages/nyhetsrum"
-              ><div class="main-menu-item">Nyhetsrum</div></a
-            >
-            <a href="pages/kontakt"><div class="main-menu-item">Kontakt</div></a>
-          </div>
-        </nav>
+      <nav>
+        <div role="button" tabindex="0" class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="nav-links">
+          <ul id="hem">
+            <a href="../"><img src="./img/logo.png"/></a>
+          </ul>
+  
+          <ul id="kontakt">
+            <li><a class="menubold" href="./pages/kontakt/">Kontakta oss</a></li>
+            <li><a href="#">Jobba hos oss</a></li>
+          </ul>
+          <ul id="publikationer">
+            <li><a class="menubold" href="./pages/publikationer">Publikationer</a></li>
+          </ul>
+          <ul id="om-oss">
+            <li><a class="menubold" href="./pages/om-oss/">Om oss</a></li>
+            <li><a href="#">Organisaton</a></li>
+            <li><a href="#">Så styrs myndigheten</a></li>
+            <li><a href="#">Redovisning av verksamhet</a></li>
+            <li><a href="#">Remisssvar och yttranden</a></li>
+            <li><a href="#">Pågående upphandlingar</a></li>
+          </ul>
+          <ul id="verksamhet">
+            <li>
+              <a class="menubold" href="./pages/verksamhetsomraden/"
+                >Verksamhetsområden</a
+              >
+            </li>
+            <li><a href="#">Yrkeshögskolan</a></li>
+            <li><a href="#">Konst- och kulturutbildningar</a></li>
+            <li><a href="#">Tolkutbildningar</a></li>
+            <li><a href="#">Utbildningar med endast tillsyn</a></li>
+            <li><a href="#">SeQF</a></li>
+            <li><a href="#">Validering</a></li>
+          </ul>
+          <ul id="lagar">
+            <li>
+              <a class="menubold" href="./pages/lagar-regler-tillsyn/"
+                >Lagar, regler, tillsyn</a
+              >
+            </li>
+            <li><a href="#">Lagar och förordningar</a></li>
+            <li><a href="#">Gällande föreskrifter</a></li>
+            <li><a href="#">Allmänna råd</a></li>
+            <li><a href="#">Tillsyn</a></li>
+            <li><a href="#">Kvalitetsgranskning</a></li>
+            <li><a href="#">Anmäl brister i en utbildning</a></li>
+          </ul>
+          <ul id="statistik">
+            <li><a class="menubold" href="./pages/statistik/">Statistik</a></li>
+            <li><a href="#">Yrkeshögskoleutbildningar</a></li>
+            <li>
+              <a href="#"
+                >Konst- och kulturutbildningar och utbildningar med endast
+                tillsyn</a
+              >
+            </li>
+            <li><a href="#">Tolkutbildningar inom folkbildningen</a></li>
+          </ul>
+          <ul id="nyheter">
+            <li><a class="menubold" href="./pages/nyhetsrum/">Nyhetsrum</a></li>
+            <li><a href="#">Pressmedelanden</a></li>
+            <li><a href="#">Kalender</a></li>
+            <li><a href="#">Filmer</a></li>
+            <li><a href="#">Pressbilder</a></li>
+            <li><a href="#">Nyhetsbrev</a></li>
+          </ul>
+        </div>
+      </nav>
       </header>
       <!-- Header end -->
     <main role="main">
