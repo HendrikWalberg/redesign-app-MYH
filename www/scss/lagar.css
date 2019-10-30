@@ -4,8 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
- "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 }
 
 html {
@@ -100,14 +99,7 @@ nav .hamburger .line {
 nav .nav-links {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "hem hem"
- "omoss omoss"
- "verksamhet verksamhet"
- "kontakt kontakt"
- "publikationer publikationer"
- "lagar lagar"
- "statistik statistik"
- "nyheter nyheter";
+      grid-template-areas: "hem hem" "omoss omoss" "verksamhet verksamhet" "kontakt kontakt" "publikationer publikationer" "lagar lagar" "statistik statistik" "nyheter nyheter";
   grid-auto-rows: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -166,13 +158,7 @@ nav .nav-links.open {
 
 @media screen and (min-width: 768px) {
   nav .nav-links {
-        grid-template-areas: "hem omoss verksamhet"
- "kontakt omoss verksamhet"
- "publikationer omoss verksamhet"
- ". omoss verksamhet"
- "lagar statistik nyheter"
- "lagar statistik nyheter"
- "lagar statistik nyheter";
+        grid-template-areas: "hem omoss verksamhet" "kontakt omoss verksamhet" "publikationer omoss verksamhet" ". omoss verksamhet" "lagar statistik nyheter" "lagar statistik nyheter" "lagar statistik nyheter";
   }
 }
 

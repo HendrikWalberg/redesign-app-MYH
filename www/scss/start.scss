@@ -16,8 +16,6 @@ $shadows: #7080909c;
     margin: 0 auto;
 }
 
-
-
 a {
     text-decoration: none;
 }
@@ -27,8 +25,10 @@ a {
     width: 80%;
     background-color: $lightgray;
     margin: 30px auto 0 auto;
-    font-size: 7vw;
+    font-size: 5vw;
     text-align: center;
+    color: white;
+    border-radius: 12px 12px 0px 0px;
 }
 
 
@@ -45,6 +45,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 20px;
+    border-radius: 0px 0px 12px 12px;
 }
 
 .card {
@@ -126,6 +127,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px 0 30px 0;
+    border-radius: 12px;
 
     a {
         display: flex;
