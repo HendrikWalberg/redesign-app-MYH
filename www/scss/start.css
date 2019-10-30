@@ -18,6 +18,30 @@ h3 {
   font-size: 1.5vw;
 }
 
+/*Parallax*/
+.main-image {
+  height: 80vh;
+  background-color: #000;
+  background-image: url("../img/main-image.jpg");
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 35%;
+  background-color: #6666664b;
+  padding: 3%;
+}
+
 /*News-section*/
 .news {
   background-color: #9CB0C3;
