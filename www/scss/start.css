@@ -4,16 +4,6 @@ a {
   text-decoration: none;
 }
 
-.description {
-  width: 100%;
-  background-color: #9CB0C3;
-  margin: 30px auto 0 auto;
-  font-size: 5vw;
-  text-align: center;
-  color: white;
-  border-radius: 12px 12px 0px 0px;
-}
-
 h3 {
   font-size: 1.5vw;
 }
@@ -43,10 +33,18 @@ h3 {
 }
 
 /*News-section*/
+#verksamhetsomraden-ingress {
+  color: #708090;
+  margin: 0 auto;
+  width: 80%;
+  padding: 50px 20px;
+  font-size: 3vw;
+}
+
 .news {
   background-color: #9CB0C3;
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 auto 60px auto;
+  width: 80%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -84,7 +82,7 @@ h3 {
   margin-top: 2%;
 }
 
-/* Allt aktuellt button */
+/* KNAPP: ALLT AKTUELLT */
 .show-more {
   color: #000;
   background-color: #FFFF00;
@@ -103,7 +101,6 @@ h3 {
 }
 
 .show-more span {
-  cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -127,7 +124,8 @@ h3 {
   right: 0;
 }
 
-/*Omraden-section*/
+/* KNAPP SLUT */
+/*OMRÅDEN*/
 .omraden {
   background-color: #9CB0C3;
   margin: 30px auto 0 auto;
