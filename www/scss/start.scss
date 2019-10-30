@@ -32,6 +32,7 @@ h3 {
     font-size: 3vw;
 }
 
+/*News-section*/
 .news {
     background-color: $lightgray;
     margin: 0 auto 60px auto;
@@ -39,6 +40,38 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 20px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
+/*Parallax*/
+.main-image {
+    height: 80vh;
+    background-color: #000;
+    background-image: url("../img/main-image.jpg");
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    background-color: #6666664b;
+    padding: 3%;
 }
 
 .card {
@@ -67,7 +100,6 @@ h3 {
         color: lightgray;
         margin-top: 2%;
     }
-
 
 /* KNAPP: ALLT AKTUELLT */
 .show-more {
@@ -120,6 +152,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px 0 30px 0;
+    border-radius: 12px;
 
     a {
         display: flex;
@@ -159,7 +192,7 @@ h3 {
 
     .omraden-list {
         list-style-type: none;
-        width: 90%;
+        width: 55%;
         margin: 10px auto;
         padding: 30px 15px;
 
@@ -180,9 +213,7 @@ h3 {
             font-size: 1.5vw;
             margin-bottom: 1.5%;
         }
-
       }
-
 
 /* Boxes */
 
@@ -194,6 +225,7 @@ h3 {
     -ms-grid-columns: (1fr),(3);
         grid-template-columns: repeat(3, 1fr);
 }
+
 .box {
     margin: 20px auto;
     color: #3b3b3b;
@@ -207,12 +239,14 @@ h3 {
     display: flex;
     box-shadow: 8px 8px 20px 1px $shadows;
 }
+
 .box-text {
     padding: 10px;
     font-size: 1.5vw;
     font-weight: 700;
     background-color: none;
 }
+
 .box-green {
     background-image: linear-gradient(-60deg, $lightgray 50%, #00c84e 50%);
     opacity: .6;
@@ -222,6 +256,7 @@ h3 {
     top:0;
     z-index:-1;
 }
+
 .box-yellow {
     background-image: linear-gradient(-60deg, $lightgray 50%, $yellow 50%);
     opacity: .6;
@@ -231,6 +266,7 @@ h3 {
     top:0;
     z-index:-1;
 }
+
 .box-gray {
     background-image: linear-gradient(-60deg, $lightgray 50%, #6699CC 50%);
     opacity: .6;
@@ -240,12 +276,14 @@ h3 {
     top:0;
     z-index:-1;
 }
+
 .box-animation {
     position: absolute;
     transition: 1s ease;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
 }
+
 .box:hover .box-animation {
     transform: translateX(25%);
     -webkit-transform: translateX(25%);
