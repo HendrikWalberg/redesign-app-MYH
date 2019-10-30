@@ -6,6 +6,7 @@ $shadows: #7080909c;
 
 /*Global styling*/
 
+
 @mixin omradenimgstyle {
     background-position: center;
     background-repeat: no-repeat;
@@ -15,20 +16,12 @@ $shadows: #7080909c;
     margin: 0 auto;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
-        "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
-    font-size: 1vw;
-}
+
 
 a {
     text-decoration: none;
-    color: black;
 }
+
 
 .description {
     width: 80%;
@@ -37,6 +30,7 @@ a {
     font-size: 7vw;
     text-align: center;
 }
+
 
 h3 {
     font-size: 1.5vw;
@@ -271,7 +265,7 @@ h3 {
 /* För iPhone 8 */
 @media screen and (max-width: 414px) {
     /*Global styling*/
-    h2 {
+    .main-heading {
         width: 100%;
         padding-top: 8%;
         padding-left: 10%;

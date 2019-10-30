@@ -1,18 +1,7 @@
 @charset "UTF-8";
 /*Global styling*/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
-  font-size: 1vw;
-}
-
 a {
   text-decoration: none;
-  color: black;
 }
 
 .description {
@@ -288,7 +277,7 @@ h3 {
 /* För iPhone 8 */
 @media screen and (max-width: 414px) {
   /*Global styling*/
-  h2 {
+  .main-heading {
     width: 100%;
     padding-top: 8%;
     padding-left: 10%;
