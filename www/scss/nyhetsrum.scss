@@ -1,17 +1,4 @@
 $color-primary: rgba(255, 238, 0, 0.706); // yellow color for heading.
-$yellow: #FFFF00;
-$blue: #6699CC;
-$lightgray: #9CB0C3;
-$darkgrey: #708090;
-$white: #FFFFFF;
-@mixin white {
-    color: $white;
-}
-
-@mixin margintop {
-    margin-top: 6%;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -96,39 +83,4 @@ body {
         opacity: 1;
         transform: translate(0);
     }
-}
-
-.imgContact {
-    @include margintop;
-    align-self: center;
-}
-
-.infoField {
-    background-color: $lightgray;
-    padding: 2% 4%;
-    width: 90%;
-    p {
-        @include white;
-        margin-bottom: 2.5%;
-    }
-    h2 {
-        @include white;
-    }
-    a {
-        text-decoration: none;
-        color: $darkgrey;
-        &:hover {
-            text-decoration: underline;
-            color: $blue;
-        }
-    }
-}
-
-iframe {
-    @include margintop;
-    align-self: center;
-}
-
-.imageLinks {
-    @include margintop;
 }

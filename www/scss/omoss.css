@@ -5,8 +5,70 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-size: 1.5vw;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: lato;
+  font-weight: 400px;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: 30vh;
+  background-color: rgba(255, 238, 0, 0.706);
+  position: relative;
+}
+
+.header .text-box {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header .text-box .heading-primary {
+  color: black;
+  text-transform: uppercase;
+}
+
+.header .text-box .heading-primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 2rem;
+  -webkit-animation-name: movetoleft;
+          animation-name: movetoleft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.header .text-box .heading-primary-sub {
+  display: block;
+  font-size: 2vw;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  -webkit-animation-name: movetoright;
+          animation-name: movetoright;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 main {

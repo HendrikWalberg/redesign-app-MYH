@@ -43,7 +43,7 @@
                     }
                     &-sub {
                         display: block;
-                        font-size: 2rem;
+                        font-size: 2vw;
                         font-weight: 700;
                         letter-spacing: 0.5rem;
                         animation-name: movetoright;
@@ -80,17 +80,6 @@
                 opacity: 1;
                 transform: translate(0);
             }
-        }
-        
-        .main-heading {
-            margin-top: 4rem;
-            text-align: center;
-            font-size: 3.5rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            display: block;
-            color: #777;
-            letter-spacing: 2px;
         }
         
         .row {
