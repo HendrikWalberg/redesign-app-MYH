@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  font-family: lato;
   font-weight: 400px;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -166,7 +165,7 @@ nav .nav-links.open {
 
 .header {
   height: 30vh;
-  background-color: rgba(255, 238, 0, 0.706);
+  background-color: #FFFF00;
   position: relative;
 }
 
