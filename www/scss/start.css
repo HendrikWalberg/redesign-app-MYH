@@ -6,7 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
   font-size: 1vw;
 }
 
@@ -63,9 +63,52 @@ h3 {
   color: #708090;
 }
 
-.card .card-footer {
+.card-footer {
   color: lightgray;
   margin-top: 2%;
+}
+
+/* Allt aktuellt button */
+.show-more {
+  color: #000;
+  background-color: #FFFF00;
+  border: none;
+  text-align: center;
+  display: block;
+  padding: 15px 25px;
+  margin: 15px auto;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  cursor: pointer;
+  border-radius: 12px;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+.show-more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+
+.show-more span:after {
+  content: "→";
+  position: absolute;
+  opacity: 0;
+  left: 100%;
+}
+
+.show-more:hover span {
+  padding-right: 25px;
+}
+
+.show-more:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /*Omraden-section*/
@@ -94,7 +137,7 @@ h3 {
   text-decoration: underline;
 }
 
-.omraden .omraden-img-note {
+.omraden-img-note {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,7 +147,7 @@ h3 {
   background-image: url(../img/omOssNotepad.jpg);
 }
 
-.omraden .omraden-img-school {
+.omraden-img-school {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,7 +157,7 @@ h3 {
   background-image: url(../img/forutbildare.jpg);
 }
 
-.omraden .omraden-img-foretag {
+.omraden-img-foretag {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,7 +167,7 @@ h3 {
   background-image: url(../img/forforetag.jpg);
 }
 
-.omraden .omraden-headline {
+.omraden-headline {
   color: white;
   text-align: center;
   text-shadow: 1px 2px 3px black;
@@ -132,29 +175,114 @@ h3 {
   padding: 8%;
 }
 
-.omraden .omraden-list {
+.omraden-list {
   list-style-type: none;
   width: 90%;
   margin: 10px auto;
   padding: 30px 15px;
 }
 
-.omraden .omraden-list .omraden-list-item {
+.omraden-list .omraden-list-item {
   font-size: 1.5vw;
   padding: 1.5%;
 }
 
-.omraden .omraden-content {
+.omraden-content {
   list-style-type: none;
   width: 90%;
   margin: 10px auto 0 auto;
   padding: 30px 15px;
 }
 
-.omraden .omraden-content .head-text {
+.omraden-content .head-text {
   color: white;
   font-size: 1.5vw;
   margin-bottom: 1.5%;
+}
+
+/* Boxes */
+.boxes {
+  margin: 10px auto;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr, 3;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+  margin: 20px auto;
+  color: #3b3b3b;
+  overflow: hidden;
+  position: relative;
+  width: 70%;
+  height: 18vh;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 8px 8px 20px 1px #7080909c;
+          box-shadow: 8px 8px 20px 1px #7080909c;
+}
+
+.box-text {
+  padding: 10px;
+  font-size: 1.5vw;
+  font-weight: 700;
+  background-color: none;
+}
+
+.box-green {
+  background-image: linear-gradient(-60deg, #9CB0C3 50%, #00c84e 50%);
+  opacity: .6;
+  bottom: 0;
+  left: -110%;
+  right: -110%;
+  top: 0;
+  z-index: -1;
+}
+
+.box-yellow {
+  background-image: linear-gradient(-60deg, #9CB0C3 50%, #FFFF00 50%);
+  opacity: .6;
+  bottom: 0;
+  left: -110%;
+  right: -110%;
+  top: 0;
+  z-index: -1;
+}
+
+.box-gray {
+  background-image: linear-gradient(-60deg, #9CB0C3 50%, #6699CC 50%);
+  opacity: .6;
+  bottom: 0;
+  left: -110%;
+  right: -110%;
+  top: 0;
+  z-index: -1;
+}
+
+.box-animation {
+  position: absolute;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+}
+
+.box:hover .box-animation {
+  transform: translateX(25%);
+  -webkit-transform: translateX(25%);
+  -moz-transform: translateX(25%);
+}
+
+#smaller-font {
+  font-size: 1.2vw;
 }
 
 /* För iPhone 8 */
@@ -185,6 +313,22 @@ h3 {
   }
   .card footer {
     font-size: 4vw;
+  }
+  .boxes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .box {
+    height: 8vh;
+    margin: 10px auto;
+  }
+  .box-text {
+    padding: 3px;
+    font-size: 3vw;
+  }
+  #smaller-font {
+    font-size: 2vw;
   }
 }
 
