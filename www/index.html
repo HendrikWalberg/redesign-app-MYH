@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./scss/lagar.css" />
     <link rel="stylesheet" href="./scss/start.css" />
+    <link rel="stylesheet" href="./css/menu.css">
     <link
       href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
@@ -44,7 +45,9 @@
         </ul>
         <ul id="verksamhet">
           <li>
-            <a href="./pages/verksamhetsomraden/">Verksamhetsområden - Huvudsida</a>
+            <a href="./pages/verksamhetsomraden/"
+              >Verksamhetsområden - Huvudsida</a
+            >
           </li>
           <li><a href="#">Yrkeshögskolan</a></li>
           <li><a href="#">Konst- och kulturutbildningar</a></li>
@@ -88,10 +91,6 @@
       </div>
     </nav>
 
-    <div class="separator">
-      <a tabindex="0" href="#">click me</a>
-    </div>
-
     <header class="header">
       <div class="text-box">
         <h1 class="heading-primary">
@@ -105,7 +104,7 @@
 
     <main>
       <section class="description">
-        <h2 class="main-heading">Nyheter</h2>
+        <h2 class="main-heading">Aktuellt</h2>
       </section>
       <div class="row">
         <section class="news">
@@ -194,10 +193,10 @@
                 <h3>Hon jobbar med att göra YH mer känt och erkänt</h3>
               </a>
               <p>
-                Maria Granberg är en tongivande YH-ambassadör. Idag arbetar hon på
-                Handelskammaren där hon leder satsningen Yrkeshögskola Mälardalen.
-                Innan dess var hon handläggare på Myndigheten för yrkeshögskolan
-                och...
+                Maria Granberg är en tongivande YH-ambassadör. Idag arbetar hon
+                på Handelskammaren där hon leder satsningen Yrkeshögskola
+                Mälardalen. Innan dess var hon handläggare på Myndigheten för
+                yrkeshögskolan och...
               </p>
 
               <footer class="card-footer">1 oktober 2019</footer>
@@ -210,43 +209,37 @@
         <section class="one-page">
           <!--Ansök om att bedriva utbildning-->
           <section class="omraden">
-            <a href="#">
-              <div class="omraden-img">
+              <div class="omraden-img-note">
                 <h3 class="omraden-headline">
                   Ansök om att driva utbildning
                 </h3>
               </div>
-            </a>
             <ul class="omraden-list">
-              <li class="omraden-list-item">Yrkeshögskoleutbildning</li>
-              <li class="omraden-list-item">Konst- och kulturutbildning</li>
-              <li class="omraden-list-item">Tolkutbildning</li>
-              <li class="omraden-list-item">Utbilding med endast tillsyn</li>
+              <a href="#"><li class="omraden-list-item">Yrkeshögskoleutbildning</li></a>
+              <a href="#"><li class="omraden-list-item">Konst- och kulturutbildning</li></a>
+              <a href="#"><li class="omraden-list-item">Tolkutbildning</li></a>
+              <a href="#"><li class="omraden-list-item">Utbilding med endast tillsyn</li></a>
             </ul>
 
             <!--För dig som bedriver utbildning-->
             <ul class="omraden-list">
-              <li class="omraden-list-item">Yrkeshögskoleutbildning</li>
-              <li class="omraden-list-item">Konst- och kulturutbildning</li>
-              <li class="omraden-list-item">Tolkutbildning</li>
-              <li class="omraden-list-item">Utbilding med endast tillsyn</li>
+              <a href="#"><li class="omraden-list-item">Yrkeshögskoleutbildning</li></a>
+              <a href="#"><li class="omraden-list-item">Konst- och kulturutbildning</li></a>
+              <a href="#"><li class="omraden-list-item">Tolkutbildning</li></a>
+              <a href="#"><li class="omraden-list-item">Utbilding med endast tillsyn</li></a>
             </ul>
-            <a href="#">
-              <div class="omraden-img">
+              <div class="omraden-img-school">
                 <h3 class="omraden-headline">
                   För dig som bedriver utbildning
                 </h3>
               </div>
-            </a>
 
             <!--För företag och organisationer-->
-            <a href="#">
-              <div class="omraden-img">
+              <div class="omraden-img-foretag">
                 <h3 class="omraden-headline">
                   För företag och organisationer
                 </h3>
               </div>
-            </a>
             <article class="omraden-content">
               <p class="head-text">
                 Arbetslivet är den främsta drivkraften bakom vilka
@@ -298,7 +291,6 @@
           </a>
         </section>
       </div>
-
     </main>
 
     <!--Footer area starts-->
@@ -424,7 +416,7 @@
       </article>
     </footer>
     <!--Footer area ends-->
-    
+    <script src="../../js/node_modules/wicg-inert/dist/inert.min.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>
