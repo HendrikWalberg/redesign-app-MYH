@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kontakta Oss - Myndigheten för yrkeshögskolan</title>
-    <link rel="stylesheet" href="scss/kontakt.css">
-    <link rel="stylesheet" href="css/start.css"> <!--Temporal menu-->
+    <link rel="stylesheet" href="../../scss/kontakt.css">
+    <link rel="stylesheet" href="../../scss/lagar.css">
   </head>
   
   <body>
@@ -88,12 +88,12 @@
 
         <form role="form" aria-labelledby="contact" action="">
           <fieldset>
-            <legend id="contact">Kontakta oss</legend>
-            <label>Namn:</label>
-          <input type="text" placeholder="Förnamn Efternamn"></input>
-          <label>Mailadress:</label>
-            <input type="email" placeholder="exempel@gmail.com"></input><br>
-            <button type="submit" action="">Skicka</button>
+            <legend>Kontakta oss:</legend>
+            <input type="text" placeholder="Skriv ditt namn"></input>
+            <input type="email" placeholder="Skriv din mejladress"></input>
+
+            <textarea placeholder="Skriv ditt meddelande" contenteditable="true"></textarea>
+            <button type="submit" action="" class="submitBtn">Skicka</button>
           </fieldset>
         </form>
 
