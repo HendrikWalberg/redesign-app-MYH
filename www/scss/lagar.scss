@@ -99,7 +99,7 @@ nav {
     clip-path: circle(100px at 90% -20%);
     transition: all 1s ease-out;
     pointer-events: none;
-    
+    overflow: scroll;
   }
 
   .nav-links.open {

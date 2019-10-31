@@ -118,6 +118,7 @@ nav .nav-links {
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   pointer-events: none;
+  overflow: scroll;
 }
 
 nav .nav-links.open {
