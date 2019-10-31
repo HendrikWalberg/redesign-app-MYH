@@ -4,10 +4,6 @@ a {
   text-decoration: none;
 }
 
-h3 {
-  font-size: 1.5vw;
-}
-
 /*PARALLAX START*/
 .main-image {
   height: 80vh;
@@ -33,6 +29,16 @@ h3 {
 }
 
 /*PARALLAX END*/
+.description {
+  text-align: center;
+  background-color: #9CB0C3;
+  font-size: 4vw;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 12px 12px 0px 0px;
+  color: black !important;
+}
+
 /*KORT*/
 #verksamhetsomraden-ingress {
   color: #708090;
@@ -318,22 +324,47 @@ h3 {
 }
 
 /* För iPhone 8 */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 550px) {
   /*Global styling*/
+  .description, .card-section, .omraden {
+    border-radius: 0 0 0 0;
+  }
   .main-heading {
     width: 100%;
     padding-top: 8%;
-    padding-left: 10%;
-    text-align: left;
     font-size: 7vw;
+  }
+  .main-heading {
+    margin-top: 20px;
   }
   h3 {
     font-size: 6vw;
   }
+  .main-image {
+    height: 40vh;
+    background-color: #000;
+    background-image: url("../img/main-image.jpg");
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  #logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: #6666664b;
+    padding: 3%;
+  }
   /*News-section*/
-  .news {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .card-section {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
     margin: 0;
     width: 100%;
   }
@@ -346,24 +377,132 @@ h3 {
   .card footer {
     font-size: 4vw;
   }
+  .omraden {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    margin: 0;
+    width: 100%;
+  }
+  #photo-utbildning {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  .omraden-headline {
+    font-size: 36px;
+  }
+  .omraden-content .head-text {
+    font-size: 20px;
+  }
+  .omraden-content a {
+    font-size: 20px;
+  }
+  .omraden-list .omraden-list-item {
+    font-size: 20px;
+  }
   .boxes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin: 0;
-  }
-  .box {
-    height: 8vh;
-    margin: 10px auto;
   }
   .box-text {
     padding: 3px;
-    font-size: 3vw;
+    font-size: 20px;
   }
   #smaller-font {
-    font-size: 2vw;
+    font-size: 15px;
   }
 }
 
 /* För Laptop */
+@media screen and (min-width: 415px) and (max-width: 900px) {
+  /*Global styling*/
+  .description, .card-section, .omraden {
+    border-radius: 0 0 0 0;
+  }
+  .main-heading {
+    width: 100%;
+    padding-top: 8%;
+    font-size: 7vw;
+  }
+  .main-heading {
+    margin-top: 20px;
+  }
+  h3 {
+    font-size: 6vw;
+  }
+  .main-image {
+    height: 40vh;
+    background-color: #000;
+    background-image: url("../img/main-image.jpg");
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  #logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: #6666664b;
+    padding: 3%;
+  }
+  /*News-section*/
+  .card-section {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .card p {
+    font-size: 4vw;
+  }
+  .card footer {
+    font-size: 4vw;
+  }
+  .card .card-content a h3 {
+    font-size: 20px;
+  }
+  .card .card-content p {
+    font-size: 20px;
+  }
+  .card .card-content footer {
+    font-size: 20px;
+  }
+  .omraden {
+    width: 100%;
+  }
+  .omraden-list {
+    margin: 0;
+  }
+  .omraden-headline {
+    font-size: 24px;
+  }
+  .omraden-content .head-text {
+    font-size: 15px;
+  }
+  .omraden-content a {
+    font-size: 15px;
+  }
+  .omraden-list .omraden-list-item {
+    font-size: 15px;
+  }
+  .boxes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .box-text {
+    padding: 3px;
+    font-size: 20px;
+  }
+  #smaller-font {
+    font-size: 15px;
+  }
+}
+
 /* För Desktop */
 /*# sourceMappingURL=start.css.map */
