@@ -543,3 +543,9 @@ a {
 @media screen and (min-width: 901px) {
 
 }
+
+@supports (-ms-ime-align: auto) {
+    .main-image {
+        background-attachment: scroll;
+    }
+}
