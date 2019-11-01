@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 }
 
 html {
@@ -206,100 +206,6 @@ body {
     width: 100%;
     -webkit-clip-path: polygon(100% 0%, 81% 52%, 100% 100%, 25% 100%, 0 51%, 25% 0%);
             clip-path: polygon(100% 0%, 81% 52%, 100% 100%, 25% 100%, 0 51%, 25% 0%);
-  }
-}
-
-footer p, footer a {
-  font-size: 15px;
-  font-weight: 500;
-  font-family: lato;
-  color: black !important;
-}
-
-footer h3 {
-  font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 700;
-  color: black !important;
-}
-
-footer h2 {
-  font-size: 25px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 700;
-  color: black !important;
-}
-
-footer.wrapper {
-  background-color: yellow;
-  padding-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-footer.wrapper > article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer.wrapper > article ul > li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-footer.wrapper .p1 {
-  padding: 10px 0;
-}
-
-footer.wrapper .link,
-footer.wrapper .email {
-  text-decoration: none;
-  font-family: lato;
-  font-weight: 500;
-  font-size: 15px;
-  color: black !important;
-}
-
-footer.wrapper .social a {
-  padding: 20px 14px;
-  -webkit-transition: color 300ms ease, -webkit-transform 300ms ease;
-  transition: color 300ms ease, -webkit-transform 300ms ease;
-  transition: color 300ms ease, transform 300ms ease;
-  transition: color 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
-  color: black;
-}
-
-footer.wrapper .social i {
-  font-size: 25px;
-}
-
-footer.wrapper .social a:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-}
-
-@media screen and (max-width: 800px) {
-  footer.wrapper .column {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
   }
 }
 /*# sourceMappingURL=omoss.css.map */
