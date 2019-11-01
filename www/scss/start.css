@@ -521,4 +521,9 @@ a {
 }
 
 /* För Desktop */
+@supports (-ms-ime-align: auto) {
+  .main-image {
+    background-attachment: scroll;
+  }
+}
 /*# sourceMappingURL=start.css.map */
