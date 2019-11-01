@@ -161,8 +161,9 @@ $lightgray: #9CB0C3;
     .publications .wrapped img {
         margin: 20px auto;
         width: 70%;
-        height: 50%;
+        height: 60%;
         border: none;
+        object-fit: contain;
     }
 
     .card .card-content {

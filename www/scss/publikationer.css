@@ -165,7 +165,10 @@
   .publications .wrapped img {
     margin: 20px auto;
     width: 70%;
-    height: 50%;
+    height: 60%;
+    border: none;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .card .card-content {
     padding: 0 6% 20px 6% !important;
