@@ -10,6 +10,10 @@
   height: 550px;
 }
 
+.imgContact.open {
+  display: none;
+}
+
 .infoField {
   margin-left: auto;
   margin-right: auto;
@@ -42,8 +46,13 @@
 }
 
 fieldset {
-  background-color: #9CB0C3;
   border: none;
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+form {
+  background-color: #9CB0C3;
   width: 80%;
   margin: 20px auto 0 auto;
 }
