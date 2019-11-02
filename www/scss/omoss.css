@@ -202,10 +202,5 @@ body {
     margin-right: 6rem;
     margin-bottom: 6rem;
   }
-  .row .col-2 .main-image .image1 {
-    width: 100%;
-    -webkit-clip-path: polygon(100% 0%, 81% 52%, 100% 100%, 25% 100%, 0 51%, 25% 0%);
-            clip-path: polygon(100% 0%, 81% 52%, 100% 100%, 25% 100%, 0 51%, 25% 0%);
-  }
 }
 /*# sourceMappingURL=omoss.css.map */
