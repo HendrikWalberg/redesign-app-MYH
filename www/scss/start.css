@@ -34,7 +34,7 @@ a {
   background-color: #9CB0C3;
   font-size: 4vw;
   width: 80%;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   border-radius: 12px 12px 0px 0px;
   color: black !important;
 }
@@ -108,6 +108,7 @@ a {
 }
 
 .show-more span {
+  font-size: 16px;
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -236,6 +237,7 @@ a {
   left: 10%;
   width: 80%;
   height: 100%;
+  border: 0;
 }
 
 /* Boxes */
@@ -383,6 +385,13 @@ a {
     margin: 0;
     width: 100%;
   }
+  .show-more {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+  .omraden {
+    margin-top: 40px;
+  }
   #photo-utbildning {
     -ms-grid-row: 3;
         grid-row-start: 3;
@@ -394,10 +403,16 @@ a {
     font-size: 20px;
   }
   .omraden-content a {
-    font-size: 20px;
+    font-size: 1.5vw;
   }
   .omraden-list .omraden-list-item {
-    font-size: 20px;
+    font-size: 1.5vw;
+  }
+  .omraden-list .omraden-list-item a {
+    font-size: 4vw;
+  }
+  .omraden-content p, a {
+    font-size: 4vw !important;
   }
   .boxes {
     -ms-grid-columns: 1fr;
@@ -458,20 +473,18 @@ a {
     width: 100%;
     padding: 0;
   }
-  .card p {
-    font-size: 4vw;
-  }
-  .card footer {
-    font-size: 4vw;
-  }
   .card .card-content a h3 {
-    font-size: 20px;
+    font-size: 3vw;
   }
   .card .card-content p {
-    font-size: 20px;
+    font-size: 3vw;
   }
   .card .card-content footer {
-    font-size: 20px;
+    font-size: 3vw;
+  }
+  .show-more {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
   }
   .omraden {
     width: 100%;
@@ -483,13 +496,16 @@ a {
     font-size: 24px;
   }
   .omraden-content .head-text {
-    font-size: 15px;
+    font-size: 3vw;
   }
   .omraden-content a {
-    font-size: 15px;
+    font-size: 3vw;
   }
   .omraden-list .omraden-list-item {
-    font-size: 15px;
+    font-size: 3vw;
+  }
+  .omraden-list .omraden-list-item a {
+    font-size: 3vw;
   }
   .boxes {
     -ms-grid-columns: 1fr;
@@ -505,4 +521,9 @@ a {
 }
 
 /* För Desktop */
+@supports (-ms-ime-align: auto) {
+  .main-image {
+    background-attachment: scroll;
+  }
+}
 /*# sourceMappingURL=start.css.map */

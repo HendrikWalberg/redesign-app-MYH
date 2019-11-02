@@ -40,7 +40,7 @@ a {
     font-size: 4vw;
     
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
     border-radius: 12px 12px 0px 0px;
     color: black !important;
 }
@@ -117,6 +117,7 @@ a {
     grid-column-start: 3;
 
     span {
+        font-size: 16px;
         display: inline-block;
         position: relative;
         transition: 0.5s;
@@ -227,6 +228,7 @@ a {
       left: 10%;
       width: 80%;
       height: 100%;
+      border: 0;
     }
   }
 
@@ -364,13 +366,21 @@ a {
             font-size: 4vw;
         }
     }
-
+    
     .omraden {
         grid-template-columns: 2fr;
         margin: 0;
         width: 100%;
     }
 
+    .show-more {
+        grid-column-start: 1;
+    }
+
+    .omraden {
+        margin-top: 40px;
+
+    }
     #photo-utbildning {
         grid-row-start: 3;
     }
@@ -384,11 +394,19 @@ a {
     }
 
     .omraden-content a {
-        font-size: 20px;
+        font-size: 1.5vw;
     }
 
     .omraden-list .omraden-list-item {
-        font-size: 20px;
+        font-size: 1.5vw;
+
+        a {
+            font-size: 4vw;
+        }
+    }
+
+    .omraden-content p,a {
+        font-size: 4vw !important;
     }
 
 
@@ -456,23 +474,21 @@ a {
 
     }
     .card {
-        p {
-            font-size: 4vw;
-        }
 
-        footer {
-            font-size: 4vw;
-        }
         .card-content a h3 {
-            font-size: 20px;
+            font-size: 3vw;
         }
         .card-content p {
-            font-size: 20px;
+            font-size: 3vw;
         }
         .card-content footer {
-            font-size: 20px;
+            font-size: 3vw;
         }
 
+    }
+
+    .show-more {
+        grid-column-start: 2;
     }
 
     .omraden {
@@ -488,16 +504,21 @@ a {
     }
 
     .omraden-content .head-text {
-        font-size: 15px;
+        font-size: 3vw;
     }
 
     .omraden-content a {
-        font-size: 15px;
+        font-size: 3vw;
 
     }
 
     .omraden-list .omraden-list-item {
-        font-size: 15px;
+        font-size: 3vw;
+
+        a {
+            font-size: 3vw;
+        }
+
         
     }
 
@@ -521,4 +542,10 @@ a {
 /* För Desktop */
 @media screen and (min-width: 901px) {
 
+}
+
+@supports (-ms-ime-align: auto) {
+    .main-image {
+        background-attachment: scroll;
+    }
 }

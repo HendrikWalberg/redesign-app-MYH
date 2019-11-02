@@ -4,274 +4,341 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/publikationer.css">
-    <link rel="stylesheet" href="scss/start.css">
-    <link rel="stylesheet" href="css/start.css"> <!-- Temporal menu -->
+    <link rel="stylesheet" href="../../scss/publikationer.css">
+    <link rel="stylesheet" href="../../scss/start.css">
+    <link rel="stylesheet" href="../../scss/lagar.css" />
+    <link rel="stylesheet" href="../../fontawesome/css/all.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Publikationer</title>
 </head>
 <body>
-    <!-- Header start -->
-    <header role="banner">
-            <nav role="navigation">
-              <div class="main-menu-list">
-                <a href="/"><div class="main-menu-item">Start</div></a>
-                <a href="pages/om-oss"><div class="main-menu-item">Om oss</div></a>
-                <a href="pages/verksamhetsomraden"
-                  ><div class="main-menu-item">Verksamhetsområden</div></a
-                >
-                <a href="pages/lagar"
-                  ><div class="main-menu-item">Lagar, regler, tillsyn</div></a
-                >
-                <a href="pages/statistik"
-                  ><div class="main-menu-item">Statistik</div></a
-                >
-                <a href="pages/publikationer"
-                  ><div class="main-menu-item">Publikationer</div></a
-                >
-                <a href="pages/nyhetsrum"
-                  ><div class="main-menu-item">Nyhetsrum</div></a
-                >
-                <a href="pages/kontakt"><div class="main-menu-item">Kontakt</div></a>
-              </div>
-            </nav>
-          </header>
-          <!-- Header end -->
+    <!--NAVIGATION START-->
+    <nav>
+      <div role="button" tabindex="0" class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+
+      <div class="nav-links">
+        <ul id="hem">
+          <li>
+            <a href="../../."><img src="../../img/logo.png" alt="Myndigheten för yrkeshögskolan"/></a>
+          </li>
+        </ul>
+
+        <ul id="kontakt">
+          <li><a class="menubold" href="../kontakt/">Kontakta oss</a></li>
+          <li><a href="#">Jobba hos oss</a></li>
+        </ul>
+
+        <ul id="publikationer">
+          <li><a class="menubold" href="../publikationer/">Publikationer</a></li>
+        </ul>
+
+        <ul id="om-oss">
+          <li><a class="menubold" href="../om-oss/">Om oss</a></li>
+          <li><a href="#">Organisaton</a></li>
+          <li><a href="#">Så styrs myndigheten</a></li>
+          <li><a href="#">Redovisning av verksamhet</a></li>
+          <li><a href="#">Remisssvar och yttranden</a></li>
+          <li><a href="#">Pågående upphandlingar</a></li>
+        </ul>
+
+        <ul id="verksamhet">
+          <li>
+            <a class="menubold" href="../verksamhetsomraden/">Verksamhetsområden</a>
+          </li>
+          <li><a href="#">Yrkeshögskolan</a></li>
+          <li><a href="#">Konst- och kulturutbildningar</a></li>
+          <li><a href="#">Tolkutbildningar</a></li>
+          <li><a href="#">Utbildningar med endast tillsyn</a></li>
+          <li><a href="#">SeQF</a></li>
+          <li><a href="#">Validering</a></li>
+        </ul>
+
+        <ul id="lagar">
+          <li>
+            <a class="menubold" href="../lagar-regler-tillsyn/">Lagar, regler, tillsyn</a>
+          </li>
+          <li><a href="#">Lagar och förordningar</a></li>
+          <li><a href="#">Gällande föreskrifter</a></li>
+          <li><a href="#">Allmänna råd</a></li>
+          <li><a href="#">Tillsyn</a></li>
+          <li><a href="#">Kvalitetsgranskning</a></li>
+          <li><a href="#">Anmäl brister i en utbildning</a></li>
+        </ul>
+
+        <ul id="statistik">
+          <li><a class="menubold" href="../statistik/">Statistik</a></li>
+          <li><a href="#">Yrkeshögskoleutbildningar</a></li>
+          <li>
+            <a href="#">
+              Konst- och kulturutbildningar och utbildningar med endast tillsyn
+            </a>
+          </li>
+          <li><a href="#">Tolkutbildningar inom folkbildningen</a></li>
+        </ul>
+
+        <ul id="nyheter">
+          <li><a class="menubold" href="../nyhetsrum/">Nyhetsrum</a></li>
+          <li><a href="#">Pressmedelanden</a></li>
+          <li><a href="#">Kalender</a></li>
+          <li><a href="#">Filmer</a></li>
+          <li><a href="#">Pressbilder</a></li>
+          <li><a href="#">Nyhetsbrev</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--NAVIGATION END-->
+
+    <!--ANIMATED HEADER-->
+    <header class="header">
+      <div class="text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary-main">myh</span>
+            <span class="heading-primary-sub">Publikationer</span>
+          </h1>
+      </div>
+    </header>
+
+    <!--MAIN SECTION-->
     <main role="main">
-        <!-- Main section here -->
         <div class="main-card">
-            <h1>Publikationer</h1>
-            <p>Här hittar du Myndigheten för yrkeshögskolans rapporter, faktablad, broschyrer, informationsblad och andra publikationer. Du kan välja typ av publikation, område och utgivningsår i rutan till höger.</p>
+          <p>Här hittar du Myndigheten för yrkeshögskolans rapporter, faktablad, broschyrer, informationsblad och andra publikationer. Du kan välja typ av publikation, 
+            område och utgivningsår i rutan till höger.
+          </p>
         </div>
+
         <section class="publications">
-            <div class="card wrapped">
-                <img src="img/pub01.JPG" alt="Omslag">
-                <article class="card-content parallel">
-                    <h3>Tillgodoräknande inom yrkeshögskolan</h3>
-                    <p class="lighter">Utgiven: 2019-10-15</p>
-                    <p>Utgångspunkten för utredningen är att ökad användning av validering och tillgodoräknande i yrkeshögskolan...</p>
-                    <ul>
-                        <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/2019/Tillgodoraknande_i_yrkeshogskolan_2019.pdf">Ladda ner rapporten</a></li>
-                        <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/Bilaga-4-Studiedokumentation-Statistik.pdf">Ladda ner bilaga 4</a></li>
-                    </ul>
-                </article>
-            </div>
-            <div class="card wrapped">
-                <img src="img/pub02.JPG" alt="Omslag">
-                <article class="card-content parallel">
-                    <h3>MYH jubileumsbroschyr 2019</h3>
-                    <p class="lighter">Utgiven: 2019-09-12</p>
-                    <p>Myndigheten för yrkeshögskolan, som bildades när yrkeshögskolan infördes 2009, fyller 10 år i år. Detta...</p>
-                    <ul>
-                        <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/2019/MYH-Jubileumsbroschyr_2019.pdf">Jubileumsbroschyr 2019</a></li>
-                    </ul>
-                </article>
-            </div>
-            <div class="card wrapped">
-                <img src="img/pub03.JPG" alt="Omslag">
-                <article class="card-content parallel">
-                    <h3>Resultat av tillsyn 2018</h3>
-                    <p class="lighter">Utgiven: 2019-09-06</p>
-                    <p>I denna rapport sammanfattar Myndigheten för yrkeshögskolan (MYH) resultatet av tillsynsverksamheten...</p>
-                    <ul>
-                        <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/2019/Resultat_av_tillsyn2018.pdf">Ladda ner rapporten</a></li>
-                    </ul>
-                </article>
-            </div>
-            <div class="card wrapped">
-                <img src="img/pub04.JPG" alt="Omslag">
-                <article class="card-content parallel">
-                    <h3>Faktablad: Särskilt pedagogiskt stöd och tillgänglighet – för dig som studerar på yrkeshögskolan</h3>
-                    <p class="lighter">Utgiven: 2019-09-05</p>
-                    <p>Som studerande på yrkeshögskolan har du rätt att få pedagogiskt stöd under dina studier. Du har också...</p>
-                    <ul>
-                        <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Informationsmaterial/Sarskilt-pedagogiskt-stod-och-tillganglighet-studerande-yh.pdf">Ladda ner faktabladet</a></li>
-                    </ul>
-                </article>
-            </div>
-            <div class="card wrapped">
-                <img src="img/pub05.JPG" alt="Omslag">
-                <article class="card-content parallel">
-                    <h3>Anvisningar för ansökan om behörighetsgivande förutbildning</h3>
-                    <p class="lighter">Utgiven: 2019-08-15</p>
-                    <p>Gäller behörighetsgivande förutbildning (BFU) för yrkeshögskoleutbildningar som startar hösten 2019 -...</p>
-                    <ul>
-                        <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Informationsmaterial/Anvisningar_BFU_2020.pdf">Ladda ner anvisningarna</a></li>
-                    </ul>
-                </article>
-            </div>
-            <div class="card wrapped">
-                <img src="img/pub06.JPG" alt="Omslag">
-                <article class="card-content parallel">
-                    <h3>Metodprövning gällande kvalitetsgranskning av tolkutbildning inom folkbildningen</h3>
-                    <p class="lighter">Utgiven: 2019-06-10</p>
-                    <p>Myndigheten för yrkeshögskolan har prövat en metod för kvalitetsgranskning av tolkutbildningar inom folkbildningen...</p>
-                    <ul>
-                        <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/2019/Metodprovning_tolk2019.pdf">Ladda ner rapport</a></li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-        <div class="main-card">
-            <button class="fler" onclick="location.href='http://www.myh.se/Publikationer/?p=2';"><span aria-label="Visa ännu fler publikationer">Visa fler publikationer</span></button>
-            <section>
-                <div>
-                    <h3>Förfina listningen</h3>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?q=">Alla publikationer (204)</a>
-                </div>
-                <div>
-                    <h3 class="light">Visa träffar av publikationstyp</h3>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">Rapporter (79)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">Återrapportering av regeringsuppdrag (63)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">Informationsmaterial (56)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">Årsredovisningar (10)</p>
-                </div>
-                <div>
-                    <h3 class="light">Visa träffar av publikationstyp</h3>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">Yrkeshögskolan (121)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">Konst- och kulturutbildningar (25)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">Tolkutbildningar (13)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">Utbildningar med endast tillsyn (12)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">Validering (10)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">SeQF (12)</p>
-                </div>
-                <div>
-                    <h3 class="light">Visa träffar av publikationstyp</h3>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2019 (25)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2018 (24)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2017 (16)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2016 (26)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2015 (32)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2014 (19)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2013 (14)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2012 (24)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2011 (15)</p>
-                    <a class="filter light" href="http://www.myh.se/Publikationer/?publication=23">2010 (10)</p>
-                </div>
-            </section>
-        </div>
-    </main>
-    <!--Footer area starts-->
-    <!-- ISSUE, put in fonts for email, adress for easier understanding-->
-    <footer class="wrapper">
-            <article class="column">
-              <h2 role="heading" class="p1">Kontakt</h2>
-              <h3 role="heading" class="p1">Telefon</h3>
-              <p>Ring vår växel 010-209 01 00</p>
-              <p>Växeln är öppen vardagar 8.00 - 17.00</p>
-              <h3 role="heading" class="p1">Digitalt kundforum</h3>
-              <p>Se vanliga frågor och svar eller ställ frågor:</p>
-              <a role="link" class="link" href="https://forum.myh.se" target="blank"
-                >forum.myh.se</a
-              >
-              <h3 role="heading" class="p1">E-post</h3>
-              <p>Allmänna frågor/synpunkter:</p>
-              <a role="textbox" class="email" href="mailto:info@myh.se"
-                >info@myh.se<br
-              /></a>
-              <p>Registrator:</p>
-              <a role="textbox" class="email" href="mailto:registrator@myh.se"
-                >registrator@myh.se</a
-              >
-              <h3 role="heading" class="p1">Adress</h3>
-              <p>Myndigheten för yrkeshögskolan</p>
-              <p>Box 145</p>
-              <p>721 05 Västerås</p>
-            </article>
-            <article class="column">
-              <h3 role="heading" class="p1">Om webbplatsen</h3>
-              <a
-                role="link"
-                class="link"
-                href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/"
-              >
-                Använda webbplatsen</a
-              ><br />
-              <a
-                role="link"
-                class="link"
-                href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/"
-              >
-                Om webbkakor (cookies)</a
-              ><br />
-              <a role="link" class="link" href="https://www.myh.se/Webbkarta/">
-                Webbkarta</a
-              >
-              <h3 role="heading" class="p1">Våra övriga webbplatser</h3>
-              <a
-                role="link"
-                class="link"
-                href="https://www.yrkeshogskolan.se"
-                target="blank"
-                aria-label="yrkeshögskolan"
-              >
-                www.yrkeshogskolan.se</a
-              ><br />
-              <a
-                role="link"
-                class="link"
-                href="https://www.konstkulturutbildning.se"
-                target="blank"
-                aria-label="Konstkulturutbildning"
-              >
-                www.konstkulturutbildning.se</a
-              ><br />
-              <a
-                role="link"
-                class="link"
-                href="https://www.myh.se/blitolk/"
-                target="blank"
-                aria-label="Blitolk"
-              >
-                www.blitolk.nu</a
-              ><br />
-              <a
-                role="link"
-                class="link"
-                href="https://www.seqf.se"
-                target="blank"
-                aria-label="Seqf"
-              >
-                www.seqf.se</a
-              >
-              <h3 role="heading" class="p1">Ansvarig utgivare</h3>
-              <p>Thomas Persson, generaldirektör MYH.</p>
-            </article>
-            <article class="column">
-              <h3 role="heading" class="p1">Ansvarig utgivare</h3>
-              <p>Thomas Persson, generaldirektör MYH.</p>
-              <h3 role="heading" class="p1">Håll dig informerad</h3>
-              <ul class="social">
-                <li role="contentinfo">
-                  <a href="https://twitter.com/" target="blank" aria-label="Twitter">
-                    <i class="fab fa-twitter-square"></i
-                  ></a>
-                </li>
-                <li role="contentinfo">
-                  <a
-                    href="https://facebook.com/"
-                    target="blank"
-                    aria-label="Facebook"
-                  >
-                    <i class="fab fa-facebook-square"></i
-                  ></a>
-                </li>
-                <li role="contentinfo">
-                  <a href="https://youtube.com/" target="blank" aria-label="Youtube">
-                    <i class="fab fa-youtube"></i
-                  ></a>
-                </li>
-                <li role="contentinfo">
-                  <a
-                    href="https://instagram.com/"
-                    target="blank"
-                    aria-label="Instagram"
-                  >
-                    <i class="fab fa-instagram"></i
-                  ></a>
-                </li>
+          <div class="card wrapped">
+            <img src="../../img/pub01.JPG" alt="Omslag">
+            <article class="card-content parallel">
+              <h3>Tillgodoräknande inom yrkeshögskolan</h3>
+              <p class="lighter">Utgiven: 2019-10-15</p>
+              <p>Utgångspunkten för utredningen är att ökad användning av validering och tillgodoräknande i yrkeshögskolan...</p>
+              <ul>
+                <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/2019/Tillgodoraknande_i_yrkeshogskolan_2019.pdf">Ladda ner rapporten</a></li>
+                <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/Bilaga-4-Studiedokumentation-Statistik.pdf">Ladda ner bilaga 4</a></li>
               </ul>
             </article>
-          </footer>
-          <!--Footer area ends-->
+          </div>
+
+          <div class="card wrapped">
+              <img src="../../img/pub02.JPG" alt="Omslag">
+              <article class="card-content parallel">
+                  <h3>MYH jubileumsbroschyr 2019</h3>
+                  <p class="lighter">Utgiven: 2019-09-12</p>
+                  <p>Myndigheten för yrkeshögskolan, som bildades när yrkeshögskolan infördes 2009, fyller 10 år i år. Detta...</p>
+                  <ul>
+                      <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/2019/MYH-Jubileumsbroschyr_2019.pdf">Jubileumsbroschyr 2019</a></li>
+                  </ul>
+              </article>
+          </div>
+
+          <div class="card wrapped">
+              <img src="../../img/pub03.JPG" alt="Omslag">
+              <article class="card-content parallel">
+                  <h3>Resultat av tillsyn 2018</h3>
+                  <p class="lighter">Utgiven: 2019-09-06</p>
+                  <p>I denna rapport sammanfattar Myndigheten för yrkeshögskolan (MYH) resultatet av tillsynsverksamheten...</p>
+                  <ul>
+                      <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/2019/Resultat_av_tillsyn2018.pdf">Ladda ner rapporten</a></li>
+                  </ul>
+              </article>
+          </div>
+
+          <div class="card wrapped">
+              <img src="../../img/pub04.JPG" alt="Omslag">
+              <article class="card-content parallel">
+                  <h3>Faktablad: Särskilt pedagogiskt stöd och tillgänglighet – för dig som studerar på yrkeshögskolan</h3>
+                  <p class="lighter">Utgiven: 2019-09-05</p>
+                  <p>Som studerande på yrkeshögskolan har du rätt att få pedagogiskt stöd under dina studier. Du har också...</p>
+                  <ul>
+                      <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Informationsmaterial/Sarskilt-pedagogiskt-stod-och-tillganglighet-studerande-yh.pdf">Ladda ner faktabladet</a></li>
+                  </ul>
+              </article>
+          </div>
+
+          <div class="card wrapped">
+              <img src="../../img/pub05.JPG" alt="Omslag">
+              <article class="card-content parallel">
+                  <h3>Anvisningar för ansökan om behörighetsgivande förutbildning</h3>
+                  <p class="lighter">Utgiven: 2019-08-15</p>
+                  <p>Gäller behörighetsgivande förutbildning (BFU) för yrkeshögskoleutbildningar som startar hösten 2019 -...</p>
+                  <ul>
+                      <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Informationsmaterial/Anvisningar_BFU_2020.pdf">Ladda ner anvisningarna</a></li>
+                  </ul>
+              </article>
+          </div>
+
+          <div class="card wrapped">
+              <img src="../../img/pub06.JPG" alt="Omslag">
+              <article class="card-content parallel">
+                  <h3>Metodprövning gällande kvalitetsgranskning av tolkutbildning inom folkbildningen</h3>
+                  <p class="lighter">Utgiven: 2019-06-10</p>
+                  <p>Myndigheten för yrkeshögskolan har prövat en metod för kvalitetsgranskning av tolkutbildningar inom folkbildningen...</p>
+                  <ul>
+                      <li><a class="link" href="https://www.myh.se/Documents/Publikationer/Rapporter/2019/Metodprovning_tolk2019.pdf">Ladda ner rapport</a></li>
+                  </ul>
+              </article>
+          </div>
+          
+          <button class="show-more">
+            <span aria-label="Visa ännu fler publikationer">Visa fler publikationer</span>
+          </button>
+        </section>
+        
+        <div>
+            <h3 class="filter-title">Förfina listningen</h3>
+        </div> 
+
+        <section class="filter">
+          <div>
+            <h3 class="light">Visa träffar av publikationstyp</h3>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">Rapporter (79)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">Regeringsuppdrag (63)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">Informationsmaterial (56)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">Årsredovisningar (10)</a>
+          </div>
+
+          <div>
+            <h3 class="light">Visa träffar av publikationstyp</h3>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">Yrkeshögskolan (121)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">Konst- och kulturutbildningar (25)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">Tolkutbildningar (13)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">Utbildningar med endast tillsyn (12)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">Validering (10)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">SeQF (12)</a>
+          </div>
+
+          <div>
+            <h3 class="light">Visa träffar av publikationstyp</h3>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2019 (25)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2018 (24)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2017 (16)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2016 (26)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2015 (32)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2014 (19)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2013 (14)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2012 (24)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2011 (15)</a>
+            <a class="light" href="http://www.myh.se/Publikationer/?publication=23">2010 (10)</a>
+          </div>
+        </section>
+    </main>
+
+    <!--FOOTER START-->
+    <footer class="wrapper" role="contentinfo">
+
+      <!--SECTION ONE-->
+      <article class="column">
+        <h2 id="footer-heading" role="heading" class="p1">Kontakt</h2>
+        <h3 role="heading" class="p1">Telefon</h3>
+        <p>Ring vår växel 010-209 01 00</p>
+        <p>Växeln är öppen vardagar 8.00 - 17.00</p>
+
+        <h3 role="heading" class="p1">Digitalt kundforum</h3>
+        <p>Se vanliga frågor och svar eller ställ frågor:</p>
+        <a role="link" class="link" href="https://forum.myh.se" target="blank">forum.myh.se</a>
+
+        <h3 role="heading" class="p1">E-post</h3>
+        <p>Allmänna frågor/synpunkter:</p>
+        <a href="mailto:info@myh.se" role="link" class="email" >info@myh.se</a>
+        <p>Registrator:</p>
+        <a href="mailto:registrator@myh.se" role="link" class="email" >registrator@myh.se</a>
+
+        <h3 role="heading" class="p1">Adress</h3>
+        <p>Myndigheten för yrkeshögskolan</p>
+        <p>Box 145</p>
+        <p>721 05 Västerås</p>
+      </article>
+
+      <!--SECTION TWO-->
+      <article class="column">
+        <h3 role="heading" class="p1">Om webbplatsen</h3>
+        <a 
+          role="link"
+          class="link"
+          href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">
+          Använda webbplatsen</a>
+        <a
+          role="link"
+          class="link"
+          href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">
+          Om webbkakor(cookies)</a>
+        <a role="link" class="link" href="https://www.myh.se/Webbkarta/">
+          Webbkarta</a>
+
+        <h3 role="heading" class="p1">Våra övriga webbplatser</h3>
+        <a
+          role="link"
+          class="link"
+          href="https://www.yrkeshogskolan.se"
+          target="blank"
+          aria-label="yrkeshögskolan">
+          www.yrkeshogskolan.se</a>
+        <a
+          role="link"
+          class="link"
+          href="https://www.konstkulturutbildning.se"
+          target="blank"
+          aria-label="Konstkulturutbildning">
+          www.konstkulturutbildning.se</a>
+        <a
+          role="link"
+          class="link"
+          href="https://www.myh.se/blitolk/"
+          target="blank"
+          aria-label="Blitolk">
+          www.blitolk.nu</a>
+        <a
+          role="link"
+          class="link"
+          href="https://www.seqf.se"
+          target="blank"
+          aria-label="Seqf">
+          www.seqf.se</a>
+
+        <h3 role="heading" class="p1">Ansvarig utgivare</h3>
+        <p>Thomas Persson, generaldirektör MYH.</p>
+      </article>
+
+      <!--SECTION THREE-->
+      <article class="column">
+        <h3 role="heading" class="p1">Ansvarig utgivare</h3>
+        <p>Thomas Persson, generaldirektör MYH.</p>
+
+        <h3 role="heading" class="p1">Håll dig informerad</h3>
+        <ul class="social">
+          <li role="listitem">
+            <a href="https://twitter.com/" target="blank" aria-label="Twitter">
+              <i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li role="listitem">
+            <a href="https://facebook.com/" target="blank" aria-label="Facebook">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li role="listitem">
+            <a href="https://youtube.com/" target="blank" aria-label="Youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li role="listitem">
+            <a
+              href="https://instagram.com/"
+              target="blank"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </footer>
+    <!--FOOTER END-->
+  
+  <script src="../../js/node_modules/wicg-inert/dist/inert.min.js"></script>
+  <script src="../../js/menu.js"></script>
 </body>
 </html>

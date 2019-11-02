@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Verksamhetsområden</title>
     <link rel="stylesheet" href="../../scss/start.css">
     <link rel="stylesheet" href="../../scss/lagar.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.min.css" />
+
+    <title>Verksamhetsområden</title>
   </head>
 
   <body>
-    <!--NAVIGATION STARTS-->
-    <header role="banner">
+    <!--NAVIGATION START-->
     <nav>
       <div role="button" tabindex="0" class="hamburger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
       </div>
+
       <div class="nav-links">
         <ul id="hem">
-          <a href="../../"><img src="../../img/logo.png"/></a>
+          <a href="../../."><img src="../../img/logo.png"/></a>
         </ul>
 
         <ul id="kontakt">
@@ -30,7 +32,7 @@
         </ul>
 
         <ul id="publikationer">
-          <li><a class="menubold" href="./pages/publikationer">Publikationer</a></li>
+          <li><a class="menubold" href="../publikationer/">Publikationer</a></li>
         </ul>
 
         <ul id="om-oss">
@@ -43,7 +45,9 @@
         </ul>
 
         <ul id="verksamhet">
-          <li><a class="menubold" href="../verksamhetsomraden/">Verksamhetsområden</a></li>
+          <li>
+            <a class="menubold" href="../verksamhetsomraden/">Verksamhetsområden</a>
+          </li>
           <li><a href="#">Yrkeshögskolan</a></li>
           <li><a href="#">Konst- och kulturutbildningar</a></li>
           <li><a href="#">Tolkutbildningar</a></li>
@@ -53,7 +57,8 @@
         </ul>
 
         <ul id="lagar">
-          <li><a class="menubold" href="../lagar-regler-tillsyn/">Lagar, regler, tillsyn</a>
+          <li>
+            <a class="menubold" href="../lagar-regler-tillsyn/">Lagar, regler, tillsyn</a>
           </li>
           <li><a href="#">Lagar och förordningar</a></li>
           <li><a href="#">Gällande föreskrifter</a></li>
@@ -66,7 +71,11 @@
         <ul id="statistik">
           <li><a class="menubold" href="../statistik/">Statistik</a></li>
           <li><a href="#">Yrkeshögskoleutbildningar</a></li>
-          <li><a href="#">Konst- och kulturutbildningar och utbildningar med endast tillsyn</a></li>
+          <li>
+            <a href="#">
+              Konst- och kulturutbildningar och utbildningar med endast tillsyn
+            </a>
+          </li>
           <li><a href="#">Tolkutbildningar inom folkbildningen</a></li>
         </ul>
 
@@ -80,10 +89,9 @@
         </ul>
       </div>
     </nav>
-    </header>
-    <!--NAVIGATION ENDS-->
+    <!--NAVIGATION END-->
 
-    <!--ANIMATED HEADER STARTS-->
+    <!--ANIMATED HEADER-->
     <header class="header">
       <div class="text-box">
         <h1 class="heading-primary">
@@ -92,7 +100,6 @@
         </h1>
       </div>
     </header>
-    <!--HEADER ENDS-->
 
     <main role="main">
       <section role="region" id="verksamhetsomraden-ingress">
@@ -104,7 +111,6 @@
 
       <!--CARDS-SECTION STARTS-->
       <section class="card-section">
-
         <section class="card">
           <img src="../../img/Yh-start.png" alt="Yrkeshögskolan" />
           <article class="card-content">
@@ -175,128 +181,115 @@
       <!--CARDS-SECTION ENDS-->
     </main>
     
-    <!--FOOTER STARTS-->
-    <footer class="wrapper">
-        <article class="column">
-          <h2 role="heading" class="p1">Kontakt</h2>
+    <!--FOOTER START-->
+    <footer class="wrapper" role="contentinfo">
 
-          <h3 role="heading" class="p1">Telefon</h3>
-          <p>Ring vår växel 010-209 01 00</p>
-          <p>Växeln är öppen vardagar 8.00 - 17.00</p>
+      <!--SECTION ONE-->
+      <article class="column">
+        <h2 id="footer-heading" role="heading" class="p1">Kontakt</h2>
+        <h3 role="heading" class="p1">Telefon</h3>
+        <p>Ring vår växel 010-209 01 00</p>
+        <p>Växeln är öppen vardagar 8.00 - 17.00</p>
 
-          <h3 role="heading" class="p1">Digitalt kundforum</h3>
-          <p>Se vanliga frågor och svar eller ställ frågor:</p>
-          <a role="link" class="link" href="https://forum.myh.se" target="blank">
-            forum.myh.se
-          </a>
+        <h3 role="heading" class="p1">Digitalt kundforum</h3>
+        <p>Se vanliga frågor och svar eller ställ frågor:</p>
+        <a role="link" class="link" href="https://forum.myh.se" target="blank">forum.myh.se</a>
 
-          <h3 role="heading" class="p1">E-post</h3>
-          <p>Allmänna frågor/synpunkter:</p>
-          <a role="textbox" class="email" href="mailto:info@myh.se">
-            info@myh.se<br />
-          </a>
-          <p>Registrator:</p>
-          <a role="textbox" class="email" href="mailto:registrator@myh.se">
-            registrator@myh.se
-          </a>
+        <h3 role="heading" class="p1">E-post</h3>
+        <p>Allmänna frågor/synpunkter:</p>
+        <a role="textbox" class="email" href="mailto:info@myh.se">info@myh.se</a>
+        <p>Registrator:</p>
+        <a role="textbox" class="email" href="mailto:registrator@myh.se">registrator@myh.se</a>
 
-          <h3 role="heading" class="p1">Adress</h3>
-          <p>Myndigheten för yrkeshögskolan</p>
-          <p>Box 145</p>
-          <p>721 05 Västerås</p>
-        </article>
+        <h3 role="heading" class="p1">Adress</h3>
+        <p>Myndigheten för yrkeshögskolan</p>
+        <p>Box 145</p>
+        <p>721 05 Västerås</p>
+      </article>
 
-        <article class="column">
-          <h3 role="heading" class="p1">Om webbplatsen</h3>
-          <a
-            role="link"
-            class="link"
-            href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">
-            Använda webbplatsen
-          </a><br />
-          <a
-            role="link"
-            class="link"
-            href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">
-            Om webbkakor (cookies)
-          </a><br />
-          <a role="link" class="link" href="https://www.myh.se/Webbkarta/">
-            Webbkarta
-          </a>
+      <!--SECTION TWO-->
+      <article class="column">
+        <h3 role="heading" class="p1">Om webbplatsen</h3>
+        <a 
+          role="link"
+          class="link"
+          href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">
+          Använda webbplatsen</a>
+        <a
+          role="link"
+          class="link"
+          href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">
+          Om webbkakor(cookies)</a>
+        <a role="link" class="link" href="https://www.myh.se/Webbkarta/">
+          Webbkarta</a>
 
-          <h3 role="heading" class="p1">Våra övriga webbplatser</h3>
-          <a
-            role="link"
-            class="link"
-            href="https://www.yrkeshogskolan.se"
-            target="blank"
-            aria-label="yrkeshögskolan">
-            www.yrkeshogskolan.se
-            </a><br />
-          <a
-            role="link"
-            class="link"
-            href="https://www.konstkulturutbildning.se"
-            target="blank"
-            aria-label="Konstkulturutbildning">
-            www.konstkulturutbildning.se</a><br />
-          <a
-            role="link"
-            class="link"
-            href="https://www.myh.se/blitolk/"
-            target="blank"
-            aria-label="Blitolk">
-            www.blitolk.nu
-          </a><br />
-          <a
-            role="link"
-            class="link"
-            href="https://www.seqf.se"
-            target="blank"
-            aria-label="Seqf">
-            www.seqf.se</a>
+        <h3 role="heading" class="p1">Våra övriga webbplatser</h3>
+        <a
+          role="link"
+          class="link"
+          href="https://www.yrkeshogskolan.se"
+          target="blank"
+          aria-label="yrkeshögskolan">
+          www.yrkeshogskolan.se</a>
+        <a
+          role="link"
+          class="link"
+          href="https://www.konstkulturutbildning.se"
+          target="blank"
+          aria-label="Konstkulturutbildning">
+          www.konstkulturutbildning.se</a>
+        <a
+          role="link"
+          class="link"
+          href="https://www.myh.se/blitolk/"
+          target="blank"
+          aria-label="Blitolk">
+          www.blitolk.nu</a>
+        <a
+          role="link"
+          class="link"
+          href="https://www.seqf.se"
+          target="blank"
+          aria-label="Seqf">
+          www.seqf.se</a>
 
-          <h3 role="heading" class="p1">Ansvarig utgivare</h3>
-          <p>Thomas Persson, generaldirektör MYH.</p>
-        </article>
+        <h3 role="heading" class="p1">Ansvarig utgivare</h3>
+        <p>Thomas Persson, generaldirektör MYH.</p>
+      </article>
 
-        <article class="column">
-          <h3 role="heading" class="p1">Ansvarig utgivare</h3>
-          <p>Thomas Persson, generaldirektör MYH.</p>
+      <!--SECTION THREE-->
+      <article class="column">
+        <h3 role="heading" class="p1">Ansvarig utgivare</h3>
+        <p>Thomas Persson, generaldirektör MYH.</p>
 
-          <h3 role="heading" class="p1">Håll dig informerad</h3>
-
-          <ul class="social">
-            <li role="contentinfo">
-              <a href="https://twitter.com/" target="blank" aria-label="Twitter">
-                <i class="fab fa-twitter-square"></i>
-              </a>
-            </li>
-            <li role="contentinfo">
-              <a
-                href="https://facebook.com/"
-                target="blank"
-                aria-label="Facebook">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li role="contentinfo">
-              <a href="https://youtube.com/" target="blank" aria-label="Youtube">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li role="contentinfo">
-              <a
-                href="https://instagram.com/"
-                target="blank"
-                aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </article>
-      </footer>
-      <!--FOOTER ENDS-->
+        <h3 role="heading" class="p1">Håll dig informerad</h3>
+        <ul class="social">
+          <li role="contentinfo">
+            <a href="https://twitter.com/" target="blank" aria-label="Twitter">
+              <i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li role="contentinfo">
+            <a href="https://facebook.com/" target="blank" aria-label="Facebook">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li role="contentinfo">
+            <a href="https://youtube.com/" target="blank" aria-label="Youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li role="contentinfo">
+            <a
+              href="https://instagram.com/"
+              target="blank"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </footer>
+    <!--FOOTER END-->
 
   <!--SCRIPT TO MAKE MENU WORK-->
   <script src="../../js/node_modules/wicg-inert/dist/inert.min.js"></script>
