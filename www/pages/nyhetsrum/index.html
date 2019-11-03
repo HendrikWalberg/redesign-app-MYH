@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../scss/nyhetsrum.css">
-    
-    <title>Nyhetsrum</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../scss/nyhetsrum.css" />
+    <link rel="stylesheet" href="../../scss/lagar.css" />
+    <link rel="stylesheet" href="../../fontawesome/css/all.min.css" />
 
- <!--NAVIGATION START-->
+    <title>Nyhetsrum</title>
+  </head>
+  <body>
+    <!--NAVIGATION START-->
     <nav>
       <div role="button" tabindex="0" class="hamburger">
         <div class="line"></div>
@@ -21,202 +22,243 @@
       <div class="nav-links">
         <ul id="hem">
           <li>
-            <a href="../../."><img src="../../img/logo.png" alt="Myndigheten för yrkeshögskolan"/></a>
+            <a role="menuitem" href="../../."
+              ><img
+                src="../../img/logo.png"
+                alt="Myndigheten för yrkeshögskolan"
+            /></a>
           </li>
         </ul>
 
         <ul id="kontakt">
-          <li><a class="menubold" href="../kontakt/">Kontakta oss</a></li>
-          <li><a href="#">Jobba hos oss</a></li>
+          <li>
+            <a role="menuitem" class="menubold" href="../kontakt/"
+              >Kontakta oss</a
+            >
+          </li>
+          <li><a role="menuitem" href="#">Jobba hos oss</a></li>
         </ul>
 
         <ul id="publikationer">
-          <li><a class="menubold" href="../publikationer/">Publikationer</a></li>
+          <li>
+            <a role="menuitem" class="menubold" href="../publikationer/"
+              >Publikationer</a
+            >
+          </li>
         </ul>
 
         <ul id="om-oss">
-          <li><a class="menubold" href="../om-oss/">Om oss</a></li>
-          <li><a href="#">Organisaton</a></li>
-          <li><a href="#">Så styrs myndigheten</a></li>
-          <li><a href="#">Redovisning av verksamhet</a></li>
-          <li><a href="#">Remisssvar och yttranden</a></li>
-          <li><a href="#">Pågående upphandlingar</a></li>
+          <li>
+            <a role="menuitem" class="menubold" href="../om-oss/">Om oss</a>
+          </li>
+          <li><a role="menuitem" href="#">Organisaton</a></li>
+          <li><a role="menuitem" href="#">Så styrs myndigheten</a></li>
+          <li><a role="menuitem" href="#">Redovisning av verksamhet</a></li>
+          <li><a role="menuitem" href="#">Remisssvar och yttranden</a></li>
+          <li><a role="menuitem" href="#">Pågående upphandlingar</a></li>
         </ul>
 
         <ul id="verksamhet">
           <li>
-            <a class="menubold" href="../verksamhetsomraden/">Verksamhetsområden</a>
+            <a role="menuitem" class="menubold" href="../verksamhetsomraden/"
+              >Verksamhetsområden</a
+            >
           </li>
-          <li><a href="#">Yrkeshögskolan</a></li>
-          <li><a href="#">Konst- och kulturutbildningar</a></li>
-          <li><a href="#">Tolkutbildningar</a></li>
-          <li><a href="#">Utbildningar med endast tillsyn</a></li>
-          <li><a href="#">SeQF</a></li>
-          <li><a href="#">Validering</a></li>
+          <li><a role="menuitem" href="#">Yrkeshögskolan</a></li>
+          <li><a role="menuitem" href="#">Konst- och kulturutbildningar</a></li>
+          <li><a role="menuitem" href="#">Tolkutbildningar</a></li>
+          <li>
+            <a role="menuitem" href="#">Utbildningar med endast tillsyn</a>
+          </li>
+          <li><a role="menuitem" href="#">SeQF</a></li>
+          <li><a role="menuitem" href="#">Validering</a></li>
         </ul>
 
         <ul id="lagar">
           <li>
-            <a class="menubold" href="../lagar-regler-tillsyn/">Lagar, regler, tillsyn</a>
+            <a role="menuitem" class="menubold" href="../lagar-regler-tillsyn/"
+              >Lagar, regler, tillsyn</a
+            >
           </li>
-          <li><a href="#">Lagar och förordningar</a></li>
-          <li><a href="#">Gällande föreskrifter</a></li>
-          <li><a href="#">Allmänna råd</a></li>
-          <li><a href="#">Tillsyn</a></li>
-          <li><a href="#">Kvalitetsgranskning</a></li>
-          <li><a href="#">Anmäl brister i en utbildning</a></li>
+          <li><a role="menuitem" href="#">Lagar och förordningar</a></li>
+          <li><a role="menuitem" href="#">Gällande föreskrifter</a></li>
+          <li><a role="menuitem" href="#">Allmänna råd</a></li>
+          <li><a role="menuitem" href="#">Tillsyn</a></li>
+          <li><a role="menuitem" href="#">Kvalitetsgranskning</a></li>
+          <li><a role="menuitem" href="#">Anmäl brister i en utbildning</a></li>
         </ul>
 
         <ul id="statistik">
-          <li><a class="menubold" href="../statistik/">Statistik</a></li>
-          <li><a href="#">Yrkeshögskoleutbildningar</a></li>
           <li>
-            <a href="#">
+            <a role="menuitem" class="menubold" href="../statistik/"
+              >Statistik</a
+            >
+          </li>
+          <li><a role="menuitem" href="#">Yrkeshögskoleutbildningar</a></li>
+          <li>
+            <a role="menuitem" href="#">
               Konst- och kulturutbildningar och utbildningar med endast tillsyn
             </a>
           </li>
-          <li><a href="#">Tolkutbildningar inom folkbildningen</a></li>
+          <li>
+            <a role="menuitem" href="#">Tolkutbildningar inom folkbildningen</a>
+          </li>
         </ul>
 
         <ul id="nyheter">
-          <li><a class="menubold" href="../nyhetsrum/">Nyhetsrum</a></li>
-          <li><a href="#">Pressmedelanden</a></li>
-          <li><a href="#">Kalender</a></li>
-          <li><a href="#">Filmer</a></li>
-          <li><a href="#">Pressbilder</a></li>
-          <li><a href="#">Nyhetsbrev</a></li>
+          <li>
+            <a role="menuitem" class="menubold" href="../nyhetsrum/"
+              >Nyhetsrum</a
+            >
+          </li>
+          <li><a role="menuitem" href="#">Pressmedelanden</a></li>
+          <li><a role="menuitem" href="#">Kalender</a></li>
+          <li><a role="menuitem" href="#">Filmer</a></li>
+          <li><a role="menuitem" href="#">Pressbilder</a></li>
+          <li><a role="menuitem" href="#">Nyhetsbrev</a></li>
         </ul>
       </div>
     </nav>
     <!--NAVIGATION END-->
 
+    <!--ANIMATED HEADER-->
+    <header class="header">
+      <div class="text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">myh</span>
+          <span class="heading-primary-sub">nyhetsrum </span>
+        </h1>
+      </div>
+    </header>
 
-     <!--ANIMATED HEADER-->
-     <header class="header">
-        <div class="text-box">
-          <h1 class="heading-primary">
-            <span class="heading-primary-main">myh</span>
-            <span class="heading-primary-sub">nyhetsrum </span> 
-          </h1>
-        </div>
-      </header>
-
-<!-- Main section here -->
+    <!-- Main section here -->
     <main role="main">
-            <div class="container">
-        
-                    <div class="news-box">
-                        <div class="news-image-box">
-                            <img  class="img" alt="apples image"  src="../../img/omOssApples.png">
-                        </div>
-                        <div class="news-info">
-                            <div class="news-date">
-                                <h2>3 november 2019</h2>
-                                
-                            </div>
-                            <h1 class="news-title">Resultat av ansökningsomgången för kurser i kontakttolkning</h1>
-                            <p class="news-text">Varje år ansöker folkhögskolor och studieförbund om medel från 
-                                Myndigheten för yrkeshögskolan för att starta kurser för kontakttolkar.
-                                 I årets ansökningsomgång har 81 kurser beviljats statsbidrag för start 
-                                 under 2020.Varje år ansöker folkhögskolor och studieförbund om medel 
-                                 från Myndigheten för yrkeshögskolan för att starta kurser för kontakttolkar.
-                                  I årets ansökningsomgång har 81 kurser beviljats statsbidrag för start under 2020..</p>
-                    
-                                <a href="#" class="read-more"> read more</a>
-                    
-                        </div>
-                    </div>
-            
+      <div class="container">
+        <div class="news-box">
+          <div class="news-image-box">
+            <img
+              class="img"
+              alt="apples image"
+              src="../../img/omOssApples.png"
+            />
+          </div>
+          <div class="news-info">
+            <div class="news-date">
+              <h2>3 november 2019</h2>
             </div>
-    
-    
-            <div class="container">
-            
-                    <div class="news-box">
-                        <div class="news-image-box">
-                            <img class="img"  alt="maria photo" src="../../img/omOssMaria.jpg">
-                        </div>
-                        <div class="news-info">
-                            <div class="news-date">
-                                <h2>29 october 2019</h2>
-                                
-                            </div>
-                            <h1 class="news-title">Hon jobbar med att göra YH mer känt och erkänt</h1>
-                            <p class="news-text">
-                                    Maria Granberg är en tongivande YH-ambassadör. Idag arbetar hon på 
-                                    Handelskammaren där hon leder satsningen Yrkeshögskola Mälardalen.
-                                    Innan dess var hon handläggare på Myndigheten för yrkeshögskolan 
-                                    och en av dem som var med och fattade beslut om vilka utbildningar
-                                    som skulle bli av. Vi träffade henne med anledning av yrkeshögskolans
-                                    10-årsjubileum.</p>
-                    
-                                <a href="#" class="read-more"> read more</a>
-                    
-                        </div>
-                    </div>
-            
+            <h1 class="news-title">
+              Resultat av ansökningsomgången för kurser i kontakttolkning
+            </h1>
+            <p class="news-text">
+              Varje år ansöker folkhögskolor och studieförbund om medel från
+              Myndigheten för yrkeshögskolan för att starta kurser för
+              kontakttolkar. I årets ansökningsomgång har 81 kurser beviljats
+              statsbidrag för start under 2020.Varje år ansöker folkhögskolor
+              och studieförbund om medel från Myndigheten för yrkeshögskolan för
+              att starta kurser för kontakttolkar. I årets ansökningsomgång har
+              81 kurser beviljats statsbidrag för start under 2020..
+            </p>
+
+            <a href="#" class="read-more"> read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="news-box">
+          <div class="news-image-box">
+            <img class="img" alt="maria photo" src="../../img/omOssMaria.jpg" />
+          </div>
+          <div class="news-info">
+            <div class="news-date">
+              <h2>29 october 2019</h2>
             </div>
-    
-    
-    
-    
-              <div class="container">
-            
-                    <div class="news-box">
-                        <div class="news-image-box">
-                            <img class="img"  alt="bill gates photo" src="../../img/omOssGd.png">
-                        </div>
-                        <div class="news-info">
-                            <div class="news-date">
-                                <h2>15 october 2019</h2>
-                                
-                            </div>
-                            <h1 class="news-title">Min bild av läget i yrkeshögskolan och expansionen </h1>
-                            <p class="news-text"> extra viktigt att följa myndighetens statistik om nyttjade
-                                platser och resultat. Expansionen är förstås positiv ur många synvinklar,
-                                men innebär också risker och utmaningar för YH-systemet. De mest uppenbara är
-                                att tillströmningen av behöriga sökande inte hänger med, att det blir svårare för
-                                anordnare att finna kompetenta medarbetare och att det blir svårare att säkra väl
-                                fungerande LIA-platser.</p>
-                    
-                                <a href="#" class="read-more"> read more</a>
-                    
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="container">
-            
-                        <div class="news-box">
-                            <div class="news-image-box">
-                                <img class="img" alt="student photo" src="../../img/omOssStudent.jpg">
-                            </div>
-                            <div class="news-info">
-                                <div class="news-date">
-                                    <h2>9 october 2019</h2>
-                                </div>
-                                <h1 class="news-title">Ekonomi och behörighet sätter stopp för många som vill karriärväxla</h1>
-                                <p class="news-text">Har du funderat på att byta yrke? Enligt en undersökning från Origo Group är
-                                    du inte ensam. 43% av deltagarna i undersökningen uppgav att de funderar på att karriärväxla och
-                                    27% att de funderat på att påbörja en utbildning. Ekonomi anges vara det främsta hindret. Samtidigt
-                                    känner många inte till vilka ekonomiska villkor som gäller vid studier.</p>
-                        
-                                    <a href="#" class="read-more"> read more</a>
-                        
-                            </div>
-                        </div>
-                
-                </div>
+            <h1 class="news-title">
+              Hon jobbar med att göra YH mer känt och erkänt
+            </h1>
+            <p class="news-text">
+              Maria Granberg är en tongivande YH-ambassadör. Idag arbetar hon på
+              Handelskammaren där hon leder satsningen Yrkeshögskola Mälardalen.
+              Innan dess var hon handläggare på Myndigheten för yrkeshögskolan
+              och en av dem som var med och fattade beslut om vilka utbildningar
+              som skulle bli av. Vi träffade henne med anledning av
+              yrkeshögskolans 10-årsjubileum.
+            </p>
 
-                <div class="read-all"><a class="read-all-link" href="#"> Allt aktuellt</a> </div>
-            </main>
+            <a href="#" class="read-more"> read more</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="container">
+        <div class="news-box">
+          <div class="news-image-box">
+            <img
+              class="img"
+              alt="bill gates photo"
+              src="../../img/omOssGd.png"
+            />
+          </div>
+          <div class="news-info">
+            <div class="news-date">
+              <h2>15 october 2019</h2>
+            </div>
+            <h1 class="news-title">
+              Min bild av läget i yrkeshögskolan och expansionen
+            </h1>
+            <p class="news-text">
+              extra viktigt att följa myndighetens statistik om nyttjade platser
+              och resultat. Expansionen är förstås positiv ur många synvinklar,
+              men innebär också risker och utmaningar för YH-systemet. De mest
+              uppenbara är att tillströmningen av behöriga sökande inte hänger
+              med, att det blir svårare för anordnare att finna kompetenta
+              medarbetare och att det blir svårare att säkra väl fungerande
+              LIA-platser.
+            </p>
 
+            <a href="#" class="read-more"> read more</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="container">
+        <div class="news-box">
+          <div class="news-image-box">
+            <img
+              class="img"
+              alt="student photo"
+              src="../../img/omOssStudent.jpg"
+            />
+          </div>
+          <div class="news-info">
+            <div class="news-date">
+              <h2>9 october 2019</h2>
+            </div>
+            <h1 class="news-title">
+              Ekonomi och behörighet sätter stopp för många som vill
+              karriärväxla
+            </h1>
+            <p class="news-text">
+              Har du funderat på att byta yrke? Enligt en undersökning från
+              Origo Group är du inte ensam. 43% av deltagarna i undersökningen
+              uppgav att de funderar på att karriärväxla och 27% att de funderat
+              på att påbörja en utbildning. Ekonomi anges vara det främsta
+              hindret. Samtidigt känner många inte till vilka ekonomiska villkor
+              som gäller vid studier.
+            </p>
 
-   <!--FOOTER START-->
+            <a href="#" class="read-more"> read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="read-all">
+        <a class="read-all-link" href="#"> Allt aktuellt</a>
+      </div>
+    </main>
+
+    <!--FOOTER START-->
     <footer class="wrapper" role="contentinfo">
-
       <!--SECTION ONE-->
       <article class="column">
         <h2 id="footer-heading" role="heading" class="p1">Kontakt</h2>
@@ -226,13 +268,17 @@
 
         <h3 role="heading" class="p1">Digitalt kundforum</h3>
         <p>Se vanliga frågor och svar eller ställ frågor:</p>
-        <a role="link" class="link" href="https://forum.myh.se" target="blank">forum.myh.se</a>
+        <a role="link" class="link" href="https://forum.myh.se" target="blank"
+          >forum.myh.se</a
+        >
 
         <h3 role="heading" class="p1">E-post</h3>
         <p>Allmänna frågor/synpunkter:</p>
-        <a href="mailto:info@myh.se" role="link" class="email" >info@myh.se</a>
+        <a href="mailto:info@myh.se" role="link" class="email">info@myh.se</a>
         <p>Registrator:</p>
-        <a href="mailto:registrator@myh.se" role="link" class="email" >registrator@myh.se</a>
+        <a href="mailto:registrator@myh.se" role="link" class="email"
+          >registrator@myh.se</a
+        >
 
         <h3 role="heading" class="p1">Adress</h3>
         <p>Myndigheten för yrkeshögskolan</p>
@@ -243,18 +289,23 @@
       <!--SECTION TWO-->
       <article class="column">
         <h3 role="heading" class="p1">Om webbplatsen</h3>
-        <a 
-          role="link"
-          class="link"
-          href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">
-          Använda webbplatsen</a>
         <a
           role="link"
           class="link"
-          href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">
-          Om webbkakor(cookies)</a>
+          href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/"
+        >
+          Använda webbplatsen</a
+        >
+        <a
+          role="link"
+          class="link"
+          href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/"
+        >
+          Om webbkakor(cookies)</a
+        >
         <a role="link" class="link" href="https://www.myh.se/Webbkarta/">
-          Webbkarta</a>
+          Webbkarta</a
+        >
 
         <h3 role="heading" class="p1">Våra övriga webbplatser</h3>
         <a
@@ -262,29 +313,37 @@
           class="link"
           href="https://www.yrkeshogskolan.se"
           target="blank"
-          aria-label="yrkeshögskolan">
-          www.yrkeshogskolan.se</a>
+          aria-label="yrkeshögskolan"
+        >
+          www.yrkeshogskolan.se</a
+        >
         <a
           role="link"
           class="link"
           href="https://www.konstkulturutbildning.se"
           target="blank"
-          aria-label="Konstkulturutbildning">
-          www.konstkulturutbildning.se</a>
+          aria-label="Konstkulturutbildning"
+        >
+          www.konstkulturutbildning.se</a
+        >
         <a
           role="link"
           class="link"
           href="https://www.myh.se/blitolk/"
           target="blank"
-          aria-label="Blitolk">
-          www.blitolk.nu</a>
+          aria-label="Blitolk"
+        >
+          www.blitolk.nu</a
+        >
         <a
           role="link"
           class="link"
           href="https://www.seqf.se"
           target="blank"
-          aria-label="Seqf">
-          www.seqf.se</a>
+          aria-label="Seqf"
+        >
+          www.seqf.se</a
+        >
 
         <h3 role="heading" class="p1">Ansvarig utgivare</h3>
         <p>Thomas Persson, generaldirektör MYH.</p>
@@ -299,10 +358,15 @@
         <ul class="social">
           <li role="listitem">
             <a href="https://twitter.com/" target="blank" aria-label="Twitter">
-              <i class="fab fa-twitter-square"></i></a>
+              <i class="fab fa-twitter-square"></i
+            ></a>
           </li>
           <li role="listitem">
-            <a href="https://facebook.com/" target="blank" aria-label="Facebook">
+            <a
+              href="https://facebook.com/"
+              target="blank"
+              aria-label="Facebook"
+            >
               <i class="fab fa-facebook-square"></i>
             </a>
           </li>
@@ -315,7 +379,8 @@
             <a
               href="https://instagram.com/"
               target="blank"
-              aria-label="Instagram">
+              aria-label="Instagram"
+            >
               <i class="fab fa-instagram"></i>
             </a>
           </li>
@@ -327,5 +392,5 @@
     <!--SCRIPT TO MAKE MENU WORK-->
     <script src="../../js/node_modules/wicg-inert/dist/inert.min.js"></script>
     <script src="../../js/menu.js"></script>
-</body>
+  </body>
 </html>
