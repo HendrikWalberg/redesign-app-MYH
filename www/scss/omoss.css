@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 }
 
 html {
@@ -201,11 +201,6 @@ body {
     margin-left: 6rem;
     margin-right: 6rem;
     margin-bottom: 6rem;
-  }
-  .row .col-2 .main-image .image1 {
-    width: 100%;
-    -webkit-clip-path: polygon(100% 0%, 81% 52%, 100% 100%, 25% 100%, 0 51%, 25% 0%);
-            clip-path: polygon(100% 0%, 81% 52%, 100% 100%, 25% 100%, 0 51%, 25% 0%);
   }
 }
 /*# sourceMappingURL=omoss.css.map */

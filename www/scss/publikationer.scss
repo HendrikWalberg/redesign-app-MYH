@@ -18,7 +18,7 @@ $lightgray: #9CB0C3;
     width: 80%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr)(1);
         grid-template-columns: repeat(1, 1fr);
 
         p {
@@ -34,7 +34,7 @@ $lightgray: #9CB0C3;
     width: 80%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: (1fr)(2);
         grid-template-columns: repeat(2, 1fr);
 
     .wrapped {
@@ -84,7 +84,7 @@ $lightgray: #9CB0C3;
     display: -ms-grid;
     display: grid;
     border-radius: 0 0 12px 12px;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr)(3);
         grid-template-columns: repeat(3, 1fr);
 }
 

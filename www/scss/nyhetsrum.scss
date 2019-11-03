@@ -1,0 +1,374 @@
+$yellow: #FFFF00;
+$blue: #6699CC;
+$lightgray: #9CB0C3;
+$darkgrey: #708090;
+$white: #FFFFFF;
+
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+body{
+    width: 100%;
+    height:100vh;
+}
+
+
+/* NAVIGATION HERE */
+#hem {
+    grid-area: hem;
+  }
+  
+  #om-oss {
+    grid-area: omoss;
+  }
+  
+  #verksamhet {
+    grid-area: verksamhet;
+  }
+  
+  #lagar {
+    grid-area: lagar;
+  }
+  
+  #statistik {
+    grid-area: statistik;
+  }
+  
+  #nyheter {
+    grid-area: nyheter;
+  }
+  
+  #kontakt {
+    grid-area: kontakt;
+  }
+  
+  #publikationer {
+    grid-area: publikationer;
+  }
+  
+  
+    /* NAVIGATION STYLING ENDS */
+  
+
+/*CONTENT STYLING STARTS*/
+.header {
+    height: 30vh;
+    background-color: $yellow;
+    position: relative;
+    .text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      .heading-primary {
+        color: black;
+        text-transform: uppercase;
+        &-main {
+            display: block;
+            font-size: 6rem;
+            font-weight: 700;
+            letter-spacing: 2rem;
+            animation-name: movetoleft;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+        }
+        
+        &-sub {
+          display: block;
+          font-size: 2vw;
+          font-weight: 700;
+          letter-spacing: 0.5rem;
+          animation-name: movetoright;
+          animation-duration: 3s;
+          animation-timing-function: ease-out;
+        }
+      }
+    }
+  }
+  
+  @keyframes movetoleft {
+    0% {
+      opacity: 0;
+      transform: translatex(-100px);
+    }
+    80% {
+      transform: translatex(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes movetoright {
+    0% {
+      opacity: 0;
+      transform: translatex(100px);
+    }
+    80% {
+      transform: translatex(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  
+  .container{
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 3rem;
+    
+    
+    .news-box {
+  
+  width: 100%;
+  max-width:110rem;
+  
+  padding: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 8rem;
+  background-color: $white;
+  box-shadow: .5rem 1rem 1rem .5rem rgba(0, 0, 0, 0.308);
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+
+}
+    
+  }
+
+
+
+.news-image-box{
+  min-width: 20rem;
+  max-width: 20rem;
+  height: 15rem;
+  transform: translateX(-8rem);
+  position: relative;
+  box-shadow: 1rem 1rem 1rem 0.5rem rgba(2, 2, 2, 0.438);
+  border-radius: 0.9rem;
+  margin-left: 60px;
+  & img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.9rem;
+
+}
+}
+
+.news-date h2{
+      display: block;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 1rem 0;
+  }
+
+  .news-title{
+      font-size: 2.5rem;
+      margin-top: 1.5rem 0 1.5rem ;
+      color: black;
+  }
+
+  .news-text{
+      margin-bottom: 3rem;
+      font-size: 1.6rem; 
+      color: rgba(0, 0, 0, 0.705);
+
+  }
+
+
+  .read-more{
+      display: inline-block;
+      padding: 1.5rem 3rem;
+      background-color: $yellow;
+      letter-spacing: 0.1rem;
+      font-size: 1.5rem;
+      border-radius: 3rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+  }
+
+  .read-more:hover{
+      transform: translateY(-0.2rem);
+  }
+
+
+  @media screen and (max-width: 768px){
+     
+
+      .news-image-box{
+          transform: translate(0 , -8rem);
+          min-width: 50rem;
+          max-width: 50rem;
+          height: 20rem;
+          margin-top: 60px;
+          margin-left:30px;
+      }
+
+
+      .news-box{
+          flex-direction: column;
+      }
+  }
+
+
+
+  @media screen and (max-width: 570px){
+     
+    
+      .container{
+          margin: 5rem 4rem;
+      }
+
+
+      .news-image-box{
+          transform: translate(0 , -8rem);
+          min-width: 30rem;
+          max-width: 30rem;
+          height: 15rem;
+          margin-top: 70px;
+      }
+  }
+
+
+  @media screen and (max-width: 425px){
+      .container{
+          margin: 3rem 3rem;
+      }
+      .news-image-box{
+          transform: translate(0 , -8rem);
+          min-width: 20rem;
+          max-width: 20rem;
+          height: 15rem;
+          margin-left: 5px;
+      }
+  }
+
+  
+
+.read-all-link{
+    margin-bottom: 5rem;
+    margin-left: 8rem;
+    
+        display: inline-block;
+       
+        padding: 1.5rem 8rem;
+        
+        background-color: $yellow;
+        letter-spacing: 0.1rem;
+        font-size: 1.5rem;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+    }
+  
+    .read-all-link:hover{
+        transform: translateY(-0.2rem);
+    }
+
+
+
+
+
+
+    //FOOTER STYLING START HERE 
+footer {
+    p, a {
+      font-size: 15px;
+      font-weight: 500;
+      color: black !important;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: black !important;
+    }
+    h2 {
+      font-size: 25px;
+      font-weight: 700;
+      color: black !important;
+    }
+  }
+    
+  footer.wrapper {
+    background-color: yellow;
+    padding-bottom: 30px;
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  
+    > article {
+      display: flex;
+      flex-direction: column;
+      ul > li {
+        display: inline-flex;
+      }
+    }
+  
+    .p1 {
+      padding: 10px 0;
+    }
+  
+    .link,
+    .email {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      color: black !important;
+    }
+    
+    //social in footer
+    .social {
+      a {
+        padding: 20px 14px;
+        transition: color 300ms ease, transform 300ms ease;
+        color: black;
+      }
+  
+      i {
+        font-size: 25px;
+      }
+  
+      a:hover {
+        transform: scale(1.4);
+      }
+    }
+  
+    //from 3 columns to 1
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+        text-align: center;
+      }
+    } 
+  }
+
+
+
+
+
+
+
+
+  
+
