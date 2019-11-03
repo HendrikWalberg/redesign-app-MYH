@@ -2,46 +2,75 @@ $yellow: #FFFF00;
 $blue: #6699CC;
 $lightgray: #9CB0C3;
 $darkgrey: #708090;
+$shadows: #7080909c;
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
-        "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
-    font-size: 1vw;
-}
-
+/*Global styling*/
 a {
     text-decoration: none;
-    color: black;
-
-    &:hover {
-        text-decoration: underline;
-        color: $darkgrey;
-    }
 }
 
-h2 {
-    width: 80%;
-    background-color: $lightgray;
-    margin: 30px auto 0 auto;
-    font-size: 7vw;
+/*PARALLAX START*/
+.main-image {
+    height: 80vh;
+    background-color: #000;
+    background-image: url("../img/main-image.jpg");
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    background-color: #6666664b;
+    padding: 3%;
+}
+/*PARALLAX END*/
+
+
+.description {
     text-align: center;
-}
-
-h3 {
-    font-size: 1.5vw;
-}
-
-.news {
     background-color: $lightgray;
-    margin:0 auto;
+    font-size: 4vw;
+    
+    width: 80%;
+    margin: 40px auto 0 auto;
+    border-radius: 12px 12px 0px 0px;
+    color: black !important;
+}
+
+/*KORT*/
+@mixin omradenimgstyle {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#verksamhetsomraden-ingress {
+    color: $darkgrey;
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px 20px;
+    font-size: 3vw;
+}
+
+.card-section {
+    background-color: $lightgray;
+    margin: 0 auto 60px auto;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 20px;
+    border-radius: 0px 0px 12px 12px;
 }
 
 .card {
@@ -58,30 +87,270 @@ h3 {
     }
     .card-content {
         padding: 12% 6%;
+
+        a:hover {
+            text-decoration: underline;
+            color: $darkgrey;
+        }
     }
+}
 
     .card-footer {
         color: lightgray;
         margin-top: 2%;
     }
- }
 
-/* För iPhone 8 */
-@media screen and (max-width: 414px) {
-    h2 {
-        width: 100%;
-        padding-top: 8%;
-        padding-left: 10%;
-        text-align: left;
-        font-size: 7vw;
+    /* KNAPP: ALLT AKTUELLT */
+    .show-more {
+    color: #000;
+    background-color: $yellow;
+    border: none;
+    text-align: center;
+    display: block;
+    padding: 15px 25px;
+    margin: 15px auto;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    cursor: pointer;
+    border-radius: 12px;
+    grid-column-start: 3;
+
+    span {
+        font-size: 16px;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+    }
+}
+
+.show-more {
+    span:after {
+        content: "→";
+        position: absolute;
+        opacity: 0;
+        left: 100%;
     }
 
+    &:hover span {
+        padding-right: 25px;
+    
+        &:after {
+            opacity: 1;
+            right: 0;
+        }
+    }
+} /* KNAPP SLUT */
+
+ /*OMRÅDEN*/
+ .omraden {
+    background-color: $lightgray;
+    margin: 30px auto 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0 30px 0;
+    border-radius: 12px;
+
+    a {
+        display: flex;
+        align-content: center;
+        font-size: 1vw;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
+
+    .omraden-img-note {
+        @include omradenimgstyle;
+        background-image: url(../img/omOssNotepad.jpg);
+        
+    }
+
+    .omraden-img-school {
+        @include omradenimgstyle;
+        background-image: url(../img/forutbildare.jpg);
+    }
+
+    .omraden-img-foretag {
+        @include omradenimgstyle;
+        background-image: url(../img/forforetag.jpg);
+    }
+
+    .omraden-headline {
+        color: white;
+        text-align: center;
+        text-shadow: 1px 2px 3px black;
+        font-size: 3vw;
+        padding: 8%;
+
+    }
+
+    .omraden-list {
+        list-style-type: none;
+        width: 55%;
+        margin: 10px auto;
+        padding: 30px 15px;
+
+        .omraden-list-item {
+            font-size: 1.5vw;
+            padding: 1.5%;
+        }
+    }
+
+    .omraden-content {
+        list-style-type: none;
+        width: 90%;
+        margin: 10px auto 0 auto;
+        padding: 30px 15px;
+
+        .head-text {
+            color: white;
+            font-size: 1.5vw;
+            margin-bottom: 1.5%;
+        }
+      }
+
+// myh video
+.video-wrapper {
+    position: relative;
+    padding-bottom: 45%;
+    padding-top: 25px;
+    height: 0;
+    margin-top: 30px;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 10%;
+      width: 80%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+/* Boxes */
+
+.boxes {
+    margin: 10px auto;
+    width: 80%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr),(3);
+        grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    margin: 20px auto;
+    color: #3b3b3b;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 18vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 8px 8px 20px 1px $shadows;
+}
+
+.box-text {
+    padding: 10px;
+    font-size: 1.5vw;
+    font-weight: 700;
+    background-color: none;
+}
+
+.box-green {
+    background-image: linear-gradient(-60deg, $lightgray 50%, #00c84e 50%);
+    opacity: .6;
+    bottom:0;
+    left:-110%;
+    right:-110%;
+    top:0;
+    z-index:-1;
+}
+
+.box-yellow {
+    background-image: linear-gradient(-60deg, $lightgray 50%, $yellow 50%);
+    opacity: .6;
+    bottom:0;
+    left:-110%;
+    right:-110%;
+    top:0;
+    z-index:-1;
+}
+
+.box-gray {
+    background-image: linear-gradient(-60deg, $lightgray 50%, #6699CC 50%);
+    opacity: .6;
+    bottom:0;
+    left:-110%;
+    right:-110%;
+    top:0;
+    z-index:-1;
+}
+
+.box-animation {
+    position: absolute;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+}
+
+.box:hover .box-animation {
+    transform: translateX(25%);
+    -webkit-transform: translateX(25%);
+    -moz-transform: translateX(25%);
+}
+
+#smaller-font {
+    font-size: 1.2vw;
+}
+
+/* För iPhone 8 */
+@media screen and (max-width: 550px) {
+    /*Global styling*/
+    .description, .card-section, .omraden {
+        border-radius: 0 0 0 0;
+    }
+    .main-heading {
+        width: 100%;
+        padding-top: 8%;
+        font-size: 7vw;
+    }
+    .main-heading {
+        margin-top: 20px;
+    }
     h3 {
         font-size: 6vw;
     }
-
-    .news {
-        grid-template-columns: 1fr;
+    .main-image {
+        height: 40vh;
+        background-color: #000;
+        background-image: url("../img/main-image.jpg");
+        position: relative;
+        opacity: 0.7;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    #logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        background-color: #6666664b;
+        padding: 3%;
+    }
+    /*News-section*/
+    .card-section {
+        grid-template-columns: 2fr;
         margin: 0;
         width: 100%;
     }
@@ -97,14 +366,186 @@ h3 {
             font-size: 4vw;
         }
     }
+    
+    .omraden {
+        grid-template-columns: 2fr;
+        margin: 0;
+        width: 100%;
+    }
+
+    .show-more {
+        grid-column-start: 1;
+    }
+
+    .omraden {
+        margin-top: 40px;
+
+    }
+    #photo-utbildning {
+        grid-row-start: 3;
+    }
+
+    .omraden-headline {
+        font-size: 36px;
+    }
+
+    .omraden-content .head-text {
+        font-size: 20px;
+    }
+
+    .omraden-content a {
+        font-size: 1.5vw;
+    }
+
+    .omraden-list .omraden-list-item {
+        font-size: 1.5vw;
+
+        a {
+            font-size: 4vw;
+        }
+    }
+
+    .omraden-content p,a {
+        font-size: 4vw !important;
+    }
+
+
+    .boxes {
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .box-text {
+        padding: 3px;
+        font-size: 20px;
+    }
+
+    #smaller-font {
+        font-size: 15px;
+    }
 }
 
 /* För Laptop */
-@media screen and (min-width: 415px) and (max-width: 1919px) {
+@media screen and (min-width: 415px) and (max-width: 900px) {
+    /*Global styling*/
+    .description, .card-section, .omraden {
+        border-radius: 0 0 0 0;
+    }
 
+    .main-heading {
+        width: 100%;
+        padding-top: 8%;
+        font-size: 7vw;
+    }
+    .main-heading {
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 6vw;
+    }
+    .main-image {
+        height: 40vh;
+        background-color: #000;
+        background-image: url("../img/main-image.jpg");
+        position: relative;
+        opacity: 0.7;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    #logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        background-color: #6666664b;
+        padding: 3%;
+    }
+    /*News-section*/
+
+    .card-section {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        width: 100%;
+        padding: 0;
+
+    }
+    .card {
+
+        .card-content a h3 {
+            font-size: 3vw;
+        }
+        .card-content p {
+            font-size: 3vw;
+        }
+        .card-content footer {
+            font-size: 3vw;
+        }
+
+    }
+
+    .show-more {
+        grid-column-start: 2;
+    }
+
+    .omraden {
+        width: 100%;
+    }
+
+    .omraden-list {
+        margin: 0;
+    }
+
+    .omraden-headline {
+        font-size: 24px;
+    }
+
+    .omraden-content .head-text {
+        font-size: 3vw;
+    }
+
+    .omraden-content a {
+        font-size: 3vw;
+
+    }
+
+    .omraden-list .omraden-list-item {
+        font-size: 3vw;
+
+        a {
+            font-size: 3vw;
+        }
+
+        
+    }
+
+
+    .boxes {
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .box-text {
+        padding: 3px;
+        font-size: 20px;
+    }
+
+    #smaller-font {
+        font-size: 15px;
+    }
 }
 
 /* För Desktop */
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 901px) {
 
+}
+
+@supports (-ms-ime-align: auto) {
+    .main-image {
+        background-attachment: scroll;
+    }
 }

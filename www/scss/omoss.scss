@@ -2,117 +2,152 @@ $yellow: #FFFF00;
 $blue: #6699CC;
 $lightgray: #9CB0C3;
 $darkgrey: #708090;
+$white: #FFFFFF;
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "HelveticaNeue","Helvetica Neue", "HelveticaNeueRoman","HelveticaNeue-Roman",
+      "Helvetica Neue Roman", "TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 }
 
-main {
-    background-color: $darkgrey;
-    color: white;
-    section {
-        padding: 8%;
-        .ingress {
-            padding: 20px;
-            font-size: 2.2vw;
-            grid-area: ingress;
-        }
-    }
+html {
+  font-size: 10px;
 }
 
-article {
-    display: grid;
-    padding: 8%;
-    grid-gap: 2%;
-    grid-template-areas: "ingress" "item-1" "item-2" "item-3" "button";
-    #item-1 {
-        grid-area: item-1;
-    }
-    #item-2 {
-        grid-area: item-2;
-    }
-    #item-3 {
-        grid-area: item-3;
-    }
-    /*Placeholder för riktig knapp*/
-    .button {
-        width: auto;
-        padding: 8px;
-        grid-area: button;
+body {
+  font-weight: 400px;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+}
+
+/*CONTENT STYLING STARTS*/
+.header {
+    height: 30vh;
+    background-color: $yellow;
+    position: relative;
+    .text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
-        background-color: $lightgray;
-        border: solid 1px;
-        border-radius: 10px;
-        &:hover {
-            background-color: $darkgrey;
-            text-decoration: underline;
+        .heading-primary {
+            color: black;
+            text-transform: uppercase;
+            &-main {
+                display: block;
+                font-size: 6rem;
+                font-weight: 700;
+                letter-spacing: 2rem;
+                animation-name: movetoleft;
+                animation-duration: 3s;
+                animation-timing-function: ease-out;
+            }
+            &-sub {
+                display: block;
+                font-size: 4vw;
+                font-weight: 700;
+                letter-spacing: 0.5rem;
+                animation-name: movetoright;
+                animation-duration: 3s;
+                animation-timing-function: ease-out;
+            }
         }
     }
 }
 
-
-/* För iPhone 8 */
-
-@media screen and (max-width: 414px) {
-    .ingress {
-        font-size: 6vw;
+@keyframes movetoleft {
+    0% {
+        opacity: 0;
+        transform: translatex(-100px);
     }
-    .body-text {
-        font-size: 4vw;
+    80% {
+        transform: translatex(10px);
     }
-    .button {
-        font-size: 4vw;
-    }
-    .page-image {
-        display: none;
+    100% {
+        opacity: 1;
+        transform: translate(0);
     }
 }
 
-
-/* För Laptop */
-
-@media screen and (min-width: 415px) and (max-width: 1919px) {
-    main {
-        margin: 0 30px;
-        display: grid;
-        grid-template-areas: "pic ingress" "article article";
+@keyframes movetoright {
+    0% {
+        opacity: 0;
+        transform: translatex(100px);
     }
-    .page-image {
-        grid-area: pic;
-        width: 48%;
+    80% {
+        transform: translatex(-10px);
     }
-    article {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-areas: "item-1 item-1 item-1" "item-2 item-2 item-2" "item-3 item-3 item-3" ". button .";
+    100% {
+        opacity: 1;
+        transform: translate(0);
     }
 }
 
-
-/* För Desktop */
-
-@media screen and (min-width: 1920px) {
-    main {
-        display: grid;
-        grid-gap: 2%;
-        grid-template-columns: 48% 48%;
-        grid-template-areas: "pic ingress" "article article";
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
     }
-    .page-image {
-        grid-area: pic;
+    & .col-1,
+    .col-2:not(:last-child) {
+        margin-right: 6rem;
     }
-    article {
-        display: grid;
-        grid-column-gap: 2%;
-        grid-template-rows: auto;
-        grid-template-areas: "item-1 item-2" "item-3 button";
+    & .col-1,
+    .col-2 {
+        width: calc((100% - 6rem) / 2);
+        float: left;
     }
-    .button {
-        height: fit-content;
-        align-self: end;
+    .text-heading {
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-left: 1.5rem;
+        text-transform: uppercase;
+    }
+    .par-1 {
+        font-size: 2rem;
+        margin-left: 1.5rem;
+        line-height: 2.5rem;
+        padding-top: 2rem;
+    }
+    .par-2 {
+        margin-left: 1.5rem;
+        padding-top: 2rem;
+    }
+    .main-image {
+        position: relative;
+        top: 15rem;
+        .image1 {
+            width: 95%;
+            box-shadow: 5px 10px 8px #888888;
+        }
     }
 }
+
+@media only screen and (max-width: 1023px) {
+    .row {
+        margin-top: 5rem;
+        & .col-1,
+        .col-2 {
+            width: 95%;
+        }
+        & .col-2 {
+            .main-image {
+                position: relative;
+                top: 6rem;
+                margin-left: 6rem;
+                margin-right: 6rem;
+                margin-bottom: 6rem;
+            }
+        }
+    }
+  }

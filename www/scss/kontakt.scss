@@ -3,116 +3,51 @@ $yellow: #FFFF00;
 $blue: #6699CC;
 $lightgray: #9CB0C3;
 $darkgrey: #708090;
-$white: #FFFFFF;
-@mixin white {
-    color: $white;
-}
 
-@mixin margintop {
+@mixin margintop6 {
     margin-top: 6%;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", "sans-serif";
+@mixin marginauto {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-html {
-    font-size: 10px;
-}
-
-body {
-    font-family: lato;
-    font-weight: 400px;
-    font-size: 1.6rem;
-    line-height: 1.7;
-    color: #777;
-    padding: 3rem;
-    box-sizing: border-box;
-}
-
-.header {
-    height: 30vh;
-    background-color: $color-primary;
-    position: relative;
-    .text-box {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        .heading-primary {
-            color: black;
-            text-transform: uppercase;
-            &-main {
-                display: block;
-                font-size: 6rem;
-                font-weight: 700;
-                letter-spacing: 2rem;
-                animation-name: movetoleft;
-                animation-duration: 3s;
-                animation-timing-function: ease-out;
-            }
-            &-sub {
-                display: block;
-                font-size: 2vw;
-                font-weight: 700;
-                letter-spacing: 0.5rem;
-                animation-name: movetoright;
-                animation-duration: 3s;
-                animation-timing-function: ease-out;
-            }
-        }
-    }
-}
-
-//add animation to heading 
-@keyframes movetoleft {
-    0% {
-        opacity: 0;
-        transform: translatex(-100px);
-    }
-    80% {
-        transform: translatex(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes movetoright {
-    0% {
-        opacity: 0;
-        transform: translatex(100px);
-    }
-    80% {
-        transform: translatex(-10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+@mixin width80 {
+    width: 80%;
 }
 
 .imgContact {
-    @include margintop;
+    @include marginauto;
+    @include margintop6;
+    @include width80;
+
+    display: grid;
     align-self: center;
+    height: 550px;
+
+}
+
+.imgContact.open {
+    display: none;
 }
 
 .infoField {
+    @include marginauto;
+    @include width80;
+
+    display: grid;
+    align-self: center;
     background-color: $lightgray;
     padding: 2% 4%;
-    width: 90%;
-    p {
-        @include white;
-        margin-bottom: 2.5%;
-    }
+    color: #FFFFFF;
+
     h2 {
-        @include white;
+        margin-top: 2.5%;
+    }
+
+    p {
+        font-size: 1.5vw;
     }
     a {
         text-decoration: none;
@@ -124,11 +59,84 @@ body {
     }
 }
 
-iframe {
-    @include margintop;
-    align-self: center;
+// FORM STYLING
+fieldset{
+    border: none;
+    width: 80%;
+    margin: 20px auto 0 auto;
 }
 
-.imageLinks {
-    @include margintop;
+form {
+    background-color: $lightgray;
+    width: 80%;
+    margin: 20px auto 0 auto;
+}
+
+legend{
+    text-align: center;
+    font-size: 7vw;
+    font-weight: 700;
+}
+
+input{
+    display: block;
+    width: 60%;
+    margin: 2% auto;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    padding: 1%;
+}
+
+textarea {
+    display: block;
+    width: 60%;
+    margin: 2% auto;
+    height: 65px;
+    border-radius: 8px;
+    border: none;
+    padding: 1%;
+}
+
+.submitBtn{
+    background-color: $darkgrey;
+    border: none;
+    border-radius: 8px;
+    width: 12%;
+    height: 25px;
+    margin: 0 auto 20px auto;
+
+    &:hover{
+        transition: all .4s ease;
+        box-shadow: 1px 2px $darkgrey;
+        background-color: $blue;
+    }
+}
+
+
+// GOOGLE MAPS
+iframe {
+    @include marginauto;
+    @include margintop6;
+
+    display: block;
+    width: 70%;
+    height: 600px;
+    margin-bottom: 6%;
+}
+
+// DESKTOP 1920x1080p LAPTOP 1280x900p IPHONE8 414x736p
+
+@media screen and (max-width: 650px) {
+
+    .imgContact {
+        display: none;
+    }
+
+
+
+    iframe {
+
+
+    }
 }
