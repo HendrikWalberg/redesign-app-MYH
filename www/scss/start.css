@@ -7,11 +7,10 @@ a {
 /*PARALLAX START*/
 .main-image {
   height: 80vh;
-  background-color: #000;
+  background-color: #9cb0c3;
   background-image: url("../img/main-image.jpg");
   position: relative;
-  opacity: 0.7;
-  background-position: center;
+  background-position-y: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,7 +23,7 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 35%;
-  background-color: #6666664b;
+  background-color: #9cb0c36b;
   padding: 3%;
 }
 
@@ -35,7 +34,6 @@ a {
   font-size: 4vw;
   width: 80%;
   margin: 40px auto 0 auto;
-  border-radius: 12px 12px 0px 0px;
   color: black !important;
 }
 
@@ -57,7 +55,6 @@ a {
   -ms-grid-columns: (1fr)(3);
       grid-template-columns: repeat(3, 1fr);
   padding-bottom: 20px;
-  border-radius: 0px 0px 12px 12px;
 }
 
 .card {
@@ -79,7 +76,45 @@ a {
   padding: 12% 6%;
 }
 
+.card .card-content a {
+  color: black;
+}
+
 .card .card-content a:hover {
+  text-decoration: underline;
+  color: #708090;
+}
+
+.calendar {
+  width: 90%;
+  margin: 8% auto auto auto;
+}
+
+.calendar img {
+  width: 100%;
+  margin: 0;
+  border-radius: 12px 12px 0 0;
+  -webkit-box-shadow: 8px 0 8px -8px #708090;
+          box-shadow: 8px 0 8px -8px #708090;
+}
+
+.calendar a {
+  color: black;
+}
+
+.calendar a div {
+  margin-top: -10px;
+  padding-bottom: 10px;
+  background-color: #f3f3f3;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  -webkit-box-shadow: 0 4px 8px 0 #708090;
+          box-shadow: 0 4px 8px 0 #708090;
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+.calendar a:hover {
   text-decoration: underline;
   color: #708090;
 }
@@ -135,29 +170,21 @@ a {
 /* KNAPP SLUT */
 /*OMRÅDEN*/
 .omraden {
-  background-color: #9CB0C3;
+  background-color: #c7cfd9;
   margin: 30px auto 0 auto;
   width: 80%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)(2);
       grid-template-columns: repeat(2, 1fr);
-  padding: 20px 0 30px 0;
-  border-radius: 12px;
+  padding: 30px 0 30px 0;
 }
 
 .omraden a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: black;
   -ms-flex-line-pack: center;
       align-content: center;
-  font-size: 1vw;
-}
-
-.omraden a:hover {
-  color: white;
-  text-decoration: underline;
+  font-size: 1.5vw;
 }
 
 .omraden-img-note {
@@ -167,7 +194,8 @@ a {
   position: relative;
   width: 90%;
   margin: 0 auto;
-  background-image: url(../img/omOssNotepad.jpg);
+  border-radius: 12px;
+  background-image: url(../img/elever.jpg);
 }
 
 .omraden-img-school {
@@ -177,6 +205,7 @@ a {
   position: relative;
   width: 90%;
   margin: 0 auto;
+  border-radius: 12px;
   background-image: url(../img/forutbildare.jpg);
 }
 
@@ -187,6 +216,7 @@ a {
   position: relative;
   width: 90%;
   margin: 0 auto;
+  border-radius: 12px;
   background-image: url(../img/forforetag.jpg);
 }
 
@@ -200,7 +230,7 @@ a {
 
 .omraden-list {
   list-style-type: none;
-  width: 55%;
+  width: 100%;
   margin: 10px auto;
   padding: 30px 15px;
 }
@@ -208,6 +238,20 @@ a {
 .omraden-list .omraden-list-item {
   font-size: 1.5vw;
   padding: 1.5%;
+  margin-bottom: 1.5%;
+  background: #9CB0C3;
+  border-radius: 30px;
+}
+
+.omraden-list .omraden-list-item:hover {
+  background: rgba(156, 176, 195, 0.6);
+}
+
+.omraden-list .omraden-list-item a {
+  padding-left: 5%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .omraden-content {
@@ -218,17 +262,22 @@ a {
 }
 
 .omraden-content .head-text {
-  color: white;
+  color: #708090;
   font-size: 1.5vw;
   margin-bottom: 1.5%;
+}
+
+.omraden-content a:hover {
+  text-decoration: underline;
+  color: #708090;
 }
 
 .video-wrapper {
   position: relative;
   padding-bottom: 45%;
   padding-top: 25px;
-  height: 0;
-  margin-top: 30px;
+  width: 90%;
+  margin: 50px auto;
 }
 
 .video-wrapper iframe {
@@ -325,12 +374,13 @@ a {
   font-size: 1.2vw;
 }
 
+footer {
+  margin-top: 50px !important;
+}
+
 /* För iPhone 8 */
 @media screen and (max-width: 550px) {
   /*Global styling*/
-  .description, .card-section, .omraden {
-    border-radius: 0 0 0 0;
-  }
   .main-heading {
     width: 100%;
     padding-top: 8%;
@@ -344,11 +394,10 @@ a {
   }
   .main-image {
     height: 40vh;
-    background-color: #000;
+    background-color: #9cb0c3;
     background-image: url("../img/main-image.jpg");
     position: relative;
-    opacity: 0.7;
-    background-position: center;
+    background-position-y: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -360,7 +409,7 @@ a {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 90%;
-    background-color: #6666664b;
+    background-color: #9cb0c36b;
     padding: 3%;
   }
   /*News-section*/
@@ -369,6 +418,9 @@ a {
         grid-template-columns: 2fr;
     margin: 0;
     width: 100%;
+  }
+  .calendar {
+    width: 80%;
   }
   .card {
     width: 80%;
@@ -393,8 +445,8 @@ a {
     margin-top: 40px;
   }
   #photo-utbildning {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
   }
   .omraden-headline {
     font-size: 36px;
@@ -425,14 +477,14 @@ a {
   #smaller-font {
     font-size: 15px;
   }
+  .calendar a div {
+    font-size: 4vw;
+  }
 }
 
-/* För Laptop */
+/* För Tablet */
 @media screen and (min-width: 415px) and (max-width: 900px) {
   /*Global styling*/
-  .description, .card-section, .omraden {
-    border-radius: 0 0 0 0;
-  }
   .main-heading {
     width: 100%;
     padding-top: 8%;
@@ -446,11 +498,10 @@ a {
   }
   .main-image {
     height: 40vh;
-    background-color: #000;
+    background-color: #9cb0c3;
     background-image: url("../img/main-image.jpg");
     position: relative;
-    opacity: 0.7;
-    background-position: center;
+    background-position-y: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -461,8 +512,8 @@ a {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 90%;
-    background-color: #6666664b;
+    width: 50%;
+    background-color: #9cb0c36b;
     padding: 3%;
   }
   /*News-section*/
@@ -517,6 +568,9 @@ a {
   }
   #smaller-font {
     font-size: 15px;
+  }
+  .calendar a div {
+    font-size: 2vw;
   }
 }
 
